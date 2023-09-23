@@ -34,6 +34,16 @@
 .w-800 {
   font-weight: 800; }
 
+@media only screen and (max-width: 580px) {
+  .hide-sm {
+    display: none !important; } }
+
+.show-md {
+  display: none; }
+  @media only screen and (max-width: 991px) {
+    .show-md {
+      display: block !important; } }
+
 body {
   font-family: "Poppins", sans-serif; }
 
@@ -194,3 +204,7 @@ body {
         fill: #cdd7e65b !important; }
       .header .header-option:hover i {
         color: white !important; }
+
+@media only screen and (max-width: 991px) {
+  .mobile-logo {
+    height: 35px; } }

@@ -58,3 +58,8 @@
         }
     }
 }
+.mobile-logo{
+    @media only screen and (max-width:991px){
+      height: 35px;
+    }   
+}

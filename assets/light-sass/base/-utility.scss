@@ -1,0 +1,11 @@
+.hide-sm{
+    @media only screen and (max-width:580px){
+        display: none !important;
+    }
+}
+.show-md{
+   display: none;
+   @media only screen and (max-width:991px){
+    display: block !important;
+} 
+}
