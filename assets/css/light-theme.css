@@ -44,6 +44,15 @@
     .show-md {
       display: block !important; } }
 
+.text-primary {
+  color: #31d4f0 !important; }
+
+.text-danger {
+  color: red !important; }
+
+.text-yellow {
+  color: #c9c905 !important; }
+
 body {
   font-family: "Poppins", sans-serif; }
 
@@ -215,9 +224,6 @@ body {
     text-align: center;
     margin-right: 10px;
     cursor: pointer; }
-    .header .header-option i {
-      font-size: 22px !important;
-      color: #0963ce !important; }
     .header .header-option svg .path-1,
     .header .header-option svg .path-2 {
       fill: #0963ce; }
@@ -232,8 +238,6 @@ body {
       .header .header-option:hover svg .path-3,
       .header .header-option:hover svg .path-4 {
         fill: #cdd7e65b !important; }
-      .header .header-option:hover i {
-        color: white !important; }
 
 @media only screen and (max-width: 991px) {
   .mobile-logo {
@@ -253,6 +257,12 @@ body {
     width: 250px;
     padding-top: 63px;
     display: none; }
+    @media only screen and (max-width: 991px) {
+      .notification-dropdown-div .notification-dropdown-inner {
+        padding-top: 55px; } }
+    @media only screen and (max-width: 767px) {
+      .notification-dropdown-div .notification-dropdown-inner {
+        right: -40px; } }
   .notification-dropdown-div .notification-dropdown {
     list-style: none;
     width: 250px;
@@ -283,12 +293,16 @@ body {
       margin: 0px auto; }
       .notification-dropdown-div .notification-dropdown li:hover {
         background-color: #f6f6f6; }
-      .notification-dropdown-div .notification-dropdown li a p {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        font-size: 14px;
-        color: #5c607b; }
+      .notification-dropdown-div .notification-dropdown li a {
+        display: flex;
+        align-items: center !important; }
+        .notification-dropdown-div .notification-dropdown li a p {
+          width: 186px;
+          overflow: hidden;
+          white-space: nowrap;
+          font-size: 14px;
+          color: #5c607b;
+          text-overflow: ellipsis; }
       .notification-dropdown-div .notification-dropdown li .see-all {
         font-size: 14px;
         padding: 5px 0px;

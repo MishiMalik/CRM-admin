@@ -25,10 +25,11 @@
     margin-right: 10px;
     cursor: pointer;
 
-    i {
-      font-size: 22px !important;
-      color: #0963ce !important;
-    }
+    // i {
+    //   font-size: 22px ;
+    //   color: #0963ce ;
+    // }
+    
     svg {
       .path-1,
       .path-2 {
@@ -51,9 +52,9 @@
           fill: #cdd7e65b !important;
         }
       }
-      i {
-        color: white !important;
-      }
+    //   i {
+    //     color: white !important;
+    //   }
     }
   }
 }
@@ -81,6 +82,12 @@
     padding-top: 63px;
     display: none;
     // right:  125px;
+    @media only screen and (max-width: 991px) {
+        padding-top: 55px;
+      }
+      @media only screen and (max-width: 767px) {
+       right: -40px;
+      }
   }
   .notification-dropdown {
     list-style: none ;
@@ -118,14 +125,17 @@
         background-color: $light-skin;
       }
       a {
+          display: flex;
+          align-items: center !important;
         p {
-          // width: 225px;
-          text-overflow: ellipsis;
+          width: 186px;
+         
           overflow: hidden;
           white-space: nowrap;
           font-size: 14px;
           color: $gray;
-
+          text-overflow: ellipsis;
+       
         }
       }
       .see-all {
