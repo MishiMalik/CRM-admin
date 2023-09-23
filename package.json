@@ -1,0 +1,25 @@
+{
+  "name": "crm",
+  "version": "1.0.0",
+  "description": "crm admin dashboard",
+  "main": "index.js",
+  "scripts": {
+    "light:sass": "node-sass assets/light-sass/main.scss assets/css/light-theme.css -w",
+  "dark:sass": "node-sass assets/dark-sass/main.scss assets/css/dark-theme.css -w",
+  "build:sass": "npm-run-all light:sass dark:sass",
+  "watch:sass": "npm-run-all -p light:sass dark:sass"
+
+  },
+  "author": "Mehwish",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "node-sass": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^10.1.0"
+  },
+  "dependencies": {
+    "live": "^0.1.25-beta.0",
+    "server": "^1.0.38"
+  }
+}
