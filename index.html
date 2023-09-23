@@ -6,24 +6,377 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap5 -->
     <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
 
     <title>Document</title>
 </head>
 
 <body class="theme">
-    <div class="container">
-        <div class="row">
-            <button id="toggleTheme">theme</button>
-        </div>
+
+    <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
+        <!-- ---------------------Side bar-------------- -->
+        <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
+
+            <div class="sidebar-layout">
+                <div class="sidebar-header d-flex justify-content-center">
+
+                    <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center">
+
+                        <img src="assets/images/d-png.png" alt="" class="img-fluid ">
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <nav class="menu open-current-submenu">
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.html" class="active-tab">
+                                    <span class="menu-icon">
+                                        <img src="assets/images/dashboard-5481.svg" alt="" height="20px" width="20px">
+                                    </span>
+                                    <span class="menu-title text-dark-blue mt-1">Dashboard</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="menu-item py-3">
+                            <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">Statistics</span>
+                        </div>
+                        <ul>
+                            <!-- <li class="menu-item">
+                                <a href="all-users.html">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-person-x"></i>
+                                    </span>
+                                    <span class="menu-title">All Users</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item sub-menu">
+                                <a>
+                                    <span class="menu-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                            <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+                                            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+                                          </svg>
+                                    </span>
+                                    <span class="menu-title">Website Users</span>
+
+                                </a>
+                                <div class="sub-menu-list">
+                                    <ul>
+                                        <li class="menu-item">
+                                            <a href="website-user.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Daily</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="website-user.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Monthly</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="website-user.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;weekly</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li> -->
+
+                            <li class="menu-item sub-menu">
+                                <a>
+                                    <span class="menu-icon">
+                                        <i class="bi bi-person-check"></i>
+                                    </span>
+                                    <span class="menu-title">Registered Users</span>
+
+                                </a>
+                                <div class="sub-menu-list">
+                                    <ul>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Daily</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Weekly</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Monthly</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="deleted-users.html">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-person-x"></i>
+                                    </span>
+                                    <span class="menu-title">Deleted Users</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.html" class="active-tab">
+                                    <span class="menu-icon">
+                                        <img src="assets/images/dashboard-5481.svg" alt="" height="20px" width="20px">
+                                    </span>
+                                    <span class="menu-title text-dark-blue mt-1">Dashboard</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="menu-item py-3">
+                            <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">Statistics</span>
+                        </div>
+                        <ul>
+                            <!-- <li class="menu-item">
+                                <a href="all-users.html">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-person-x"></i>
+                                    </span>
+                                    <span class="menu-title">All Users</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item sub-menu">
+                                <a>
+                                    <span class="menu-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-person-vcard" viewBox="0 0 16 16">
+                                            <path d="M5 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm4-2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5ZM9 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 9 8Zm1 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Z"/>
+                                            <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H8.96c.026-.163.04-.33.04-.5C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1.006 1.006 0 0 1 1 12V4Z"/>
+                                          </svg>
+                                    </span>
+                                    <span class="menu-title">Website Users</span>
+
+                                </a>
+                                <div class="sub-menu-list">
+                                    <ul>
+                                        <li class="menu-item">
+                                            <a href="website-user.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Daily</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="website-user.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Monthly</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="website-user.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;weekly</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li> -->
+
+                            <li class="menu-item sub-menu">
+                                <a>
+                                    <span class="menu-icon">
+                                        <i class="bi bi-person-check"></i>
+                                    </span>
+                                    <span class="menu-title">Registered Users</span>
+
+                                </a>
+                                <div class="sub-menu-list">
+                                    <ul>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Daily</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Weekly</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Monthly</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="deleted-users.html">
+                                    <span class="menu-icon">
+                                        <i class="bi bi-person-x"></i>
+                                    </span>
+                                    <span class="menu-title">Deleted Users</span>
+                                </a>
+                            </li>
+
+
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </aside>
     </div>
+    <div class="main-area">
+        <!-- --------------------Main Side-------------- -->
+        <!-- ----------------Header--------------- -->
+        <header class="header w-100">
+            <a id="btn-collapse" href="#" class="align-self-center ">
+                <i class="bi bi-filter-left f-28 btn-head"></i>
+            </a>
+            <a id="btn-toggle" href="#" class="sidebar-toggler break-point-lg align-self-center">
+                <i class="bi bi-filter-left f-28  btn-head"></i>
+            </a>
+            <div class="dropdown  notification-dropdown-btn profile-dropdown ms-auto align-self-center px-3 text-dark">
+                <button type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="notifications">
+                        <i class="bi bi-bell f-22 "></i>
+                        <div class="number">
+                            2
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu notification-dropdown" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item " href="notifications.html">
+                            <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Unde, a!</p>
+                            <div class="d-flex justify-content-end">
+                                <span class="text-right mt-1">Tue,9:50pm</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item " href="#">
+                            <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Unde, a!</p>
+                            <div class="d-flex justify-content-end">
+                                <span class="text-right mt-1">Tue,9:50pm</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item " href="#">
+                            <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Unde, a!</p>
+                            <div class="d-flex justify-content-end">
+                                <span class="text-right mt-1">Tue,9:50pm</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a class="dropdown-item " href="#">
+                            <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Unde, a!</p>
+                            <div class="d-flex justify-content-end">
+                                <span class="text-right mt-1">Tue,9:50pm</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="notifications.html" class="text-center">
+                            <div class="see-all">
+                                See All
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex  user-account px-2">
+
+                <div class="user-icon">
+                    <i class="bi bi-person "></i>
+                </div>
+                <div class="dropdown profile-dropdown">
+                    <button class=" dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        InsCriptChat
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                        <li><a class="dropdown-item" href="log-in.html"><i
+                                    class="bi bi-box-arrow-left me-2"></i>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- <div class="layout ms-auto main-area">
+             -->
+        <!-- -----------Main Contents----------- -->
+        <main class="content pb-4">
+            <button id="toggleTheme">theme</button>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima saepe optio accusantium tempore. Officiis
+            sed ex asperiores ad! Tempora perspiciatis rem ab reprehenderit mollitia adipisci molestias voluptates natus
+            nam ea laudantium maxime doloribus magni eveniet perferendis voluptatem autem, deserunt soluta placeat non
+            nesciunt. Et laborum neque mollitia, maxime ducimus qui reprehenderit quam deserunt eaque pariatur quo
+            delectus culpa doloribus ut eligendi deleniti velit repudiandae sapiente. Sunt, est ab doloribus eius non
+            maxime libero deserunt soluta accusamus molestias, sint iusto dignissimos ex facere ut cupiditate, sed
+            inventore quae eligendi! Quia iste, corrupti facilis esse dicta quibusdam reprehenderit alias totam rem nam
+            sint laborum at! Quis tenetur aut ab pariatur nulla ipsa animi culpa soluta voluptates, ullam sed nobis
+            adipisci, doloribus deserunt fugiat laudantium tempora eveniet a impedit obcaecati esse, vel architecto
+            eaque. Sit veniam molestias a quisquam incidunt ipsa magni iste, recusandae eius eligendi excepturi commodi
+            animi veritatis cum soluta dolorum eveniet tempora rem voluptas neque autem, odit pariatur! Distinctio est
+            iure perspiciatis atque eaque inventore, harum adipisci error facilis dignissimos fugit laboriosam, labore
+            animi quis perferendis, non praesentium soluta qui blanditiis! Aliquam ab perferendis ad quibusdam et hic,
+            architecto animi nostrum natus expedita, omnis numquam sunt, consequatur eos dolorum eius sit dolore
+            necessitatibus? Tempora architecto ipsa accusamus laborum nesciunt ullam repudiandae reiciendis totam enim
+            inventore, possimus ratione eius dolore. Id ducimus optio ullam alias? Ducimus, molestiae? Recusandae
+            laborum nostrum veritatis nesciunt assumenda esse hic! Vitae architecto adipisci praesentium totam maiores
+            nihil quidem id aut! Autem accusantium quae mollitia aperiam a. Eos earum iste suscipit quis consectetur
+            optio molestias, officiis cum doloribus nulla consequatur molestiae odio animi repellat perspiciatis,
+            doloremque facilis assumenda reprehenderit a sunt. Expedita natus quos, molestiae placeat reiciendis nihil
+            distinctio minus dolorum odio illum veniam! Dolor quas quibusdam omnis corrupti adipisci laudantium, tempora
+            corporis animi fuga saepe eum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, sequi in. Rerum excepturi tempore non et,
+            sapiente hic officia at ea, fugiat doloremque quam eos in quod. Ex tempore labore amet quas iusto, inventore
+            ratione exercitationem recusandae deleniti odio. Repellat consectetur voluptate aliquam repellendus ad hic
+            corrupti debitis veniam quaerat id beatae totam animi cumque mollitia, ab sit dolorem a laboriosam ullam
+            iusto dolore aperiam consequatur? Alias ea, possimus nam consequuntur hic corporis sapiente quaerat nobis.
+            Natus sequi corporis error. Perferendis temporibus rerum, voluptates eum deserunt, magnam quibusdam
+            consectetur, nihil rem quae pariatur iure dolores id ipsum debitis enim cupiditate nam sit corrupti. Facilis
+            quisquam eaque autem maiores ducimus voluptatibus a sint atque libero similique, recusandae numquam, ipsum
+            eum explicabo placeat quam pariatur quis labore! Nisi velit tenetur sed exercitationem nam, omnis ea
+            veritatis rerum voluptatem! Nostrum quasi numquam distinctio et quae unde? Autem assumenda alias cumque
+            neque at nam doloribus debitis repudiandae blanditiis ratione non nemo labore iste maiores quos, optio, ipsa
+            reiciendis facere laudantium voluptatibus deserunt, quaerat veritatis vitae sed. Consequatur corrupti
+            molestias, porro, sunt quibusdam veritatis fugiat aut voluptatem, laudantium quia assumenda dicta quam
+            repudiandae. Iste dicta quo laborum incidunt mollitia reprehenderit dignissimos, libero blanditiis doloribus
+            corporis rerum doloremque vero placeat accusamus error nihil nesciunt est odit ad, eligendi voluptatum
+            corrupti consectetur! Ratione cum accusamus sit reiciendis itaque voluptatem perferendis culpa rem ipsa, non
+            fuga molestias repellat qui nesciunt nemo fugit? Fugiat veritatis inventore culpa consequatur animi laborum
+            omnis sint cumque maxime modi, recusandae incidunt at iure fugit veniam quam quasi exercitationem possimus
+            odit ullam. Assumenda ab voluptatum quos nisi beatae exercitationem ducimus non, sint molestias rem mollitia
+            minus tempore quia nam repellendus. Sunt non nisi aut minima culpa consequatur eius, aliquam, ratione
+            deleniti laudantium ipsa. Exercitationem repudiandae quibusdam esse nam neque id optio voluptate, tempore
+            aliquam?
+        </main>
+        <div class="overlay"></div>
+
+    </div>
+    <!-- </div> -->
+    <!-- </div> -->
 
 
 
 
-
-
+    <div id="overlay" class="overlay"></div>
 
 
 
@@ -38,6 +391,7 @@
     <!-- bootstrap5 -->
     <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
     <script src="assets/Js/app.js"></script>
+    <script src="assets/Js/layout.js"></script>
 </body>
 
 </html>
