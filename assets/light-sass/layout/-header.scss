@@ -1,0 +1,60 @@
+.header{
+    margin-bottom: 0;
+    margin-left: 0;
+    min-height: 80px;
+    border-radius: 10px;
+    border-bottom: 0px solid #efeffd;
+    padding:0px 20px;
+    box-shadow: none;
+    background-color: #ffffff;
+    @media only screen and (max-width:991px){
+        border-radius: 0px;
+        min-height: 60px;
+        padding: 0 14px;
+    }
+    .header-option{
+        height: 45px;
+        width: 45px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 10px;
+        cursor: pointer;
+       
+        i{
+            font-size: 22px !important;
+            color: #0963ce !important;
+        }
+        svg{
+            .path-1,
+            .path-2{
+                fill: #0963ce;
+            }
+            .path-3,
+            .path-4{
+                fill: #0962ce8e;
+            }
+        }
+        &:hover{
+            background-color: $secondry;
+            svg{
+                .path-1,
+                .path-2{
+                    fill: white;
+                }
+                .path-3,
+                .path-4{
+                    fill: #cdd7e65b !important;  
+                }
+               
+            }
+            i{
+                color: white !important;
+            }
+        }
+    }
+}
