@@ -42,3 +42,72 @@ body {
   display: flex;
   height: 100vh;
   overflow-y: hidden; }
+
+.sidebar {
+  background-color: white !important;
+  border-radius: 10px;
+  padding: 15px 0px; }
+  .sidebar .sidebar-header {
+    padding: 0px 15px 15px 15px; }
+    .sidebar .sidebar-header img {
+      height: 40px;
+      width: auto; }
+  .sidebar .menu .menu-item a {
+    color: #5c607b !important; }
+  .sidebar .menu .menu-item a .menu-icon {
+    color: #5c607b !important;
+    cursor: pointer; }
+  .sidebar .menu .menu-item a:hover .menu-title {
+    color: #0963ce; }
+  .sidebar .menu .menu-item a .menu-icon svg path {
+    fill: #5c607b; }
+  .sidebar .menu .menu-item a:hover .menu-icon svg path {
+    fill: #0963ce !important; }
+  .sidebar .menu .menu-item a:hover::after {
+    border-color: #0963ce !important; }
+  .sidebar .menu-heading {
+    padding: 0px 20px 15px 20px;
+    font-weight: 400;
+    color: #172b4c;
+    opacity: 1; }
+  .sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar {
+    width: 5px; }
+  .sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar-track {
+    background-color: transparent !important; }
+  .sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    outline: 1px solid var(--blue);
+    border-radius: 10px; }
+  .sidebar .user-account {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px !important;
+    border: 1px solid #f3f6f9 !important;
+    margin: 18px 20px !important;
+    border-radius: 10px; }
+
+.profile-dropdown {
+  position: relative !important; }
+  .profile-dropdown .dropdown-toggle h3 {
+    color: #172b4c;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5; }
+  .profile-dropdown .dropdown-toggle p {
+    color: #172b4c;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5; }
+  .profile-dropdown .dropdown-toggle::after {
+    margin-left: 20px !important; }
+  .profile-dropdown .dropdown-menu {
+    position: absolute !important;
+    inset: 3px 30px auto -10px !important;
+    right: 0px !important;
+    border: 1px solid #f3f6f9 !important; }
+    .profile-dropdown .dropdown-menu li:not(:last-child) {
+      margin-bottom: 7px; }

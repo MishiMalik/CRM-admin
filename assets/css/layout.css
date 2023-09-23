@@ -7,7 +7,6 @@
 }
 
 .header {
-    background-color: white;
     position: sticky !important;
     top: 0px !important;
     width: 100%;
@@ -15,29 +14,20 @@
     justify-content: space-between;
 }
 
-.content {
-    /* padding: 0px; */
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-gray);
-    /* padding-top: 40px;
-    overflow-y: hidden; */
-    /* overflow-y: scroll; */
-    /* padding: 12px; */
-}
+
 
 .main-area {
     padding: 0px 12px 0px 24px !important;
     margin: 12px 0px;
     overflow-y: auto;
 }
-
+/* 
 .layout .footer {
     text-align: center;
     margin-top: auto;
     margin-bottom: 20px;
     padding: 20px;
-}
+} */
 
 /* .layout.rtl .header {
     box-shadow: -1px 1px 4px #9aa0b9;
@@ -51,7 +41,6 @@
     left: 12px;
     background-size: cover;
     background-position: center;
-    background-color: rgba(63, 81, 181, 0.853) !important;
     height: calc(100vh - 24px) !important;
     overflow-y: hidden !important;
 }
@@ -69,16 +58,6 @@
 
 }
 
-.sidebar .image-wrapper>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.sidebar.has-bg-image .image-wrapper {
-    display: block;
-}
 
 .sidebar .sidebar-layout {
     min-height: 100%;
@@ -86,7 +65,6 @@
     flex-direction: column;
     position: relative;
     z-index: 2;
-    background-color: rgba(63, 81, 181, 0.853) !important;
 }
 
 .sidebar .sidebar-layout .sidebar-header {
@@ -95,7 +73,6 @@
     display: flex;
     align-items: center;
     padding: 0 20px;
-    border-bottom: 1px solid rgba(83, 93, 125, 0.3);
 }
 
 .sidebar .sidebar-layout .sidebar-header>span {
@@ -106,42 +83,14 @@
 
 .sidebar .sidebar-layout .sidebar-content {
     flex-grow: 1;
-    padding: 10px 0;
+    padding: 0px 0;
     height: calc(100vh - 304px);
     overflow-y: scroll;
 
 }
 
-.sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar {
-    width: 5px;
 
-}
 
-.sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: transparent !important;
-}
-
-.sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar-thumb {
-    background-color: white;
-    outline: 1px solid var(--blue);
-    border-radius: 10px;
-}
-
-.sidebar .sidebar-layout .sidebar-footer {
-    height: 64px;
-    min-height: 64px;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid rgba(83, 93, 125, 0.3);
-    padding: 0 20px;
-}
-
-.sidebar .sidebar-layout .sidebar-footer>span {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
 
 @keyframes swing {
 
@@ -181,9 +130,12 @@
     align-items: center;
     height: 50px;
     padding: 0 20px;
-    font-weight: 600;
-    font-size: 20px;
-    color: white;
+    font-weight: 400 !important;
+    opacity: 0.9;
+    white-space: nowrap;
+    align-items: center;
+    line-height: 25px;
+    /* color: white; */
 }
 
 .layout .sidebar .menu .menu-item a .menu-icon {
@@ -212,8 +164,12 @@
     white-space: nowrap;
     flex-grow: 1;
     transition: color 0.3s;
-    font-weight: 600 !important;
-    color: white;
+ font-weight: 400;
+    opacity: 0.9;
+    white-space: nowrap;
+    align-items: center;
+    line-height: 25px;
+    /* color: white; */
 }
 
 .layout .sidebar .menu .menu-item a .menu-prefix,
@@ -224,21 +180,12 @@
     transition: opacity 0.3s;
 }
 
-.layout .sidebar .menu .menu-item a:hover .menu-title {
-    color: white;
-}
-
-.layout .sidebar .menu .menu-item a:hover .menu-icon {
-    color: white;
-}
 
 .layout .sidebar .menu .menu-item a:hover .menu-icon i {
     animation: swing ease-in-out 0.5s 1 alternate;
 }
 
-.layout .sidebar .menu .menu-item a:hover::after {
-    border-color: #dee2ec !important;
-}
+
 
 .layout .sidebar .menu .menu-item.sub-menu {
     position: relative;
@@ -421,8 +368,8 @@ a {
 
 
 .user-icon {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     border-radius: 100%;
     background-color: var(--dark-blue);
     display: flex;
@@ -492,8 +439,8 @@ a {
 }
 
 .layout .sidebar {
-    width: 240px;
-    min-width: 240px;
+    width: 280px;
+    min-width: 280px;
 }
 
 
@@ -520,10 +467,7 @@ a {
     transform: rotate(-45deg);
 }
 
-.user-account {
-    display: flex;
-    align-items: center;
-}
+
 
 .notifications {
     position: relative;
@@ -596,7 +540,7 @@ a {
 }
 
 .sidebar .menu-heading {
-    color: white !important;
+    /* color: white !important; */
     font-weight: 700;
     font-size: 16px;
 }
@@ -606,7 +550,7 @@ a {
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.404);
     bottom: 0 !important;
     display: none;
 }
