@@ -77,6 +77,9 @@ body {
     .theme {
       padding-bottom: 50px; } }
 
+.theme-override {
+  overflow: hidden; }
+
 @keyframes bounceIn {
   from,
   20%,

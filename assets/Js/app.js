@@ -107,19 +107,23 @@ function applyStyles2() {
   // Check if the screen width is less than 991px
   if (screenWidth < 991) {
     $("#overlay-all").on("click", function () {
-      $(".theme").css("overflow", "auto");
+      // $(".theme").css("overflow", "auto");
+      $(".theme").toggleClass("theme-override");
     });
     $(".side-menu-ticket-btn").on("click", function () {
-      $(".theme").css("overflow", "hidden");
+      // $(".theme").css("overflow", "hidden");
+      $(".theme").toggleClass("theme-override");
     });
     $(".close-btn").on("click", function () {
-      $(".theme").css("overflow", "auto");
+      // $(".theme").css("overflow", "auto");
+      $(".theme").toggleClass("theme-override");
     });
     $(".side-menu-quick-btn").on("click", function () {
-      $(".theme").css("overflow", "hidden");
+      // $(".theme").css("overflow", "hidden");
+      $(".theme").toggleClass("theme-override");
     });
     $("#show-more-menu").on("click", function () {
-      $(".theme").css("overflow", "hidden");
+      $(".theme").toggleClass("theme-override");
     });
     
   }
