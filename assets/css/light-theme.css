@@ -482,7 +482,7 @@ body {
   z-index: 1000;
   height: 530px;
   width: 400px;
-  transition: all .5s; }
+  transition: all 0.5s; }
   .chat__popup .header {
     height: 60px;
     background-color: white;

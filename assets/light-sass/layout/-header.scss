@@ -346,190 +346,183 @@
   border-color: #ee3158 !important;
 }
 
-
-
-
-
-
 // ================================================================chat popup
-.chat__popup{
-    position: fixed;
-    right: 50px;
-    bottom: -700px;
-    height: calc(100vh -170px);
+.chat__popup {
+  position: fixed;
+  right: 50px;
+  bottom: -700px;
+  height: calc(100vh -170px);
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 1000;
+  height: 530px;
+  width: 400px;
+  transition: all 0.5s;
+  .header {
+    height: 60px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    z-index: 1000;
-    height:530px ;
-    width: 400px;
-    transition: all .5s;
-    .header{
-        height: 60px;
-        background-color: white;
-        padding: 15px 16px;
-        border-bottom: 1px solid $light-skin;
-        border-radius: 0px;
-        .image-div{
-            height: 40px;
-            width: 40px;
-            border-radius: 100%;
-            border: 1px solid $secondry;
-            overflow: hidden;
-            margin-right: 10px !important;
-            img{
-                object-fit: contain;
-                object-position: top;
-                height:100%;
-                width: 100%;
-                border-radius: 100%;
-               
-            }
-          
-        }
-        h2{
-            font-size: 18px;
-            font-weight: 500;
-            margin-bottom: 0px ;
-            padding-bottom: 0px;
-            color: $dark-blue;
-        }
-        .status{
-            font-size: 14px;
-            color: $gray !important;
-        }
-        .close-chat{
-            background-color: #ffd6de;
-            border-color: #ffd6de;
-            padding: 5px 10px;
-            font-weight: 600;
-            font-size: 14px;
-            border: none;
-            box-shadow: none;
-            outline: none;
-            border-radius: 100%;
-            i {
-              font-size: 14px;
-              color: #ee3158 !important;
-            }
-            &:hover {
-              background-color: #ee3158;
-              i {
-                color: white !important;
-              }
-            }
-        }
+    padding: 15px 16px;
+    border-bottom: 1px solid $light-skin;
+    border-radius: 0px;
+    .image-div {
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      border: 1px solid $secondry;
+      overflow: hidden;
+      margin-right: 10px !important;
+      img {
+        object-fit: contain;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+      }
     }
-    .body{
-        height: 400px;
-        overflow-y: auto;
-        padding: 16px;
-        .recieve{
-            margin-bottom: 16px;
-            .image-div{
-                height: 25px;
-                width: 25px;
-                border-radius: 100%;
-                overflow: hidden;
-                margin-right: 10px !important;
-                img{
-                    object-fit: contain;
-                    object-position: top;
-                    height:100%;
-                    width: 100%;
-                    border-radius: 100%;
-                }
-            }
-            h2{
-                font-size: 14px;
-                font-weight: 500;
-                color: $dark-blue;
-                margin-bottom: 0px;
-                padding-bottom: 0px;
-            }
-            .status{
-                color: $gray;
-                font-size: 12px;
-            }
-            .recieved-msg{
-                max-width: 300px;
-                width: fit-content;
-                padding: 7px 7px;
-                border-radius: 5px;
-                background-color: $light-skin;
-                margin-top: 5px;
-                p{
-                    font-size: 14px;
-                    color: $gray;
-                }
-            }
-        }
-        .send{
-            margin-bottom: 16px;
-            .image-div{
-                height: 25px;
-                width: 25px;
-                border-radius: 100%;
-                overflow: hidden;
-                margin-left: 10px !important;
-                img{
-                    object-fit: contain;
-                    object-position: top;
-                    height:100%;
-                    width: 100%;
-                    border-radius: 100%;
-                }
-            }
-            h2{
-                font-size: 14px;
-                font-weight: 500;
-                color: $dark-blue;
-                margin-bottom: 0px;
-                padding-bottom: 0px;
-            }
-            .status{
-                color: $gray;
-                font-size: 12px;
-            }
-            .send-msg{
-                margin-top: 7px;
-                max-width: 300px;
-                width: fit-content;
-                padding: 7px 7px;
-                border-radius: 5px;
-                background-color: $primary;
-                
-                p{
-                    font-size: 14px;
-                    color: white;
-                }
-            }
-        }
+    h2 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      color: $dark-blue;
     }
-    .type-area{
-        height: 50px;
-        background-color: white;
-        padding: 15px;
-        border-top: 1px solid $light-skin;
+    .status {
+      font-size: 14px;
+      color: $gray !important;
+    }
+    .close-chat {
+      background-color: #ffd6de;
+      border-color: #ffd6de;
+      padding: 5px 10px;
+      font-weight: 600;
+      font-size: 14px;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      border-radius: 100%;
+      i {
         font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        input{
-            border: none;
-            outline: none;
-            background-color: transparent;
-            width: 90%;
-            height: 36px;
-            &:focus,
-            &:active{
-                outline: none;
-                border: none;
-            }
+        color: #ee3158 !important;
+      }
+      &:hover {
+        background-color: #ee3158;
+        i {
+          color: white !important;
         }
-        i{
-            color: $secondry;
-            font-size: 20px;
-        }
+      }
     }
+  }
+  .body {
+    height: 400px;
+    overflow-y: auto;
+    padding: 16px;
+    .recieve {
+      margin-bottom: 16px;
+      .image-div {
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-right: 10px !important;
+        img {
+          object-fit: contain;
+          object-position: top;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-blue;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      .status {
+        color: $gray;
+        font-size: 12px;
+      }
+      .recieved-msg {
+        max-width: 300px;
+        width: fit-content;
+        padding: 7px 7px;
+        border-radius: 5px;
+        background-color: $light-skin;
+        margin-top: 5px;
+        p {
+          font-size: 14px;
+          color: $gray;
+        }
+      }
+    }
+    .send {
+      margin-bottom: 16px;
+      .image-div {
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+        overflow: hidden;
+        margin-left: 10px !important;
+        img {
+          object-fit: contain;
+          object-position: top;
+          height: 100%;
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+      h2 {
+        font-size: 14px;
+        font-weight: 500;
+        color: $dark-blue;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+      }
+      .status {
+        color: $gray;
+        font-size: 12px;
+      }
+      .send-msg {
+        margin-top: 7px;
+        max-width: 300px;
+        width: fit-content;
+        padding: 7px 7px;
+        border-radius: 5px;
+        background-color: $primary;
+
+        p {
+          font-size: 14px;
+          color: white;
+        }
+      }
+    }
+  }
+  .type-area {
+    height: 50px;
+    background-color: white;
+    padding: 15px;
+    border-top: 1px solid $light-skin;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      width: 90%;
+      height: 36px;
+      &:focus,
+      &:active {
+        outline: none;
+        border: none;
+      }
+    }
+    i {
+      color: $secondry;
+      font-size: 20px;
+    }
+  }
 }
