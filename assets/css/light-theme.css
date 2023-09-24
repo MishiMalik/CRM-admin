@@ -218,6 +218,16 @@ body {
   .sidebar.collapsed .sub-menu-list .menu-item {
     margin-bottom: 0px !important; }
 
+.menu-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
+  z-index: 1000; }
+
 .header {
   margin-bottom: 0;
   margin-left: 0;
@@ -226,8 +236,7 @@ body {
   border-bottom: 0px solid #efeffd;
   padding: 0px 20px;
   box-shadow: none;
-  background-color: #ffffff;
-  z-index: 999; }
+  background-color: #ffffff; }
   @media only screen and (max-width: 991px) {
     .header {
       border-radius: 0px;
