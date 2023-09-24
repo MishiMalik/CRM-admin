@@ -33,18 +33,16 @@
   // .menu .menu-item a:hover .menu-icon svg path {
   //   fill: $secondry !important;
   // }
-  .menu .menu-item a .menu-icon svg .path-dark {
-    fill: #5c607b;
+  // .menu .menu-item a .menu-icon svg i {
+  //   fill: #5c607b;
+  // }
+  // .menu .menu-item a .menu-icon svg i {
+  //   fill: #cecfd7;
+  // }
+  .menu .menu-item a:hover .menu-icon  i {
+    color: $secondry !important;
   }
-  .menu .menu-item a .menu-icon svg .path-light {
-    fill: #cecfd7;
-  }
-  .menu .menu-item a:hover .menu-icon svg .path-dark {
-    fill: $secondry !important;
-  }
-  .menu .menu-item a:hover .menu-icon svg .path-light {
-    fill: #0962ce8e !important;
-  }
+
   .menu .menu-item a:hover::after {
     border-color: $secondry !important;
   }
@@ -57,8 +55,8 @@
   .active-menu .menu-title {
     color: $secondry;
   }
-  .active-menu .menu-icon svg .path-dark {
-    fill: $secondry !important;
+  .active-menu .menu-icon i {
+    color: $secondry !important;
   }
   .active-menu .menu-icon svg .path-light {
     fill: #0962ce8e !important;
