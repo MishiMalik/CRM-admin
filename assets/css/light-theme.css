@@ -113,10 +113,14 @@ body {
     cursor: pointer; }
   .sidebar .menu .menu-item a:hover .menu-title {
     color: #0963ce; }
-  .sidebar .menu .menu-item a .menu-icon svg path {
+  .sidebar .menu .menu-item a .menu-icon svg .path-dark {
     fill: #5c607b; }
-  .sidebar .menu .menu-item a:hover .menu-icon svg path {
+  .sidebar .menu .menu-item a .menu-icon svg .path-light {
+    fill: #cecfd7; }
+  .sidebar .menu .menu-item a:hover .menu-icon svg .path-dark {
     fill: #0963ce !important; }
+  .sidebar .menu .menu-item a:hover .menu-icon svg .path-light {
+    fill: #0962ce8e !important; }
   .sidebar .menu .menu-item a:hover::after {
     border-color: #0963ce !important; }
   .sidebar .menu-heading {
@@ -126,8 +130,10 @@ body {
     opacity: 1; }
   .sidebar .active-menu .menu-title {
     color: #0963ce; }
-  .sidebar .active-menu .menu-icon svg path {
+  .sidebar .active-menu .menu-icon svg .path-dark {
     fill: #0963ce !important; }
+  .sidebar .active-menu .menu-icon svg .path-light {
+    fill: #0962ce8e !important; }
   .sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar {
     width: 5px; }
   .sidebar .sidebar-layout .sidebar-content::-webkit-scrollbar-track {
@@ -316,3 +322,9 @@ body {
 
 .dropdown-item {
   color: #808080 !important; }
+
+.path-dark {
+  fill: #5C607B !important; }
+
+.path-light {
+  fill: #CECFD7 !important; }

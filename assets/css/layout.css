@@ -550,7 +550,7 @@ a {
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
-    background-color: rgba(0, 0, 0, 0.404);
+    background-color: rgba(0, 0, 0, 0.1);
     bottom: 0 !important;
     display: none;
 }
