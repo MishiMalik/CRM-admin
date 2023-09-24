@@ -622,4 +622,7 @@ a {
     #btn-toggle {
         display: none;
     }
+    .sidebar{
+        display: none;
+    }
 }

@@ -64,6 +64,8 @@ $("#overlay").on("click", function () {
   $(this).css("display", "none");
   $(".side-menu-quick").css("right", "-400px");
   $(".side-menu-ticket").css("right", "-400px");
+  $(".menu-footer-popup").css("bottom", "-700px");
+  $(".menu-footer").css("box-shadow","rgba(99, 99, 99, 0.2) 0px 2px 8px 0px")
 });
 
 // =====================================ticket menu
@@ -83,3 +85,10 @@ $(".close-chat").on("click", function () {
   $(".chat__popup").css("bottom", "-700px");
 });
 
+
+// ======================================more footer
+$("#show-more-menu").on("click", function () {
+  $(".menu-footer-popup").css("bottom", "0px");
+  $("#overlay").css("display", "block");
+  $(".menu-footer").css("box-shadow","none")
+});
