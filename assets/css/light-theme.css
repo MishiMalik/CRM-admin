@@ -320,7 +320,7 @@ body {
       margin-top: 15px !important;
       padding-bottom: 0px !important;
       padding-left: 20px !important; }
-      .menu-footer-popup .more-footer-link .more-dropdown-menu .menu-item {
+      .menu-footer-popup .more-footer-link .more-dropdown-menu .menu-item:not(:last-child) {
         margin-bottom: 22px !important; }
     .menu-footer-popup .more-footer-link a {
       display: flex;
