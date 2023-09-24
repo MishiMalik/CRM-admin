@@ -291,7 +291,8 @@ body {
         box-shadow: none !important; }
       .menu-footer-popup .more-footer-link .more-dropdown i {
         font-size: 16px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        width: 20px; }
     .menu-footer-popup .more-footer-link .more-dropdown-menu {
       position: relative !important;
       transform: none !important;
