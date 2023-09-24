@@ -216,7 +216,7 @@ document.getElementById("btn-toggle2").addEventListener("click", () => {
 /**
  * toggle sidebar on overlay click
  */
-document.getElementById("overlay").addEventListener("click", () => {
+document.getElementById("overlay-sidebar").addEventListener("click", () => {
   SIDEBAR_EL.classList.toggle("toggled");
 });
 
@@ -257,9 +257,9 @@ INNER_SUB_MENUS_BTN.forEach((element) => {
   });
 });
 
-$("#overlay").on("click", function () {
+$("#overlay-sidebar").on("click", function () {
   $(this).css("display", "none");
 });
 $("#btn-toggle").on("click", function () {
-  $("#overlay").css("display", "block");
+  $("#overlay-sidebar").css("display", "block");
 });

@@ -549,7 +549,18 @@ a {
     font-size: 16px;
 }
 
-#overlay {
+#overlay-all {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    background-color: rgba(0, 0, 0, 0.1);
+    bottom: 0 !important;
+    display: none;
+    z-index: 999;
+}
+
+#overlay-sidebar {
     position: absolute !important;
     top: 0 !important;
     left: 0 !important;
@@ -604,11 +615,14 @@ a {
         display: block;
     }
 
-    #overlay {
+    #overlay-all {
 
         z-index: 100;
     }
+    #overlay-sidebar {
 
+        z-index: 100;
+    }
     .layout {
         z-index: 10000;
     }
@@ -624,5 +638,8 @@ a {
     }
     .sidebar{
         display: none;
+    }
+    .overlay-show{
+        display: block !important;
     }
 }

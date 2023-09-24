@@ -51,6 +51,10 @@
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
   transition: all .5s;
+  display: none;
+  @media only screen and (max-width: 575px) {
+    display:block;
+  }
   h3{
     font-size: 16px;
     font-weight: 500;

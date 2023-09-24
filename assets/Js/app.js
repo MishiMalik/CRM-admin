@@ -53,29 +53,29 @@ $(document).ready(function () {
 // =====================================quick menu
 $(".side-menu-quick-btn").on("click", function () {
   $(".side-menu-quick").css("right", "0px");
-  $("#overlay").css("display", "block");
+  $("#overlay-all").css("display", "block");
 });
 $(".close-btn").on("click", function () {
   $(".side-menu-quick").css("right", "-400px");
-  $("#overlay").css("display", "none");
+  $("#overlay-all").css("display", "none");
 });
 
-$("#overlay").on("click", function () {
+$("#overlay-all").on("click", function () {
   $(this).css("display", "none");
   $(".side-menu-quick").css("right", "-400px");
   $(".side-menu-ticket").css("right", "-400px");
   $(".menu-footer-popup").toggleClass("menu-footer-popup-show");
-   $(".menu-footer").toggleClass("menu-footer-shadow");
+  $(".overlay").toggleClass("overlay-show");
 });
 
 // =====================================ticket menu
 $(".side-menu-ticket-btn").on("click", function () {
   $(".side-menu-ticket").css("right", "0px");
-  $("#overlay").css("display", "block");
+  $("#overlay-all").css("display", "block");
 });
 $(".close-btn").on("click", function () {
   $(".side-menu-ticket").css("right", "-400px");
-  $("#overlay").css("display", "none");
+  $("#overlay-all").css("display", "none");
 });
 //   =============================================chat
 $(".chat-btn").on("click", function () {
@@ -85,7 +85,6 @@ $(".close-chat").on("click", function () {
   $(".chat__popup").css("bottom", "-700px");
 });
 
-
 // ======================================more footer
 // $("#show-more-menu").on("click", function () {
 //   $(".menu-footer-popup").toggle('.menu-footer-popup-show');
@@ -93,8 +92,8 @@ $(".close-chat").on("click", function () {
 //   // $(".menu-footer").css("box-shadow","none")
 
 // });
-$("#show-more-menu").on("click", function() {
+$("#show-more-menu").on("click", function () {
   $(".menu-footer-popup").toggleClass("menu-footer-popup-show");
-   $(".menu-footer").toggleClass("menu-footer-shadow");
-   $("#overlay").css("display", "block");
+  $(".menu-footer").toggleClass("menu-footer-shadow");
+  $(".overlay").toggleClass("overlay-show");
 });
