@@ -245,6 +245,10 @@ body {
   @media only screen and (max-width: 575px) {
     .menu-footer {
       display: flex; } }
+  .menu-footer .active-footer-menu a {
+    color: #0963ce !important; }
+    .menu-footer .active-footer-menu a i {
+      color: #0963ce !important; }
 
 .header {
   margin-bottom: 0;
@@ -478,7 +482,7 @@ body {
   position: absolute;
   height: 40px;
   width: 40px;
-  left: -5px;
+  left: -6px;
   top: -5px;
   opacity: 0;
   border: 3px solid #7047ee;
