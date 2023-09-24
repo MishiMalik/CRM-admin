@@ -7,6 +7,7 @@
   padding: 0px 20px;
   box-shadow: none;
   background-color: #ffffff;
+  z-index:999;
   @media only screen and (max-width: 991px) {
     border-radius: 0px;
     min-height: 60px;
@@ -27,7 +28,18 @@
     .header-icon {
       font-size: 18px !important;
       color: $secondry;
+      @media only screen and (max-width: 580px) {
+        font-size: 20px;
+      }
     }
+    @media only screen and (max-width: 580px) {
+        margin-right: 0px;
+        margin-left: 5px;
+        height: 35px;
+        width: 35px;
+        padding: 7px;
+
+      }
 
     // i {
     //   font-size: 22px ;
@@ -170,6 +182,9 @@
 // }
 
 // ========================================side menu
+.side-menu-quick{
+    right: -400px;
+}
 .side-menu {
   position: fixed;
   border-radius: 0px;
@@ -178,12 +193,25 @@
   box-shadow: none;
   background-color: #ffffff;
   top: 0;
-  right: 0;
   bottom: 0;
   width: 350px;
   height: 100vh;
-  z-index: 30;
-    display: none;
+  overflow-y: scroll;
+  z-index: 2000;
+  transition: all .5s;
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+    // display: none;
   .close-btn {
     background-color: #ffd6de;
     border-color: #ffd6de;
@@ -194,13 +222,14 @@
     box-shadow: none;
     outline: none;
     border-radius: 5px;
-    svg {
-      fill: #ee3158 !important;
+    i {
+        font-size: 14px;
+      color: #ee3158 !important;
     }
     &:hover {
       background-color: #ee3158;
-      svg {
-        fill: #ffd6de !important;
+      i {
+        color: white !important;
       }
     }
   }
@@ -210,13 +239,17 @@
       color: $dark-blue;
       font-weight: 400;
     }
-    a {
+    a{
       .actions-card {
         background-color: #f3f6f9;
-        padding: 15px 5px;
+        padding: 35px 5px !important;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         i {
-          font-size: 20px;
+          font-size: 35px;
         }
         p {
           font-size: 16px;
@@ -224,7 +257,16 @@
           margin-top: 5px;
         
         }
-      }
+        &:hover{
+            background-color: $secondry;
+            p{
+                color: white;
+            }
+            i{
+                color: white;
+            }
+        }
+    }
     }
   }
 }

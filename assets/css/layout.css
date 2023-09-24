@@ -17,10 +17,11 @@
 
 
 .main-area {
-    padding: 0px 12px 0px 24px !important;
+    padding: 0px 12px 0px 30px !important;
     margin: 12px 0px;
     overflow-y: auto;
 }
+
 /* 
 .layout .footer {
     text-align: center;
@@ -85,10 +86,13 @@
     flex-grow: 1;
     padding: 0px 0;
     height: calc(100vh - 304px);
-    overflow-y: scroll;
+    overflow-y: hidden;
 
 }
 
+.sidebar .sidebar-layout .sidebar-content:hover {
+    overflow-y: scroll;
+}
 
 
 
@@ -164,7 +168,7 @@
     white-space: nowrap;
     flex-grow: 1;
     transition: color 0.3s;
- font-weight: 400;
+    font-weight: 400;
     opacity: 0.9;
     white-space: nowrap;
     align-items: center;
@@ -274,6 +278,7 @@
     border: none;
     transform: translateY(-50%);
 }
+
 /* 
 .layout .sidebar.collapsed .menu>ul>.menu-item.sub-menu>a:hover::after {
     background-color: #dee2ec;
@@ -290,8 +295,7 @@
 /* .layout .sidebar.collapsed .menu>ul>.menu-item.active>a::after {
     background-color: #dee2ec;
 } */
-.sidebar.col
-.layout .sidebar.has-bg-image .menu.icon-shape-circle .menu-item a .menu-icon,
+.sidebar.col .layout .sidebar.has-bg-image .menu.icon-shape-circle .menu-item a .menu-icon,
 .layout .sidebar.has-bg-image .menu.icon-shape-rounded .menu-item a .menu-icon,
 .layout .sidebar.has-bg-image .menu.icon-shape-square .menu-item a .menu-icon {
     background-color: rgba(11, 26, 44, 0.6);
@@ -553,18 +557,23 @@ a {
     background-color: rgba(0, 0, 0, 0.1);
     bottom: 0 !important;
     display: none;
+    z-index: 999;
 }
-.layout .sidebar.collapsed .menu>ul>.menu-item.sub-menu:hover>.sub-menu-list{
+
+.layout .sidebar.collapsed .menu>ul>.menu-item.sub-menu:hover>.sub-menu-list {
     display: block !important;
     visibility: visible !important;
     transform: translate3d(89px, 284px, 0px) !important;
 }
-.sub-menu a{
+
+.sub-menu a {
     cursor: pointer;
 }
-.content{
+
+.content {
     padding: 17px;
 }
+
 @media only screen and (max-width:991px) {
     .layout {
         top: 0 !important;
@@ -579,9 +588,10 @@ a {
         display: none !important;
 
     }
-    .main-area{
+
+    .main-area {
         padding: 0px !important;
         margin: 0 !important;
     }
-    
+
 }

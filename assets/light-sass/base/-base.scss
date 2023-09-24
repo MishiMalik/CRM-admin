@@ -1,5 +1,17 @@
 body {
   font-family: "Poppins", sans-serif;
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
 }
 .theme {
   background-color: $light-skin;
@@ -7,4 +19,5 @@ body {
   height: 100vh;
   overflow-y: hidden;
   // padding: 12px;
+  
 }
