@@ -263,3 +263,22 @@ $("#overlay-sidebar").on("click", function () {
 $("#btn-toggle").on("click", function () {
   $("#overlay-sidebar").css("display", "block");
 });
+function applyStyles() {
+  const screenWidth = $(window).width();
+
+  // Check if the screen width is less than 500px
+  if (screenWidth < 991) {
+    $("#overlay-sidebar").on("click", function () {
+      $(".theme").css("overflow", "auto");
+    });
+    $("#btn-toggle").on("click", function () {
+      $(".theme").css("overflow", "hidden");
+    });
+  }
+}
+
+// Listen for the resize event
+$(window).on("resize", applyStyles);
+
+// Initial application of styles
+applyStyles();

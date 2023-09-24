@@ -99,3 +99,34 @@ $("#show-more-menu").on("click", function () {
   $(".overlay").toggleClass("overlay-show");
   $(this).toggleClass("active-footer-menu");
 });
+
+
+function applyStyles2() {
+  const screenWidth = $(window).width();
+
+  // Check if the screen width is less than 991px
+  if (screenWidth < 991) {
+    $("#overlay-all").on("click", function () {
+      $(".theme").css("overflow", "auto");
+    });
+    $(".side-menu-ticket-btn").on("click", function () {
+      $(".theme").css("overflow", "hidden");
+    });
+    $(".close-btn").on("click", function () {
+      $(".theme").css("overflow", "auto");
+    });
+    $(".side-menu-quick-btn").on("click", function () {
+      $(".theme").css("overflow", "hidden");
+    });
+    $("#show-more-menu").on("click", function () {
+      $(".theme").css("overflow", "hidden");
+    });
+    
+  }
+}
+
+// Listen for the resize event
+$(window).on("resize", applyStyles2);
+
+// Initial application of styles
+applyStyles2();
