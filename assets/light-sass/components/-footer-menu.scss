@@ -34,7 +34,9 @@
     color: $secondry !important;
   }
 }
-
+.menu-footer-shadow{
+    box-shadow: none;
+}
 // ===============================more option
 .menu-footer-popup {
   position: fixed;
@@ -98,4 +100,11 @@
       line-height: 10px;
     }
   }
+}
+.menu-footer-popup-show{
+    bottom: 0;
+}
+
+.menu-footer-popup.menu-footer-popup-show .menu-footer{
+    box-shadow: none !important;
 }
