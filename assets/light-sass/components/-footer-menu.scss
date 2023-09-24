@@ -34,8 +34,8 @@
     color: $secondry !important;
   }
 }
-.menu-footer-shadow{
-    box-shadow: none;
+.menu-footer-shadow {
+  box-shadow: none;
 }
 // ===============================more option
 .menu-footer-popup {
@@ -50,72 +50,68 @@
   overflow-y: auto;
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
-  transition: all .5s;
+  transition: all 0.5s;
   display: none;
   @media only screen and (max-width: 575px) {
-    display:block;
+    display: block;
   }
-  h3{
+  h3 {
     font-size: 16px;
     font-weight: 500;
     color: $dark-blue;
   }
   .more-footer-link {
     padding: 15px 0px;
-    .more-dropdown{
-        background-color: transparent;
-        padding: 0 !important;
-        border: none;
-        margin: 0;
-        position: relative;
-        display: flex;
-        align-items: center;
-        &:focus,
-        &:active{
-            outline: none !important;
-            box-shadow: none !important;
-        }
-       .more-icon{
+    .more-dropdown {
+      background-color: transparent;
+      padding: 0 !important;
+      border: none;
+      margin: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+      &:focus,
+      &:active {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+      .more-icon {
         width: 20px;
         margin-right: 7px;
         i {
-            font-size: 16px;
-           
-           
-          }
-       }
-          font-size: 14px;
-          font-weight: 500;
-          color: $gray;
-          line-height: 10px;
-    }
-    .more-dropdown-menu{
-        position: relative !important;
-        transform: none !important;
-        border: none !important;
-        margin-top: 15px !important;
-        padding-bottom: 0px !important;
-        padding-left: 20px !important;
-        .menu-item{
-            margin-bottom: 15px !important;
+          font-size: 16px;
         }
+      }
+      font-size: 14px;
+      font-weight: 500;
+      color: $gray;
+      line-height: 10px;
+    }
+    .more-dropdown-menu {
+      position: relative !important;
+      transform: none !important;
+      border: none !important;
+      margin-top: 15px !important;
+      padding-bottom: 0px !important;
+      padding-left: 20px !important;
+      .menu-item {
+        margin-bottom: 15px !important;
+      }
     }
     a {
+      display: flex;
+      align-items: center;
+      .more-icon {
+        margin-right: 7px;
+        width: 20px;
         display: flex;
+        justify-content: center;
         align-items: center;
-        .more-icon{
-            margin-right: 7px;
-            width: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            i {
-                font-size: 14px;
-              
-             
-              }
+        i {
+          font-size: 14px;
         }
-     
+      }
+
       font-size: 14px;
       font-weight: 500;
       color: $gray;
@@ -123,10 +119,10 @@
     }
   }
 }
-.menu-footer-popup-show{
-    bottom: 0;
+.menu-footer-popup-show {
+  bottom: 0;
 }
 
-.menu-footer-popup.menu-footer-popup-show .menu-footer{
-    box-shadow: none !important;
+.menu-footer-popup.menu-footer-popup-show .menu-footer {
+  box-shadow: none !important;
 }

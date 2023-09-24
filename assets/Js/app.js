@@ -66,6 +66,7 @@ $("#overlay-all").on("click", function () {
   $(".side-menu-ticket").css("right", "-400px");
   $(".menu-footer-popup").toggleClass("menu-footer-popup-show");
   $(".overlay").toggleClass("overlay-show");
+  $('#show-more-menu').toggleClass("active-footer-menu");
 });
 
 // =====================================ticket menu
@@ -96,4 +97,5 @@ $("#show-more-menu").on("click", function () {
   $(".menu-footer-popup").toggleClass("menu-footer-popup-show");
   $(".menu-footer").toggleClass("menu-footer-shadow");
   $(".overlay").toggleClass("overlay-show");
+  $(this).toggleClass("active-footer-menu");
 });

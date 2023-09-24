@@ -265,7 +265,7 @@ body {
   overflow-y: auto;
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
-  transition: all .5s;
+  transition: all 0.5s;
   display: none; }
   @media only screen and (max-width: 575px) {
     .menu-footer-popup {
