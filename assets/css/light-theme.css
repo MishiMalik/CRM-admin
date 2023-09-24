@@ -290,8 +290,8 @@ body {
         outline: none !important;
         box-shadow: none !important; }
       .menu-footer-popup .more-footer-link .more-dropdown i {
-        font-size: 14px;
-        margin-right: 7px; }
+        font-size: 16px;
+        margin-right: 10px; }
     .menu-footer-popup .more-footer-link .more-dropdown-menu {
       position: relative !important;
       transform: none !important;
@@ -308,7 +308,8 @@ body {
       line-height: 10px; }
       .menu-footer-popup .more-footer-link a i {
         font-size: 14px;
-        margin-right: 7px; }
+        margin-right: 7px;
+        width: 20px; }
 
 .menu-footer-popup-show {
   bottom: 0; }
