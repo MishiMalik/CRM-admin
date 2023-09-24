@@ -606,12 +606,16 @@ body {
   position: absolute;
   height: 40px;
   width: 40px;
-  left: -6px;
+  left: -6px !important;
   top: -5px;
   opacity: 0;
   border: 3px solid #7047ee;
   border-radius: 40px;
-  animation: pulsate 3.5s ease-out;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-name: pulsate;
+  animation-name: pulsate;
+  -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
 .ticket-success {
