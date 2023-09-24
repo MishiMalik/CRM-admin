@@ -1,0 +1,20 @@
+.hide-sm{
+    @media only screen and (max-width:580px){
+        display: none !important;
+    }
+}
+.show-md{
+   display: none;
+   @media only screen and (max-width:991px){
+    display: block !important;
+} 
+}
+.text-primary{
+    color: $primary !important;
+}
+.text-danger{
+    color: red !important;
+}
+.text-yellow{
+    color: rgb(201, 201, 5) !important;
+}
