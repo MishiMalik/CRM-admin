@@ -356,13 +356,14 @@
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   z-index: 1000;
-  height: 520px;
+  height: 510px;
   width: 400px;
   transition: all 0.5s;
-  .header {
-    height: 70px;
+  overflow: hidden;
+  .chat-header {
+    height: 60px ;
     background-color: white;
-    padding: 15px 16px;
+    padding: 0px 16px;
     border-bottom: 1px solid $light-skin;
     border-radius: 0px;
     .image-div {
@@ -502,7 +503,7 @@
   .type-area {
     height: 50px;
     background-color: white;
-    padding: 15px;
+    padding:0 15px;
     border-top: 1px solid $light-skin;
     font-size: 14px;
     display: flex;

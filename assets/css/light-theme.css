@@ -480,38 +480,39 @@ body {
   border-radius: 10px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   z-index: 1000;
-  height: 520px;
+  height: 510px;
   width: 400px;
-  transition: all 0.5s; }
-  .chat__popup .header {
-    height: 70px;
+  transition: all 0.5s;
+  overflow: hidden; }
+  .chat__popup .chat-header {
+    height: 60px;
     background-color: white;
-    padding: 15px 16px;
+    padding: 0px 16px;
     border-bottom: 1px solid #f6f6f6;
     border-radius: 0px; }
-    .chat__popup .header .image-div {
+    .chat__popup .chat-header .image-div {
       height: 40px;
       width: 40px;
       border-radius: 100%;
       border: 1px solid #0963ce;
       overflow: hidden;
       margin-right: 10px !important; }
-      .chat__popup .header .image-div img {
+      .chat__popup .chat-header .image-div img {
         object-fit: contain;
         object-position: top;
         height: 100%;
         width: 100%;
         border-radius: 100%; }
-    .chat__popup .header h2 {
+    .chat__popup .chat-header h2 {
       font-size: 18px;
       font-weight: 500;
       margin-bottom: 0px;
       padding-bottom: 0px;
       color: #172b4c; }
-    .chat__popup .header .status {
+    .chat__popup .chat-header .status {
       font-size: 14px;
       color: #5c607b !important; }
-    .chat__popup .header .close-chat {
+    .chat__popup .chat-header .close-chat {
       background-color: #ffd6de;
       border-color: #ffd6de;
       padding: 5px 10px;
@@ -521,12 +522,12 @@ body {
       box-shadow: none;
       outline: none;
       border-radius: 100%; }
-      .chat__popup .header .close-chat i {
+      .chat__popup .chat-header .close-chat i {
         font-size: 14px;
         color: #ee3158 !important; }
-      .chat__popup .header .close-chat:hover {
+      .chat__popup .chat-header .close-chat:hover {
         background-color: #ee3158; }
-        .chat__popup .header .close-chat:hover i {
+        .chat__popup .chat-header .close-chat:hover i {
           color: white !important; }
   .chat__popup .body {
     height: 400px;
@@ -601,7 +602,7 @@ body {
   .chat__popup .type-area {
     height: 50px;
     background-color: white;
-    padding: 15px;
+    padding: 0 15px;
     border-top: 1px solid #f6f6f6;
     font-size: 14px;
     display: flex;
