@@ -496,9 +496,10 @@
             <!-- Notification -->
             <div class="ms-auto d-flex">
                 <div class="notification-dropdown-div  align-self-center header-option">
-                    <button type="button">
+                    <button type="button" style="position: relative;">
                         <div class="notifications">
-                            <i class="fa-duotone fa-bell header-icon"></i>
+                            <i class="fa-duotone fa-bell header-icon mt-1"></i>
+
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 version="1.1" width="22" height="22" viewBox="0 0 256 256" xml:space="preserve">
 
@@ -521,6 +522,7 @@
                             2
                         </div> -->
                         </div>
+                        <div class="pulse-wave"></div>
                     </button>
                     <div class="notification-dropdown-inner">
                         <ul class="notification-dropdown">
@@ -591,12 +593,12 @@
                         </g>
                     </svg> -->
 
-                 
+
 
                 </div>
 
                 <!-- ticker -->
-                <div class="header-option align-self-center hide-sm">
+                <div class="header-option align-self-center hide-sm side-menu-ticket-btn">
                     <!-- <i class="bi bi-app-indicator path-1"></i> -->
                     <i class="fa-duotone fa-life-ring header-icon"></i>
 
@@ -607,7 +609,7 @@
                 </div>
 
                 <!-- chat -->
-                <div class="header-option align-self-center hide-sm">
+                <div class="header-option align-self-center hide-sm chat-btn">
                     <i class="fa-duotone fa-messages header-icon"></i>
                     <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                         width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
@@ -683,12 +685,13 @@
                 </div>
             </div>
         </header>
+        <!-- quick links menu -->
         <div class="side-menu side-menu-quick">
             <div class="quick-links">
                 <div class="row">
-                    <div class="col-lg-12 mb-4 pb-3">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
                         <div class="d-flex justify-content-between align-items-center">
-                            <h1 class="mb-0 pb-0">Quick Actions</h1>
+                            <h1 class="mb-0 pb-0 ">Quick Actions</h1>
                             <button class="close-btn">
                                 <i class="fa-duotone fa-xmark-large"></i>
                                 <!-- <svg xmlns="http://www.w3.org/2000/svg"
@@ -773,12 +776,319 @@
                         </a>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>
-        <!-- <div class="layout ms-auto main-area">
-             -->
+        <!-- ticket menu -->
+        <div class="side-menu side-menu-ticket">
+            <div class="ticket-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0">Ticket/support </h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+                                <!-- <svg xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="10"
+                                    height="10" viewBox="0 0 256 256" xml:space="preserve">
+
+                                    <defs>
+                                    </defs>
+                                    <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10;  fill-rule: nonzero; opacity: 1;"
+                                        transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+                                        <path
+                                            d="M 10 90 c -2.559 0 -5.119 -0.977 -7.071 -2.929 c -3.905 -3.905 -3.905 -10.237 0 -14.143 l 70 -70 c 3.906 -3.905 10.236 -3.905 14.143 0 c 3.905 3.905 3.905 10.237 0 14.143 l -70 70 C 15.119 89.023 12.559 90 10 90 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10;  fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        <path
+                                            d="M 80 90 c -2.56 0 -5.118 -0.977 -7.071 -2.929 l -70 -70 c -3.905 -3.905 -3.905 -10.237 0 -14.143 c 3.905 -3.905 10.237 -3.905 14.143 0 l 70 70 c 3.905 3.905 3.905 10.237 0 14.143 C 85.118 89.023 82.56 90 80 90 z"
+                                            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10;  fill-rule: nonzero; opacity: 1;"
+                                            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                    </g>
+                                </svg> -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat -->
+        <div class="chat__popup">
+            <div class="header">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <button class="close-chat ms-auto">
+                        <i class="fa-duotone fa-xmark-large"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body">
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                  <!-- recieve -->
+                  <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                  <!-- recieve -->
+                  <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                  <!-- send -->
+                  <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                  <!-- recieve -->
+                  <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="type-area">
+                <input type="text" placeholder="Type Here...">
+                <i class="fa-solid fa-paper-plane-top "></i>
+            </div>
+        </div>
         <!-- -----------Main Contents----------- -->
         <main class="content pb-4">
             <!-- <button id="toggleTheme">theme</button> -->

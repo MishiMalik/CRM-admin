@@ -7,7 +7,7 @@
   padding: 0px 20px;
   box-shadow: none;
   background-color: #ffffff;
-  z-index:999;
+  z-index: 999;
   @media only screen and (max-width: 991px) {
     border-radius: 0px;
     min-height: 60px;
@@ -33,13 +33,12 @@
       }
     }
     @media only screen and (max-width: 580px) {
-        margin-right: 0px;
-        margin-left: 5px;
-        height: 35px;
-        width: 35px;
-        padding: 7px;
-
-      }
+      margin-right: 0px;
+      margin-left: 5px;
+      height: 35px;
+      width: 35px;
+      padding: 7px;
+    }
 
     // i {
     //   font-size: 22px ;
@@ -182,14 +181,18 @@
 // }
 
 // ========================================side menu
-.side-menu-quick{
-    right: -400px;
+.side-menu-quick {
+  right: -400px;
+}
+.side-menu-ticket {
+  right: -400px;
 }
 .side-menu {
   position: fixed;
   border-radius: 0px;
   border-bottom: 0px solid #efeffd;
   padding: 30px;
+  padding-top: 0;
   box-shadow: none;
   background-color: #ffffff;
   top: 0;
@@ -198,7 +201,7 @@
   height: 100vh;
   overflow-y: scroll;
   z-index: 2000;
-  transition: all .5s;
+  transition: all 0.5s;
   &::-webkit-scrollbar {
     width: 7px;
   }
@@ -211,7 +214,13 @@
     background-color: #aaa;
     border-radius: 10px;
   }
-    // display: none;
+  .side-menu-header {
+    position: sticky;
+    background-color: white;
+    top: 0;
+    padding-top: 30px;
+  }
+  // display: none;
   .close-btn {
     background-color: #ffd6de;
     border-color: #ffd6de;
@@ -223,7 +232,7 @@
     outline: none;
     border-radius: 5px;
     i {
-        font-size: 14px;
+      font-size: 14px;
       color: #ee3158 !important;
     }
     &:hover {
@@ -233,13 +242,13 @@
       }
     }
   }
+  h1 {
+    font-size: 18px;
+    color: $dark-blue;
+    font-weight: 500;
+  }
   .quick-links {
-    h1 {
-      font-size: 18px;
-      color: $dark-blue;
-      font-weight: 400;
-    }
-    a{
+    a {
       .actions-card {
         background-color: #f3f6f9;
         padding: 35px 5px !important;
@@ -255,18 +264,272 @@
           font-size: 16px;
           font-weight: 400;
           margin-top: 5px;
-        
         }
-        &:hover{
-            background-color: $secondry;
-            p{
-                color: white;
-            }
-            i{
-                color: white;
-            }
+        &:hover {
+          background-color: $secondry;
+          p {
+            color: white;
+          }
+          i {
+            color: white;
+          }
         }
-    }
+      }
     }
   }
+  .ticket-links {
+    .ticket-notify {
+      display: flex;
+      margin-bottom: 20px;
+      h4 {
+        font-size: 18px;
+        font-weight: 500;
+        color: $dark-blue;
+        padding: 0px 20px 0px 0;
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ticket-body {
+        border-left-width: 5px;
+        border-left-style: solid;
+        border-radius: 5px;
+        padding: 0px 10px;
+        p {
+          color: $dark-blue;
+          font-size: 14px;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin-bottom: 0px !important;
+        }
+        span {
+          font-size: 13px;
+          color: #7e8299;
+        }
+      }
+      &:hover {
+        .ticket-body {
+          p {
+            color: $secondry;
+          }
+        }
+      }
+    }
+  }
+}
+.pulse-wave {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  left: -5px;
+  top: -5px;
+  opacity: 0;
+  border: 3px solid #7047ee;
+  border-radius: 40px;
+  animation: pulsate 3.5s ease-out;
+  animation-iteration-count: infinite;
+}
+.ticket-success {
+  border-left-color: #05825f !important;
+}
+.ticket-warning {
+  border-color: #ffc047 !important;
+}
+.ticket-info {
+  border-color: #5caaf9 !important;
+}
+.ticket-alert {
+  border-color: #ee3158 !important;
+}
+
+
+
+
+
+
+// ================================================================chat popup
+.chat__popup{
+    position: fixed;
+    right: 50px;
+    bottom: -700px;
+    height: calc(100vh -170px);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    z-index: 1000;
+    height:530px ;
+    width: 400px;
+    transition: all .5s;
+    .header{
+        height: 60px;
+        background-color: white;
+        padding: 15px 16px;
+        border-bottom: 1px solid $light-skin;
+        border-radius: 0px;
+        .image-div{
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            border: 1px solid $secondry;
+            overflow: hidden;
+            margin-right: 10px !important;
+            img{
+                object-fit: contain;
+                object-position: top;
+                height:100%;
+                width: 100%;
+                border-radius: 100%;
+               
+            }
+          
+        }
+        h2{
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 0px ;
+            padding-bottom: 0px;
+            color: $dark-blue;
+        }
+        .status{
+            font-size: 14px;
+            color: $gray !important;
+        }
+        .close-chat{
+            background-color: #ffd6de;
+            border-color: #ffd6de;
+            padding: 5px 10px;
+            font-weight: 600;
+            font-size: 14px;
+            border: none;
+            box-shadow: none;
+            outline: none;
+            border-radius: 100%;
+            i {
+              font-size: 14px;
+              color: #ee3158 !important;
+            }
+            &:hover {
+              background-color: #ee3158;
+              i {
+                color: white !important;
+              }
+            }
+        }
+    }
+    .body{
+        height: 400px;
+        overflow-y: auto;
+        padding: 16px;
+        .recieve{
+            margin-bottom: 16px;
+            .image-div{
+                height: 25px;
+                width: 25px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin-right: 10px !important;
+                img{
+                    object-fit: contain;
+                    object-position: top;
+                    height:100%;
+                    width: 100%;
+                    border-radius: 100%;
+                }
+            }
+            h2{
+                font-size: 14px;
+                font-weight: 500;
+                color: $dark-blue;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            .status{
+                color: $gray;
+                font-size: 12px;
+            }
+            .recieved-msg{
+                max-width: 300px;
+                width: fit-content;
+                padding: 7px 7px;
+                border-radius: 5px;
+                background-color: $light-skin;
+                margin-top: 5px;
+                p{
+                    font-size: 14px;
+                    color: $gray;
+                }
+            }
+        }
+        .send{
+            margin-bottom: 16px;
+            .image-div{
+                height: 25px;
+                width: 25px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin-left: 10px !important;
+                img{
+                    object-fit: contain;
+                    object-position: top;
+                    height:100%;
+                    width: 100%;
+                    border-radius: 100%;
+                }
+            }
+            h2{
+                font-size: 14px;
+                font-weight: 500;
+                color: $dark-blue;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+            .status{
+                color: $gray;
+                font-size: 12px;
+            }
+            .send-msg{
+                margin-top: 7px;
+                max-width: 300px;
+                width: fit-content;
+                padding: 7px 7px;
+                border-radius: 5px;
+                background-color: $primary;
+                
+                p{
+                    font-size: 14px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .type-area{
+        height: 50px;
+        background-color: white;
+        padding: 15px;
+        border-top: 1px solid $light-skin;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        input{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            width: 90%;
+            height: 36px;
+            &:focus,
+            &:active{
+                outline: none;
+                border: none;
+            }
+        }
+        i{
+            color: $secondry;
+            font-size: 20px;
+        }
+    }
 }

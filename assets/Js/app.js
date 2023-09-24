@@ -63,5 +63,29 @@ $(".close-btn").on("click", function () {
 $("#overlay").on("click", function () {
     $(this).css("display", "none");
     $(".side-menu-quick").css("right", "-400px");
+    $(".side-menu-ticket").css("right", "-400px");
   });
  
+
+  // =====================================ticket menu
+$(".side-menu-ticket-btn").on("click", function () {
+    $(".side-menu-ticket").css("right", "0px");
+    $("#overlay").css("display", "block");
+  });
+  $(".close-btn").on("click", function () {
+    $(".side-menu-ticket").css("right", "-400px");
+    $('#overlay').css("display", "none");
+  });
+//   =============================================chat
+$(".chat-btn").on("click", function () {
+    $(".chat__popup").css("bottom", "30px");
+  });
+  $(".close-chat").on("click", function () {
+    $('.chat__popup').css("bottom", "-700px");
+  });
+  
+//   $("#overlay").on("click", function () {
+//       $(this).css("display", "none");
+//       $(".side-menu-ticket").css("right", "-400px");
+//     });
+   
