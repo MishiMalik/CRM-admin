@@ -322,6 +322,7 @@ body {
   bottom: 0;
   width: 350px;
   height: 100vh;
+  z-index: 30;
   display: none; }
   .side-menu .close-btn {
     background-color: #ffd6de;
@@ -352,4 +353,4 @@ body {
     .side-menu .quick-links a .actions-card p {
       font-size: 16px;
       font-weight: 400;
-      margin-top: 10px; }
+      margin-top: 5px; }
