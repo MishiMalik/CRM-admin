@@ -68,6 +68,14 @@ body {
   display: flex;
   height: 100vh;
   overflow-y: hidden; }
+  @media only screen and (max-width: 991px) {
+    .theme {
+      height: 100%;
+      overflow-y: auto;
+      padding-top: 50px; } }
+  @media only screen and (max-width: 575px) {
+    .theme {
+      padding-bottom: 50px; } }
 
 @keyframes bounceIn {
   from,
@@ -340,7 +348,11 @@ body {
     .header {
       border-radius: 0px;
       min-height: 60px;
-      padding: 0 14px; } }
+      padding: 0 14px;
+      position: fixed !important;
+      top: 0 !important;
+      left: 0;
+      right: 0; } }
   .header .header-option {
     height: 45px;
     width: 45px;
