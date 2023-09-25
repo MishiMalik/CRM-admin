@@ -330,18 +330,19 @@
   }
   .pulse-wave {
     position: absolute;
-    height: 40px;
-    width: 40px;
-    left: -6px !important;
-    top: -5px;
+    height: 27px !important;
+    width: 27px !important;
+    right: -6px !important;
+    top: 0px;
     opacity: 0;
+    // background-color: black;
     border: 3px solid #7047ee;
     border-radius: 40px;
     -webkit-animation-duration: 3.5s;
       animation-duration: 3.5s;
       -webkit-animation-name: pulsate;
       animation-name: pulsate;
-    // animation: pulsate 3.5s ease-out;
+    animation: pulsate 3.5s ease-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
   }
