@@ -510,6 +510,7 @@ a {
     top: 0px;
     right: -3px;
 }
+
 .detail-btn {
     padding: 5px 10px;
     background-color: white;
@@ -581,7 +582,7 @@ a {
 }
 
 .content {
-    padding: 17px;
+    margin: 17px 0 !important;
 }
 
 #btn-toggle {
@@ -618,10 +619,12 @@ a {
 
         z-index: 100;
     }
+
     #overlay-sidebar {
 
         z-index: 100;
     }
+
     .layout {
         z-index: 10000;
     }
@@ -631,14 +634,17 @@ a {
 
     }
 }
-@media only screen and (max-width:575px){
+
+@media only screen and (max-width:575px) {
     #btn-toggle {
         display: none;
     }
-    .sidebar{
+
+    .sidebar {
         display: none;
     }
-    .overlay-show{
+
+    .overlay-show {
         display: block !important;
     }
 }

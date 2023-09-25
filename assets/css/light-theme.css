@@ -23,10 +23,10 @@
   font-weight: 400; }
 
 .w-500 {
-  font-weight: 500; }
+  font-weight: 500 !important; }
 
 .w-600 {
-  font-weight: 600; }
+  font-weight: 600 !important; }
 
 .w-700 {
   font-weight: 700; }
@@ -53,6 +53,16 @@
 .text-yellow {
   color: #c9c905 !important; }
 
+.ellipsis-3 {
+  color: #172b4c;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0px !important; }
+
 body {
   font-family: "Poppins", sans-serif; }
   body ::-webkit-scrollbar {
@@ -72,7 +82,7 @@ body {
     .theme {
       height: 100%;
       overflow-y: auto;
-      padding-top: 50px; } }
+      padding-top: 60px; } }
   @media only screen and (max-width: 575px) {
     .theme {
       padding-bottom: 50px; } }
@@ -357,7 +367,8 @@ body {
   border-bottom: 0px solid #efeffd;
   padding: 0px 20px;
   box-shadow: none;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 20; }
   @media only screen and (max-width: 991px) {
     .header {
       border-radius: 0px;
@@ -551,37 +562,38 @@ body {
         color: white; }
       .side-menu .quick-links a .actions-card:hover i {
         color: white; }
-  .side-menu .ticket-links .ticket-notify {
+
+.ticket-links .ticket-notify {
+  display: flex;
+  margin-bottom: 20px; }
+  .ticket-links .ticket-notify h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #172b4c;
+    padding: 0px 20px 0px 0;
+    margin-bottom: 0px;
     display: flex;
-    margin-bottom: 20px; }
-    .side-menu .ticket-links .ticket-notify h4 {
-      font-size: 18px;
-      font-weight: 500;
+    justify-content: center;
+    align-items: center; }
+  .ticket-links .ticket-notify .ticket-body {
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-radius: 5px;
+    padding: 0px 10px; }
+    .ticket-links .ticket-notify .ticket-body p {
       color: #172b4c;
-      padding: 0px 20px 0px 0;
-      margin-bottom: 0px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .side-menu .ticket-links .ticket-notify .ticket-body {
-      border-left-width: 5px;
-      border-left-style: solid;
-      border-radius: 5px;
-      padding: 0px 10px; }
-      .side-menu .ticket-links .ticket-notify .ticket-body p {
-        color: #172b4c;
-        font-size: 14px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin-bottom: 0px !important; }
-      .side-menu .ticket-links .ticket-notify .ticket-body span {
-        font-size: 13px;
-        color: #7e8299; }
-    .side-menu .ticket-links .ticket-notify:hover .ticket-body p {
-      color: #0963ce; }
+      font-size: 14px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 0px !important; }
+    .ticket-links .ticket-notify .ticket-body span {
+      font-size: 13px;
+      color: #7e8299; }
+  .ticket-links .ticket-notify:hover .ticket-body p {
+    color: #0963ce; }
 
 .ticket-success {
   border-left-color: #05825f !important; }
@@ -761,3 +773,193 @@ body {
   animation: pulsate 3.5s ease-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
+
+.box {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #EFEFFD;
+  padding: 20px;
+  overflow: hidden;
+  transition: all 2s;
+  margin-bottom: 17px; }
+  @media only screen and (max-width: 575px) {
+    .box {
+      margin-bottom: 12px; } }
+  @media only screen and (max-width: 1270px) and (min-width: 1200px) {
+    .box {
+      padding: 20px 10px; } }
+  .box .box-text {
+    margin-left: 20px;
+    position: relative;
+    z-index: 10; }
+    .box .box-text .light-icon {
+      font-size: 18px;
+      color: #5c607b; }
+  .box .box-heading {
+    font-size: 16px;
+    color: #172b4c;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 15px;
+    white-space: nowrap; }
+  .box .box-value {
+    color: #5c607b;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    z-index: 10; }
+  .box .box-icon {
+    background-color: rgba(9, 99, 206, 0.1);
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .box .box-icon i {
+      color: #0963ce;
+      font-size: 23px; }
+  .box .progress {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    display: flex;
+    flex-shrink: 0 !important; }
+  .box .progress:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .box .progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1; }
+  .box .progress .progress-left {
+    left: 0; }
+  .box .progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    top: 0; }
+  .box .progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left; }
+  .box .progress .progress-right {
+    right: 0; }
+  .box .progress .progress-right .progress-bar {
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 1.8s linear forwards; }
+  .box .progress .progress-value {
+    width: 85%;
+    height: 85%;
+    border-radius: 50%;
+    border: 2px solid #ebebeb;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    position: absolute;
+    top: 7.5%;
+    left: 7.5%; }
+  .box .progress.blue .progress-bar {
+    border-color: #049dff; }
+  .box .progress.blue .progress-value {
+    color: #049dff; }
+  .box .progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s; }
+  .box .progress.yellow .progress-bar {
+    border-color: #fdba04; }
+  .box .progress.yellow .progress-value {
+    color: #fdba04; }
+  .box .progress.yellow .progress-left .progress-bar {
+    animation: loading-3 1s linear forwards 1.8s; }
+  .box .progress.pink .progress-bar {
+    border-color: #ed687c; }
+  .box .progress.pink .progress-value {
+    color: #ed687c; }
+  .box .progress.pink .progress-left .progress-bar {
+    animation: loading-4 0.4s linear forwards 1.8s; }
+  .box .progress.green .progress-bar {
+    border-color: #1abc9c; }
+  .box .progress.green .progress-value {
+    color: #1abc9c; }
+  .box .progress.green .progress-left .progress-bar {
+    animation: loading-5 1.2s linear forwards 1.8s; }
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); } }
+
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(144deg);
+    transform: rotate(144deg); } }
+
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); } }
+
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(36deg);
+    transform: rotate(36deg); } }
+
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(126deg);
+    transform: rotate(126deg); } }
+  @media only screen and (max-width: 990px) {
+    .box .progress {
+      margin-bottom: 20px; } }
+
+/* CSS for the chart containers */
+#regional_sales {
+  width: 100%;
+  height: 400px; }
+
+#customer_location {
+  width: 100%;
+  height: 400px; }

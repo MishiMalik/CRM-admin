@@ -7,7 +7,7 @@
   padding: 0px 20px;
   box-shadow: none;
   background-color: #ffffff;
-  // z-index: 999;
+  z-index: 20;
   @media only screen and (max-width: 991px) {
     border-radius: 0px;
     min-height: 60px;
@@ -283,51 +283,51 @@
       }
     }
   }
-  .ticket-links {
-    .ticket-notify {
+
+}
+.ticket-links {
+  .ticket-notify {
+    display: flex;
+    margin-bottom: 20px;
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      color: $dark-blue;
+      padding: 0px 20px 0px 0;
+      margin-bottom: 0px;
       display: flex;
-      margin-bottom: 20px;
-      h4 {
-        font-size: 18px;
-        font-weight: 500;
+      justify-content: center;
+      align-items: center;
+    }
+    .ticket-body {
+      border-left-width: 5px;
+      border-left-style: solid;
+      border-radius: 5px;
+      padding: 0px 10px;
+      p {
         color: $dark-blue;
-        padding: 0px 20px 0px 0;
-        margin-bottom: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 14px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 0px !important;
       }
+      span {
+        font-size: 13px;
+        color: #7e8299;
+      }
+    }
+    &:hover {
       .ticket-body {
-        border-left-width: 5px;
-        border-left-style: solid;
-        border-radius: 5px;
-        padding: 0px 10px;
         p {
-          color: $dark-blue;
-          font-size: 14px;
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 2;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          margin-bottom: 0px !important;
-        }
-        span {
-          font-size: 13px;
-          color: #7e8299;
-        }
-      }
-      &:hover {
-        .ticket-body {
-          p {
-            color: $secondry;
-          }
+          color: $secondry;
         }
       }
     }
   }
 }
-
 .ticket-success {
   border-left-color: #05825f !important;
 }

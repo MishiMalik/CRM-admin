@@ -18,3 +18,13 @@
 .text-yellow{
     color: rgb(201, 201, 5) !important;
 }
+.ellipsis-3{
+    color: $dark-blue;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px !important;
+}
