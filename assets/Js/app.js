@@ -1,20 +1,42 @@
 // toggle theme
+// document.addEventListener("DOMContentLoaded", function () {
+//   const toggleButton = document.getElementById("toggleTheme");
+//   const themeLink = document.getElementById("theme-link");
+//   const lightThemeURL = "assets/css/light-theme.css";
+//   const darkThemeURL = "assets/css/dark-theme.css";
+
+//   toggleButton.addEventListener("click", function () {
+//     if (themeLink.href.includes(lightThemeURL)) {
+//       themeLink.href = darkThemeURL;
+//       alert("Switching to dark theme");
+//     } else {
+//       themeLink.href = lightThemeURL;
+//       alert("Switching to light theme");
+//     }
+//   });
+// });
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("toggleTheme");
   const themeLink = document.getElementById("theme-link");
+  const logoImage = document.getElementById("logo-image");
   const lightThemeURL = "assets/css/light-theme.css";
   const darkThemeURL = "assets/css/dark-theme.css";
+  const lightLogoURL = "assets/images/DigiSplix-Logo-for-Light-Mode.png";
+  const darkLogoURL = "assets/images/DigiSplix-logo-for-dark-mode.png";
 
   toggleButton.addEventListener("click", function () {
     if (themeLink.href.includes(lightThemeURL)) {
       themeLink.href = darkThemeURL;
+      logoImage.src = darkLogoURL; // Update the logo for dark theme
       alert("Switching to dark theme");
     } else {
       themeLink.href = lightThemeURL;
+      logoImage.src = lightLogoURL; // Update the logo for light theme
       alert("Switching to light theme");
     }
   });
 });
+
 // expand screen
 $(document).ready(function () {
   $("#fullscreen-button").on("click", function () {
