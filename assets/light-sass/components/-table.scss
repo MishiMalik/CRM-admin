@@ -1,17 +1,63 @@
-.small-table{
-    thead tr{
-        background-color: rgba($secondry,0.1);
-        th{
-            border: 1px solid $light-skin !important;
-            font-size: 14px;
-            font-weight: 500;
-            color: $secondry;
-        }
+.table-responsive-div {
+  @media only screen and (max-width: 767px) {
+    // min-width: 703px;
+    overflow-x: auto;
+  }
+  &::-webkit-scrollbar {
+    height: 5px !important;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+}
+.small-table {
+  @media only screen and (max-width: 767px) {
+    min-width: 703px;
+  }
+  thead tr {
+    background-color: rgba($secondry, 0.1);
+    th {
+      border: 1px solid $light-skin !important;
+      font-size: 14px;
+      font-weight: 500;
+      color: $secondry;
     }
-    tbody{
-        tr td{
-            border: 1px solid $light-skin !important;
-            font-size: 14px;
-        }
+  }
+  tbody {
+    tr td {
+      border: 1px solid $light-skin !important;
+      font-size: 14px;
     }
+  }
+}
+.dasboard-table {
+  height: 367px !important;
+  .table-responsive-div {
+    height: 281px;
+    overflow-y: auto;
+    @media only screen and (max-width: 767px) {
+        height: 100% !important;
+       }
+  }
+  ::-webkit-scrollbar {
+    width: 5px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+  @media only screen and (max-width: 767px) {
+   height: 100% !important;
+  }
 }

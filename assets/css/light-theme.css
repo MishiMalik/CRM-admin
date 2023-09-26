@@ -6,6 +6,9 @@
 
 .f-20 {
   font-size: 20px; }
+  @media only screen and (max-width: 991px) {
+    .f-20 {
+      font-size: 18px; } }
 
 .f-16 {
   font-size: 16px; }
@@ -65,11 +68,11 @@
 
 body {
   font-family: "Poppins", sans-serif; }
-  body ::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     width: 7px; }
-  body ::-webkit-scrollbar-track {
+  body::-webkit-scrollbar-track {
     background-color: transparent !important; }
-  body ::-webkit-scrollbar-thumb {
+  body::-webkit-scrollbar-thumb {
     background-color: #aaa;
     border-radius: 10px; }
 
@@ -359,6 +362,24 @@ body {
 .menu-footer-popup.menu-footer-popup-show .menu-footer {
   box-shadow: none !important; }
 
+@media only screen and (max-width: 767px) {
+  .table-responsive-div {
+    overflow-x: auto; } }
+
+.table-responsive-div::-webkit-scrollbar {
+  height: 5px !important; }
+
+.table-responsive-div::-webkit-scrollbar-track {
+  background-color: transparent !important; }
+
+.table-responsive-div::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 10px; }
+
+@media only screen and (max-width: 767px) {
+  .small-table {
+    min-width: 703px; } }
+
 .small-table thead tr {
   background-color: rgba(9, 99, 206, 0.1); }
   .small-table thead tr th {
@@ -370,6 +391,25 @@ body {
 .small-table tbody tr td {
   border: 1px solid #f6f6f6 !important;
   font-size: 14px; }
+
+.dasboard-table {
+  height: 367px !important; }
+  .dasboard-table .table-responsive-div {
+    height: 281px;
+    overflow-y: auto; }
+    @media only screen and (max-width: 767px) {
+      .dasboard-table .table-responsive-div {
+        height: 100% !important; } }
+  .dasboard-table ::-webkit-scrollbar {
+    width: 5px !important; }
+  .dasboard-table ::-webkit-scrollbar-track {
+    background-color: transparent !important; }
+  .dasboard-table ::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px; }
+  @media only screen and (max-width: 767px) {
+    .dasboard-table {
+      height: 100% !important; } }
 
 .header-div {
   z-index: 20;
@@ -801,14 +841,10 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
-  border: 1px solid #EFEFFD;
+  border: 1px solid #efeffd;
   padding: 20px;
   overflow: hidden;
-  transition: all 2s;
-  margin-bottom: 17px; }
-  @media only screen and (max-width: 575px) {
-    .box {
-      margin-bottom: 12px; } }
+  transition: all 2s; }
   @media only screen and (max-width: 1270px) and (min-width: 1200px) {
     .box {
       padding: 20px 10px; } }
@@ -976,10 +1012,29 @@ body {
       margin-bottom: 20px; } }
 
 /* CSS for the chart containers */
-#regional_sales {
+#regional-sales {
   width: 100%;
-  height: 400px; }
+  height: 350px !important;
+  display: flex;
+  justify-content: center; }
+  @media only screen and (max-width: 990px) {
+    #regional-sales {
+      height: 100% !important; } }
 
 #customer_location {
   width: 100%;
-  height: 400px; }
+  height: 300px; }
+
+.recent-activities {
+  height: 570px;
+  overflow-y: auto; }
+  @media only screen and (max-width: 991px) {
+    .recent-activities {
+      height: 100%; } }
+  .recent-activities::-webkit-scrollbar {
+    width: 5px !important; }
+  .recent-activities::-webkit-scrollbar-track {
+    background-color: transparent !important; }
+  .recent-activities::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px; }
