@@ -1,9 +1,9 @@
-.header-div{
+.header-div {
   z-index: 20;
   background-color: $light-skin;
   padding: 0px 7px;
   padding-bottom: 12px;
-  @media only screen and (max-width:991px){
+  @media only screen and (max-width: 991px) {
     padding: 0;
   }
 }
@@ -16,7 +16,7 @@
   padding: 0px 20px;
   box-shadow: none;
   background-color: #ffffff;
-  
+
   @media only screen and (max-width: 991px) {
     border-radius: 0px;
     min-height: 60px;
@@ -292,7 +292,6 @@
       }
     }
   }
-
 }
 .ticket-links {
   .ticket-notify {
@@ -365,7 +364,7 @@
   transition: all 0.5s;
   overflow: hidden;
   .chat-header {
-    height: 60px ;
+    height: 60px;
     background-color: white;
     padding: 0px 16px;
     border-bottom: 1px solid $light-skin;
@@ -507,7 +506,7 @@
   .type-area {
     height: 50px;
     background-color: white;
-    padding:0 15px;
+    padding: 0 15px;
     border-top: 1px solid $light-skin;
     font-size: 14px;
     display: flex;
@@ -542,9 +541,9 @@
   border: 3px solid #7047ee;
   border-radius: 40px;
   -webkit-animation-duration: 3.5s;
-    animation-duration: 3.5s;
-    -webkit-animation-name: pulsate;
-    animation-name: pulsate;
+  animation-duration: 3.5s;
+  -webkit-animation-name: pulsate;
+  animation-name: pulsate;
   animation: pulsate 3.5s ease-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;

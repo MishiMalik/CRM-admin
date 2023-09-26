@@ -7,13 +7,13 @@
 }
 
 .header {
-   
+
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.header-div{
+.header-div {
     position: sticky !important;
     top: 0px !important;
 }
@@ -22,18 +22,19 @@
     padding: 0px 12px 0px 25px !important;
     margin: 12px 0px;
     overflow-y: auto;
+
     &::-webkit-scrollbar {
         width: 7px;
-      }
-    
-      &::-webkit-scrollbar-track {
+    }
+
+    &::-webkit-scrollbar-track {
         background-color: transparent !important;
-      }
-    
-      &::-webkit-scrollbar-thumb {
+    }
+
+    &::-webkit-scrollbar-thumb {
         background-color: #aaa;
         border-radius: 10px;
-      }
+    }
 }
 
 /* 
@@ -650,10 +651,13 @@ a {
         overflow-y: auto !important;
 
     }
-    .content{
- padding: 0
-    }; 
-    
+
+    .content {
+        padding: 0
+    }
+
+    ;
+
 }
 
 @media only screen and (max-width:575px) {
