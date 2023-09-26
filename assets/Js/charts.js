@@ -546,12 +546,7 @@ am5.ready(function() {
         value: 324366,
         circleTemplate: { fill: colors.getIndex(8) }
       },
-      {
-        id: "IN",
-        name: "India",
-        value: 1241491960,
-        circleTemplate: { fill: colors.getIndex(0) }
-      },
+     
       {
         id: "ID",
         name: "Indonesia",
@@ -1191,3 +1186,4 @@ am5.ready(function() {
     chart.appear(1000, 100);
     
     }); // end am5.ready()
+    

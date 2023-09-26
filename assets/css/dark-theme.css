@@ -367,6 +367,15 @@ body {
 .menu-footer-popup.menu-footer-popup-show .menu-footer {
   box-shadow: none !important; }
 
+.header-div {
+  z-index: 20;
+  background-color: #f6f6f6;
+  padding: 0px 7px;
+  padding-bottom: 12px; }
+  @media only screen and (max-width: 991px) {
+    .header-div {
+      padding: 0; } }
+
 .header {
   margin-bottom: 0;
   margin-left: 0;

@@ -1,3 +1,12 @@
+.header-div{
+  z-index: 20;
+  background-color: $light-skin;
+  padding: 0px 7px;
+  padding-bottom: 12px;
+  @media only screen and (max-width:991px){
+    padding: 0;
+  }
+}
 .header {
   margin-bottom: 0;
   margin-left: 0;
@@ -7,7 +16,7 @@
   padding: 0px 20px;
   box-shadow: none;
   background-color: #ffffff;
-  z-index: 20;
+  
   @media only screen and (max-width: 991px) {
     border-radius: 0px;
     min-height: 60px;

@@ -7,17 +7,19 @@
 }
 
 .header {
-    position: sticky !important;
-    top: 0px !important;
+   
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-
+.header-div{
+    position: sticky !important;
+    top: 0px !important;
+}
 
 .main-area {
-    padding: 0px 12px 0px 30px !important;
+    padding: 0px 12px 0px 25px !important;
     margin: 12px 0px;
     overflow-y: auto;
 }
@@ -582,6 +584,7 @@ a {
 }
 
 .content {
+    padding: 0px 7px;
     margin: 17px 0 !important;
 }
 
@@ -609,6 +612,8 @@ a {
     .main-area {
         padding: 0px !important;
         margin: 0 !important;
+        border-radius: 10px 10px 0 0;
+        overflow: hidden;
     }
 
     #btn-toggle {
@@ -633,6 +638,10 @@ a {
         overflow-y: auto !important;
 
     }
+    .content{
+ padding: 0
+    }; 
+    
 }
 
 @media only screen and (max-width:575px) {
