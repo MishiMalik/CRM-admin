@@ -22,6 +22,18 @@
   color: $gray;
   background-color: transparent !important;
   border-bottom: 1px solid transparent;
+  @media only screen and (max-width:420px){
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+  @media only screen and (max-width:360px){
+    padding: 7px 8px;
+    font-size: 13px;
+  }
+  @media only screen and (max-width:328px){
+    padding: 7px 7px;
+    font-size: 13px;
+  }
 }
 
 /* Change background color of buttons on hover */

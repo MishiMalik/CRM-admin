@@ -43,7 +43,7 @@
   /* 150% */
 }
 /* Add a class for styling the selected text */
-.form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label
+ .form-floating>.form-select~label
 {
   color: white !important;
   opacity: 1;

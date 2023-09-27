@@ -713,6 +713,10 @@ div.dataTables_scrollBody::-webkit-scrollbar-thumb {
   .modal-btn-cancel:hover {
     transform: translateY(-3px); }
 
+@media only screen and (max-width: 600px) {
+  .modal-body {
+    padding: 0px !important; } }
+
 .crm-input {
   font-size: 14px;
   font-style: normal;
@@ -756,7 +760,7 @@ div.dataTables_scrollBody::-webkit-scrollbar-thumb {
   /* 150% */ }
 
 /* Add a class for styling the selected text */
-.form-floating > .form-control:focus ~ label, .form-floating > .form-control:not(:placeholder-shown) ~ label, .form-floating > .form-select ~ label {
+.form-floating > .form-select ~ label {
   color: white !important;
   opacity: 1; }
 
@@ -812,6 +816,18 @@ div.dataTables_scrollBody::-webkit-scrollbar-thumb {
   color: #5c607b;
   background-color: transparent !important;
   border-bottom: 1px solid transparent; }
+  @media only screen and (max-width: 420px) {
+    .tab button {
+      padding: 7px 10px;
+      font-size: 14px; } }
+  @media only screen and (max-width: 360px) {
+    .tab button {
+      padding: 7px 8px;
+      font-size: 13px; } }
+  @media only screen and (max-width: 328px) {
+    .tab button {
+      padding: 7px 7px;
+      font-size: 13px; } }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
