@@ -606,6 +606,10 @@ a {
 }
 
 @media only screen and (max-width:991px) {
+    .content {
+        /* padding: 0px 7px; */
+        margin: 17px 0 !important;
+    }
     .layout {
         top: 0 !important;
         left: 0px !important;

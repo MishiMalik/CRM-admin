@@ -791,32 +791,40 @@ div.dataTables_scrollBody::-webkit-scrollbar-thumb {
   box-shadow: none !important; }
 
 /* Style the tabs */
-.tabs {
+.tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1; }
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 20px; }
 
 /* Style the buttons inside the tabs */
-.tabs button {
+.tab button {
   background-color: inherit;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 7px 16px;
   transition: 0.3s;
-  font-size: 17px; }
+  font-size: 14px;
+  font-weight: 500;
+  color: #5c607b;
+  background-color: transparent !important;
+  border-bottom: 1px solid transparent; }
 
 /* Change background color of buttons on hover */
-.tabs button:hover {
-  background-color: #ddd; }
+.tab button:hover {
+  border-bottom: 1px solid #0963ce;
+  color: #0963ce; }
 
 /* Create an active/current tabslink class */
-.tabs button.active {
-  background-color: #ccc; }
+.tab button.active {
+  border-bottom: 1px solid #0963ce;
+  color: #0963ce; }
 
 /* Style the tabs content */
-.tabs-tabcontent {
+.tab-tabcontent {
   display: none; }
 
 .header-div {
