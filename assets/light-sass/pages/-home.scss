@@ -1,3 +1,8 @@
+.box-p{
+  @media only screen and (max-width: 500px) {
+    padding: 15px 15px !important;
+  }
+}
 .box {
   position: relative;
   width: 100%;
@@ -8,7 +13,7 @@
   border: 1px solid #efeffd;
   padding: 20px;
   overflow: hidden;
-  // transition: all 2s;
+    // transition: all 2s;
 
  
   @media only screen and (max-width: 1270px) and (min-width: 1200px) {

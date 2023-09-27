@@ -1,0 +1,37 @@
+.modal-medium{
+    max-width: 700px !important;
+    .modal-content{
+        width: 100% !important;
+    }
+}
+.modal-btn-save{
+    background-color: $secondry;
+    border: 1px solid $secondry;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 25px;
+    min-width: 120px;
+    transition: all .5s;
+    &:hover{
+        transform: translateY(-3px);
+    }
+}
+
+.modal-btn-cancel{
+    background-color:transparent;
+    border: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: $secondry;
+    border-radius: 4px;
+    padding: 10px 25px;
+    border: 1px solid $secondry;
+    transition: all .5s;
+    &:hover{
+        transform: translateY(-3px);
+    }
+}
