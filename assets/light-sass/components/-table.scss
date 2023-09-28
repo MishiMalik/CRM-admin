@@ -67,6 +67,9 @@
 // ===============================================data table
 
 // ===============================================data table buttons===========================
+.data-table-style{
+  width: 100% !important;
+}
 table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
 table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   height: 15px;
