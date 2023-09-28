@@ -279,10 +279,11 @@ body {
   @media only screen and (max-width: 575px) {
     .menu-footer {
       display: flex; } }
-  .menu-footer .active-footer-menu a {
+
+.active-footer-menu a {
+  color: #0963ce !important; }
+  .active-footer-menu a i {
     color: #0963ce !important; }
-    .menu-footer .active-footer-menu a i {
-      color: #0963ce !important; }
 
 .menu-footer-shadow {
   box-shadow: none; }
@@ -677,38 +678,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   background-color: #06f744; }
 
 .in-active {
-  background-color: #F2F2F2;
-  color: #5c607b !important;
-  padding: 4px 6px !important;
-  border-radius: 4px;
-  border: none !important;
-  font-size: 14px;
-  color: white; }
-  .in-active:hover {
-    color: #5c607b !important; }
-  .in-active:focus, .in-active:active {
-    outline: none;
-    box-shadow: none; }
+  background-color: #8f8d8d;
+  color: white !important; }
   @media only screen and (max-width: 600px) {
     .in-active {
       padding: 2px 5px !important;
       font-size: 12px; } }
 
-.active {
-  padding: 4px 6px !important;
-  border-radius: 4px;
-  border: none !important;
-  font-size: 14px;
-  color: white;
+.active-now {
   background-color: #31b131;
   color: white; }
-  .active:hover {
-    color: white !important; }
-  .active:focus, .active:active {
-    outline: none;
-    box-shadow: none; }
   @media only screen and (max-width: 600px) {
-    .active {
+    .active-now {
       padding: 2px 5px !important;
       font-size: 12px; } }
 
@@ -736,6 +717,45 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   justify-content: center;
   align-items: center;
   text-align: center; }
+
+.select-active {
+  padding: 4px 7px !important;
+  border-radius: 5px !important;
+  width: 100px;
+  margin: 0px auto;
+  font-size: 14px; }
+  .select-active:active, .select-active:focus {
+    outline: none !important;
+    box-shadow: none !important; }
+  @media only screen and (max-width: 400px) {
+    .select-active {
+      font-size: 12px;
+      width: 85px; } }
+
+.custom-select {
+  position: relative;
+  display: inline-block; }
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer; }
+
+.custom-select .custom-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 6px 0 6px;
+  border-color: white transparent transparent transparent;
+  pointer-events: none; }
+
+.form-select:focus {
+  box-shadow: none !important; }
 
 .pagination {
   margin: 20px 10px !important;
@@ -785,8 +805,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-weight: 500;
   color: white;
   border-radius: 4px;
-  padding: 10px 25px;
-  min-width: 120px;
+  padding: 7px 20px !important;
+  min-width: 100px;
+  line-height: normal !important;
   transition: all .5s; }
   .modal-btn-save:hover {
     transform: translateY(-3px); }
@@ -799,7 +820,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-weight: 500;
   color: #0963ce;
   border-radius: 4px;
-  padding: 10px 25px;
+  padding: 0px 20px;
   border: 1px solid #0963ce;
   transition: all .5s; }
   .modal-btn-cancel:hover {
@@ -852,10 +873,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   /* 150% */ }
 
 /* Add a class for styling the selected text */
-.form-floating > .form-select ~ label {
-  color: white !important;
-  opacity: 1; }
-
 .sign-check-label {
   color: #84818a;
   font-family: Manrope;

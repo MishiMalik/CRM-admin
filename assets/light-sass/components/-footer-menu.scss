@@ -27,12 +27,13 @@
   @media only screen and (max-width: 575px) {
     display: flex;
   }
-  .active-footer-menu a {
-    i {
-      color: $secondry !important;
-    }
+
+}
+.active-footer-menu a {
+  i {
     color: $secondry !important;
   }
+  color: $secondry !important;
 }
 .menu-footer-shadow {
   box-shadow: none;

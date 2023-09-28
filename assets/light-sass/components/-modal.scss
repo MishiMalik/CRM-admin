@@ -12,8 +12,9 @@
     font-weight: 500;
     color: white;
     border-radius: 4px;
-    padding: 10px 25px;
-    min-width: 120px;
+    padding: 7px 20px !important;
+    min-width: 100px;
+    line-height: normal !important;
     transition: all .5s;
     &:hover{
         transform: translateY(-3px);
@@ -28,7 +29,7 @@
     font-weight: 500;
     color: $secondry;
     border-radius: 4px;
-    padding: 10px 25px;
+    padding: 0px 20px;
     border: 1px solid $secondry;
     transition: all .5s;
     &:hover{

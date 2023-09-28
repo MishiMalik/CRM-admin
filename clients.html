@@ -89,7 +89,7 @@
                             </li>
 
                             <li class="menu-item">
-                                <a href="leads.html" class="active-menu">
+                                <a href="leads.html">
                                     <span class="menu-icon">
                                         <i class="fa-duotone fa-people-group"></i>
 
@@ -178,7 +178,7 @@
                             </li>
 
                             <li class="menu-item">
-                                <a href="clients.html">
+                                <a href="clients.html" class="active-menu">
                                     <span class="menu-icon">
                                         <i class="fa-duotone fa-users-line"></i>
 
@@ -758,10 +758,11 @@
                             <div class="col-lg-12 h-100">
                                 <div class="box mb-3 box-p">
                                     <div class="flex-grow-1">
-                                        <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-3">
+                                        <div
+                                            class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-3">
                                             <h1 class="f-20 w-500 mb-0 pb-0">Clients</h1>
                                             <button class="table-btn" type="button" class="btn btn-primary"
-                                                data-bs-toggle="modal" data-bs-target="#leadModal">Add New</button>
+                                                data-bs-toggle="modal" data-bs-target="#clientModal">Add New</button>
                                         </div>
                                         <table id="example-inprogress" class="table data-table-style client-table">
                                             <thead>
@@ -773,8 +774,8 @@
                                                     <th>Partner Name</th>
                                                     <th>Date Joined</th>
                                                     <th>Designation</th>
-                                                    <th>Phone Number  </th>
-                                                    <th>Business Contact Number  </th>
+                                                    <th>Phone Number </th>
+                                                    <th>Business Contact Number </th>
                                                     <th>Email Address</th>
                                                     <th>Business Email Address</th>
                                                     <th>Actions</th>
@@ -794,11 +795,47 @@
 
                                                     <td>Jhon Doe</td>
                                                     <td class="">
-                                                        <div class="dropdown table-dropdown">
-                                                            <a class="  active ">
+                                                        <!-- <select class="form-select crm-input" id="select-status"
+                                                            aria-label="Floating label select example">
+                                                            <option selected value="1"
+                                                                style="color:white; background-color: green ">Active
+                                                            </option>
+                                                            <option value="2"
+                                                                style="color:white; background-color: rgb(143, 141, 141); ">
+                                                                Inactive</option>
+
+                                                        </select> -->
+                                                        <div class="custom-select">
+                                                            <select class="form-select  select-active" 
+                                                                aria-label=" label select example">
+                                                                <option value="1"
+                                                                    style="color:white; background-color: green">Active
+                                                                </option>
+                                                                <option  selected  value="2"
+                                                                    style="color:white; background-color: rgb(143, 141, 141);">
+                                                                    Inactive</option>
+                                                            </select>
+                                                            <div class="custom-select-arrow"></div>
+                                                        </div>
+
+
+
+                                                        <!-- <div class="dropdown table-dropdown">
+                                                            <a class="btn  dropdown-toggle table-dropdown-btn active-now "
+                                                                href="#" role="button" id="dropdownMenuLink"
+                                                                data-bs-toggle="dropdown" aria-expanded="false">
                                                                 Active
                                                             </a>
-                                                        </div>
+
+                                                            <ul class="dropdown-menu"
+                                                                aria-labelledby="dropdownMenuLink">
+                                                                <li><a class="dropdown-item active-now"
+                                                                        href="#">Active</a></li>
+                                                                <li><a class="dropdown-item in-active"
+                                                                        href="#">Inactive</a></li>
+                                                              
+                                                            </ul>
+                                                        </div> -->
                                                     </td>
                                                     <td>Pakistan </td>
                                                     <td>AB Divilar</td>
@@ -808,13 +845,13 @@
                                                     </td>
                                                     <td>ABCD</td>
                                                     <td>
-                                                       0300 99 8765 65
+                                                        0300 99 8765 65
                                                     </td>
                                                     <td>
                                                         0300 99 8765 65
                                                     </td>
                                                     <td>
-                                                       abc@gmail.com
+                                                        abc@gmail.com
                                                     </td>
                                                     <td>
                                                         abc@gmail.com
@@ -836,10 +873,17 @@
 
                                                     <td>Jhon Doe</td>
                                                     <td class="">
-                                                        <div class="dropdown table-dropdown">
-                                                            <a class="  in-active">
-                                                                Inactive
-                                                            </a>
+                                                        <div class="custom-select">
+                                                            <select class="form-select  select-active" 
+                                                                aria-label=" label select example">
+                                                                <option selected value="1"
+                                                                    style="color:white; background-color: green">Active
+                                                                </option>
+                                                                <option value="2"
+                                                                    style="color:white; background-color: rgb(143, 141, 141);">
+                                                                    Inactive</option>
+                                                            </select>
+                                                            <div class="custom-select-arrow"></div>
                                                         </div>
                                                     </td>
                                                     <td>Pakistan </td>
@@ -850,13 +894,13 @@
                                                     </td>
                                                     <td>ABCD</td>
                                                     <td>
-                                                       0300 99 8765 65
+                                                        0300 99 8765 65
                                                     </td>
                                                     <td>
                                                         0300 99 8765 65
                                                     </td>
                                                     <td>
-                                                       abc@gmail.com
+                                                        abc@gmail.com
                                                     </td>
                                                     <td>
                                                         abc@gmail.com
@@ -892,25 +936,25 @@
                 Dashboard
             </a>
         </div>
-        <div class="footer-menu-link active-footer-menu">
+        <div class="footer-menu-link ">
             <a href="leads.html">
                 <i class="fa-duotone fa-people-group"></i>
                 Leads
             </a>
         </div>
         <div class="footer-menu-link">
-            <a href="">
+            <a href="projects.html">
                 <i class="fa-duotone fa-rectangle-history"></i>
                 Projects
             </a>
         </div>
-        <div class="footer-menu-link">
-            <a href="">
+        <div class="footer-menu-link ">
+            <a href="chats.html" class="">
                 <i class="fa-duotone fa-messages"></i>
                 Chats
             </a>
         </div>
-        <div class="footer-menu-link" id="show-more-menu">
+        <div class="footer-menu-link " id="show-more-menu">
             <a>
                 <i class="fa-duotone fa-circle-ellipsis-vertical"></i>
                 More
@@ -922,7 +966,7 @@
         <h3>More Menus</h3>
         <div class="menu-footer-padding"></div>
         <div class="d-flex align-items-center more-footer-link">
-            <a class="d-flex align-items-center">
+            <a href="sales.html" class="d-flex align-items-center">
                 <div class="more-icon">
                     <i class="fa-duotone fa-chart-mixed-up-circle-dollar"></i>
                 </div>
@@ -975,8 +1019,8 @@
             </div>
 
         </div>
-        <div class="d-flex align-items-center more-footer-link">
-            <a href="">
+        <div class="d-flex align-items-center more-footer-link active-footer-menu active-footer-menu">
+            <a href="clients.html" class="">
                 <div class="more-icon">
                     <i class="fa-duotone fa-users-line"></i>
                 </div>
@@ -985,7 +1029,7 @@
             </a>
         </div>
         <div class="d-flex align-items-center more-footer-link">
-            <a href="">
+            <a href="partners.html">
                 <div class="more-icon">
                     <i class="fa-duotone fa-user-group-simple"></i>
                 </div>
@@ -995,7 +1039,7 @@
         </div>
 
         <div class="d-flex align-items-center more-footer-link">
-            <a href="">
+            <a href="staff.html">
                 <div class="more-icon">
                     <i class="fa-duotone fa-user-tie"></i>
                 </div>
@@ -1004,7 +1048,7 @@
             </a>
         </div>
         <div class="d-flex align-items-center more-footer-link">
-            <a href="">
+            <a href="support.html">
                 <div class="more-icon">
                     <i class="fa-duotone fa-user-headset"></i>
                 </div>
@@ -1021,7 +1065,7 @@
     <div id="overlay-sidebar"></div>
 
     <!-- Modal -->
-    <div class="modal fade" id="leadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="clientModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-medium">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1033,7 +1077,7 @@
                     <form action="">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-12">
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control crm-input" id="name"
                                             placeholder="Mickel">
@@ -1048,11 +1092,69 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
+
+                                    <div class="form-floating">
+                                        <select class="form-select crm-input" id="select-status"
+                                            aria-label="Floating label select example">
+                                            <option>Select</option>
+                                            <option value="1" style="color: green; ">Active
+                                            </option>
+                                            <option value="2" style="color: gray; ">
+                                                Inactive</option>
+
+                                        </select>
+                                        <label class="crm-label form-label" for="select-status">Status</label>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control crm-input" id="Title" placeholder="ABC">
-                                        <label class="crm-label form-label" for="Title">Title</label>
+                                        <input type="text" class="form-control crm-input" id="country"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="country">State/Country</label>
                                     </div>
                                 </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="partner"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="partner">Partner Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control crm-input" id="date"
+                                            placeholder="12/3/2023">
+                                        <label class="crm-label form-label" for="date">Joined Date</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="Designation"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="Designation">Designation</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="p-number"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="p-number">Phone Number</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="Bussiness-Contact-Number"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="Bussiness-Contact-Number">Bussiness
+                                            Contact Number</label>
+                                    </div>
+                                </div>
+
 
                                 <div class="col-lg-6">
                                     <div class="form-floating mb-3">
@@ -1061,86 +1163,15 @@
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <!-- <div class="form-floating">
-                            <select class="form-select crm-input" id="select-status" aria-label="Floating label select example">
-                              <option selected value="1" style="padding: 7px 10px; background-color: #06F7F0; color: white;">New Lead</option>
-                              <option style="padding: 3px 10px; background-color: #063AF6; color: white;" value="2">Contracted</option>
-                              <option style="padding: 3px 10px; background-color: #E400F7; color: white;" value="3">Follow-Up</option>
-                              <option style="padding: 3px 10px; background-color: #F75C06; color: white;" value="2">In-Progress</option>
-                              <option style="padding: 3px 10px; background-color: #F70606; color: white;" value="3">Failed</option>
-                              <option style="padding: 3px 10px; background-color: #06F744; color: white;" value="3">Qualified</option>
-                            </select>
-                            <label class="crm-label form-label" for="select-status">Status</label>
-                          </div> -->
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control crm-input" id="bussiness-email"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="bussiness-email">Bussiness Email
+                                            Address</label>
+                                    </div>
+                                </div>
 
-                                    <div class="form-floating">
-                                        <select class="form-select crm-input" id="select-status"
-                                            aria-label="Floating label select example">
-                                            <option>Select</option>
-                                            <option value="1" style="background-color: #06F7F0; color: white;">New Lead
-                                            </option>
-                                            <option value="2" style="background-color: #063AF6; color: white;">
-                                                Contracted</option>
-                                            <option value="3" style="background-color: #E400F7; color: white;">Follow-Up
-                                            </option>
-                                            <option value="4" style="background-color: #F75C06; color: white;">
-                                                In-Progress</option>
-                                            <option value="5" style="background-color: #F70606; color: white;">Failed
-                                            </option>
-                                            <option value="6" style="background-color: #06F744; color: white;">Qualified
-                                            </option>
-                                        </select>
-                                        <label class="crm-label form-label" for="select-status">Status</label>
-                                    </div>
 
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control crm-input" id="url" placeholder="ABC">
-                                        <label class="crm-label form-label" for="url">URL</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control crm-input" id="partner"
-                                            placeholder="ABC">
-                                        <label class="crm-label form-label" for="partner">Partner</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control crm-input" id="country"
-                                            placeholder="ABC">
-                                        <label class="crm-label form-label" for="country">Country</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control crm-input" id="address"
-                                            placeholder="ABC">
-                                        <label class="crm-label form-label" for="address">Address</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control crm-input" id="p-number"
-                                            placeholder="ABC">
-                                        <label class="crm-label form-label" for="p-number">Phone Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="date" class="form-control crm-input" id="date" placeholder="ABC">
-                                        <label class="crm-label form-label" for="date">Phone Number</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-floating mb-3">
-                                        <input type="date" class="form-control crm-input" id="follow-date"
-                                            placeholder="ABC">
-                                        <label class="crm-label form-label" for="follow-date">Follow-up Date</label>
-                                    </div>
-                                </div>
                                 <div class="col-lg-12">
                                     <div class="d-flex justify-content-end mt-3 mb-2">
                                         <button type="button" class="modal-btn-cancel me-3"
@@ -1181,6 +1212,38 @@
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     <script src="assets/Js/table.js"></script>
     <script>
+      $(document).ready(function () {
+    // Iterate through each select element with class .select-active
+    $(".select-active").each(function () {
+        const selectStatus = $(this);
+
+        function applyStyleToSelectedOption() {
+            // Get the selected option
+            const selectedOption = selectStatus.find("option:selected");
+
+            // Get the styles from the selected option
+            const backgroundColor = selectedOption.css("background-color");
+            const color = selectedOption.css("color");
+
+            // Apply the styles to the select element
+            selectStatus.css("background-color", backgroundColor);
+            selectStatus.css("color", color);
+
+            // Apply the styles to the selected option
+            selectedOption.css("background-color", backgroundColor);
+            selectedOption.css("color", color);
+        }
+
+        // Apply the style to the selected option immediately
+        applyStyleToSelectedOption();
+
+        // Listen for the change event on this specific select element
+        selectStatus.on("change", applyStyleToSelectedOption);
+    });
+});
+
+
+        // select for modal
         document.addEventListener("DOMContentLoaded", function () {
             const selectStatus = document.getElementById("select-status");
 
