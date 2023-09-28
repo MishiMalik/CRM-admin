@@ -644,6 +644,36 @@ div.dataTables_wrapper div.dataTables_filter input {
 .qualified {
   background-color: #06F744; }
 
+.table-actions .edit {
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #31d4f0;
+  color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .table-actions .edit i {
+    font-size: 16px;
+    margin: 0px !important; }
+
+.table-actions .save {
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #31b131;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
 .pagination {
   margin: 20px 10px !important;
   background-color: transparent;

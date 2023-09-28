@@ -342,7 +342,40 @@ background-color: #063AF6;
   background-color: #06F744;
 }
 
+.table-actions{
+   .edit{
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+     font-size: 16px;
+     background-color: $primary;
+     color:white;
+     border: none;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     i{
+      font-size: 16px;
+      margin: 0px !important;
+     }
+   }
+   .save{
+    height: 30px;
+    width: 30px;
+    border-radius: 4px;
+     font-size: 16px;
+     background-color: #31b131;
+     color:white;
+     border: none;
+     margin-left: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+   }
 
+}
 
 
 
