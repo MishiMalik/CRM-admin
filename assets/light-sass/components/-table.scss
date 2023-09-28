@@ -221,9 +221,10 @@ div.dataTables_wrapper div.dataTables_filter input {
   color: $secondry;
   white-space: nowrap !important;
   padding: 12px 20px !important;
-  text-align: center !important;
+  // text-align: center !important;
   @media only screen and (max-width: 600px) {
     padding: 12px 6px !important;
+      text-align: center !important;
   }
   @media only screen and (max-width: 400px) {
     padding: 10px 5px !important;
@@ -235,9 +236,10 @@ div.dataTables_wrapper div.dataTables_filter input {
   white-space: nowrap;
   padding: 8px 5px !important;
   padding: 12px 20px !important;
-  text-align: center !important;
+  // text-align: center !important;
   vertical-align: middle;
   @media only screen and (max-width: 600px) {
+      text-align: center !important;
     padding: 12px 6px !important;
   }
   @media only screen and (max-width: 400px) {
@@ -472,7 +474,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   // border-color: transparent !important;
   box-shadow: none !important;
 }
-
+.bussiness-n{
+  font-size: 12px;
+  color: $gray !important;
+}
 // .data-table-style tbody tr {
 //   &:hover {
 //     background-color: #ff338112 !important;

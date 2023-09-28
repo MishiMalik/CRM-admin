@@ -544,11 +544,11 @@ div.dataTables_wrapper div.dataTables_filter input {
   font-weight: 500;
   color: #0963ce;
   white-space: nowrap !important;
-  padding: 12px 20px !important;
-  text-align: center !important; }
+  padding: 12px 20px !important; }
   @media only screen and (max-width: 600px) {
     .data-table-style thead tr th {
-      padding: 12px 6px !important; } }
+      padding: 12px 6px !important;
+      text-align: center !important; } }
   @media only screen and (max-width: 400px) {
     .data-table-style thead tr th {
       padding: 10px 5px !important; } }
@@ -558,10 +558,10 @@ div.dataTables_wrapper div.dataTables_filter input {
   white-space: nowrap;
   padding: 8px 5px !important;
   padding: 12px 20px !important;
-  text-align: center !important;
   vertical-align: middle; }
   @media only screen and (max-width: 600px) {
     .data-table-style tbody tr td {
+      text-align: center !important;
       padding: 12px 6px !important; } }
   @media only screen and (max-width: 400px) {
     .data-table-style tbody tr td {
@@ -759,6 +759,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .form-select:focus {
   box-shadow: none !important; }
+
+.bussiness-n {
+  font-size: 12px;
+  color: #5c607b !important; }
 
 .pagination {
   margin: 20px 10px !important;
