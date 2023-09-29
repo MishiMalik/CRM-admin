@@ -66,6 +66,11 @@
   text-overflow: ellipsis;
   margin-bottom: 0px !important; }
 
+.page-title {
+  color: #172b4c;
+  font-size: 15px;
+  font-weight: 500; }
+
 body {
   font-family: "Poppins", sans-serif; }
   body::-webkit-scrollbar {
@@ -92,6 +97,52 @@ body {
 
 .theme-override {
   overflow: hidden; }
+
+.carousel__slide {
+  position: relative;
+  display: block;
+  flex: 1 0 100%;
+  width: 100%;
+  height: width;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  box-sizing: border-box;
+  white-space: normal; }
+  .carousel__slide figure {
+    display: flex;
+    margin: 0; }
+    @media only screen and (max-width: 7479px) {
+      .carousel__slide figure {
+        justify-content: center; } }
+  .carousel__slide div {
+    width: 100%;
+    position: relative;
+    overflow: hidden; }
+    .carousel__slide div:before {
+      display: block;
+      content: "";
+      padding-top: 50%; }
+    .carousel__slide div > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%; }
+    @media only screen and (max-width: 7479px) {
+      .carousel__slide div {
+        width: 100%; } }
+  .carousel__slide img {
+    display: block;
+    flex: 1 1 auto;
+    object-fit: cover; }
+  .carousel__slide .credit {
+    margin-top: 1rem;
+    color: rgba(0, 0, 0, 0.5);
+    display: block; }
+  .carousel__slide.scrollable {
+    overflow-y: scroll; }
 
 @keyframes bounceIn {
   from,
@@ -958,6 +1009,178 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 /* Style the tabs content */
 .tab-tabcontent {
   display: none; }
+
+.person-card {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #efeffd;
+  padding: 0px; }
+  .person-card .person-detail {
+    position: relative;
+    z-index: 2;
+    padding: 20px 10px 7px 10px;
+    text-align: center; }
+    .person-card .person-detail h1 {
+      color: #0963ce;
+      font-size: 22px;
+      font-weight: 400;
+      text-align: center; }
+    .person-card .person-detail p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #5c607b; }
+    .person-card .person-detail a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #5c607b;
+      text-decoration: none; }
+      .person-card .person-detail a:hover {
+        color: #0963ce; }
+  .person-card .contact-icon {
+    cursor: pointer;
+    margin-top: -36px; }
+    .person-card .contact-icon .fb {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      background-color: #3b5998;
+      border-color: #3b5998; }
+      .person-card .contact-icon .fb i {
+        color: #ffff;
+        font-size: 18px; }
+    .person-card .contact-icon .insta {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      background-color: #e1306c;
+      border-color: #e1306c;
+      color: #ffffff; }
+      .person-card .contact-icon .insta i {
+        color: #ffff;
+        font-size: 18px; }
+    .person-card .contact-icon .twitter {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      background-color: #1da1f2;
+      border-color: #1da1f2;
+      color: #ffffff; }
+      .person-card .contact-icon .twitter i {
+        color: #ffff;
+        font-size: 18px; }
+    .person-card .contact-icon .msg {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+      background-color: #ffa800;
+      border-color: #ffa800;
+      color: #ffffff; }
+      .person-card .contact-icon .msg i {
+        color: #ffff;
+        font-size: 18px; }
+
+.dots-btn {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none; }
+
+.dots-menu {
+  background-color: white;
+  background-color: #ffffff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #efeffd;
+  display: none; }
+
+.dots-dropdown {
+  position: relative;
+  text-align: left; }
+
+.dots-btn:active ~ .dots-menu,
+.dots-btn:focus ~ .dots-menu {
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  display: block; }
+
+.person-flag {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  top: 10px;
+  right: 10px;
+  object-fit: cover; }
+
+.ribbon-two {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 71px;
+  height: 71px;
+  text-align: right; }
+  .ribbon-two span {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background-color: #31d4f0;
+    -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+    position: absolute;
+    top: 19px;
+    left: -21px;
+    font-weight: 600; }
+    .ribbon-two span:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      z-index: -1;
+      border-right: 3px solid #31d4f0;
+      border-bottom: 3px solid #31d4f0; }
+    .ribbon-two span:after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 100%;
+      z-index: -1;
+      border-left: 3px solid #31d4f0;
+      border-bottom: 3px solid #31d4f0; }
+
+.ribbox-blue span {
+  background-color: #0963ce !important; }
+  .ribbox-blue span:before {
+    content: "";
+    border-right: 3px solid #0963ce;
+    border-bottom: 3px solid #0963ce; }
+  .ribbox-blue span:after {
+    content: "";
+    border-left: 3px solid #0963ce;
+    border-bottom: 3px solid #0963ce; }
+
+.ribbox-red span {
+  background-color: green !important; }
+  .ribbox-red span:before {
+    content: "";
+    border-right: 3px solid green;
+    border-bottom: 3px solid green; }
+  .ribbox-red span:after {
+    content: "";
+    border-left: 3px solid green;
+    border-bottom: 3px solid green; }
 
 .header-div {
   z-index: 20;
