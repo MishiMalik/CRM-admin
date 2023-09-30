@@ -8,12 +8,12 @@
   border: 1px solid #efeffd;
   padding: 0px;
   height: 100%;
+  z-index: 0;
   .person-img {
     border-radius: 10px 10px 0px 0px;
   }
   .person-detail {
     position: relative;
-    z-index: 2;
     padding: 20px 10px 7px 10px;
     text-align: center;
     h1 {
