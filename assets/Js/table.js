@@ -1,30 +1,32 @@
-const table = $('#example').DataTable({
-    responsive: true,
-    language: {
-                searchPlaceholder: "Search records"
-                
-            },
+const table = $("#example").DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: "Search records",
+  },
 });
-const exampleinprogress = $('#example-inprogress').DataTable({
-    responsive: true,
-    language: {
-                searchPlaceholder: "Search records"
-                
-            },
+const exampleinprogress = $("#example-inprogress").DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: "Search records",
+  },
 });
-const tableFailed = $('#example-failed').DataTable({
-    responsive: true,
-    language: {
-                searchPlaceholder: "Search records"
-                
-            },
+const tableFailed = $("#example-failed").DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: "Search records",
+  },
 });
-const exampleQualify = $('#example-qualify').DataTable({
-    responsive: true,
-    language: {
-                searchPlaceholder: "Search records"
-                
-            },
+const exampleQualify = $("#example-qualify").DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: "Search records",
+  },
+});
+const upcomingTable = $("#upcoming-table").DataTable({
+  responsive: true,
+  searching: false,
+  paging: false,
+  info: false,
 });
 
 // // Formatting function for row details - modify as you need
@@ -61,13 +63,13 @@ const exampleQualify = $('#example-qualify').DataTable({
 //         </div>
 //       </div>`);
 // }
- 
+
 // let table = new DataTable('#example', {
 //     responsive: true,
 //     scrollX: true,
 //     language: {
 //         searchPlaceholder: "Search records"
-        
+
 //     },
 //     columnDefs: [
 //       {
@@ -79,12 +81,12 @@ const exampleQualify = $('#example-qualify').DataTable({
 //       }
 //     ]
 // });
- 
+
 // // Add event listener for opening and closing details
 // table.on('click', 'td.dt-control', function (e) {
 //     let tr = e.target.closest('tr');
 //     let row = table.row(tr);
- 
+
 //     if (row.child.isShown()) {
 //         // This row is already open - close it
 //         row.child.hide();
