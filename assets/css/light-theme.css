@@ -1945,8 +1945,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   margin-top: -2px; }
 
 .chat-body {
-  height: 100vh;
-  overflow-y: hidden; }
+  height: 100vh !important;
+  overflow-y: hidden !important; }
 
 .chat__screen {
   height: 100%;
