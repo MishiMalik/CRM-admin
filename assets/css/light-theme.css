@@ -1919,7 +1919,7 @@ dots-menu2 .dropdown-item {
   margin-top: -2px; }
 
 .project-name {
-  width: 100px;
+  width: 140px;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important; }
