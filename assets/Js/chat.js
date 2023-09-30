@@ -128,13 +128,14 @@ var initialScreenSize = window.innerHeight;
 window.addEventListener("resize", function() {
    if(window.innerHeight < initialScreenSize){
         $(".menu-footer").hide(); 
-   } else{ 
-        if($(window).width() < 580) {
-            $(".menu-footer").show(); 
-            $(".chat__screen").css("height","calc(100vh - 190px)"); 
+             $(".chat__screen").css("height","calc(100vh - 190px)"); 
             $(".chat__screen-chats").css("height","calc(100vh - 190px)"); 
             $(".chat__screen-chats-wrapper").css("height","calc(100vh - 250px)"); 
             $(".chat__screen-body-msgs").css("height","calc(100vh - 250px)"); 
+   } else{ 
+        if($(window).width() < 580) {
+            $(".menu-footer").show(); 
+       
         }
        
    } 
