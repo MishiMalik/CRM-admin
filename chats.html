@@ -1,0 +1,1543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap5 -->
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/icons/icons/all.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-solid.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-regular.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-light.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
+
+
+    <title>Document</title>
+</head>
+
+<body class="theme">
+
+    <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
+        <!-- ---------------------Side bar-------------- -->
+        <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
+
+            <div class="sidebar-layout">
+                <div class="sidebar-header d-flex justify-content-center">
+
+                    <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid logo-lg"
+                            id="logo-image">
+                        <img src="assets/images/d-png.png" alt="" class="img-fluid logo-sm">
+                    </div>
+                </div>
+                <div class="d-flex  user-account ">
+
+                    <div class="user-icon">
+                        <img src="assets/images/vatar-removebg-preview.png" alt="" class="" height="50" width="50">
+                    </div>
+                    <div class="dropdown profile-dropdown ms-auto">
+                        <button class="dropdown-toggle d-flex align-items-center pe-3" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div>
+                                <h3 class="mb-0">Nil Yeager </h3>
+                                <p class="mb-0 pb-0">Super Admin</p>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="bi bi-person me-3"></i>Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="settings.html"><i
+                                        class="bi bi-gear me-3"></i>Settings</a>
+                            <li><a class="dropdown-item" href="log-in.html"><i
+                                        class="bi bi-arrow-bar-left me-3"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item py-3 menu-heading-div">
+                    <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">Main Menu</span>
+                </div>
+                <div class="sidebar-content">
+                    <nav class="menu open-current-submenu">
+
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-grid-2"></i>
+                                    </span>
+                                    <span class="menu-title">Dashboard </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="leads.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-people-group"></i>
+
+                                    </span>
+                                    <span class="menu-title">Leads</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="projects.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-rectangle-history"></i>
+
+                                    </span>
+                                    <span class="menu-title">Projects</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="sales.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-chart-mixed-up-circle-dollar"></i>
+                                    </span>
+                                    <span class="menu-title">Sales
+                                    </span>
+                                </a>
+
+                            </li>
+
+                            <li class="menu-item sub-menu">
+                                <a>
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-file-invoice-dollar"></i>
+
+                                    </span>
+                                    <span class="menu-title">Invoices</span>
+
+                                </a>
+                                <div class="sub-menu-list">
+                                    <ul>
+                                        <li class="menu-item">
+                                            <a href="invoice-list.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices List</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Grid</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="add-invoice.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Add Invoices</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="edit-invoice.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Edit Invoices</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="invoice-details.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Details</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="invoice-settings.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Settings</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="menu-item">
+                                <a href="partners.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-group-simple"></i>
+                                    </span>
+
+                                    <span class="menu-title">Partners
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="clients.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-users-line"></i>
+
+                                    </span>
+                                    <span class="menu-title">Clients
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="chats.html" class="active-menu">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-messages"></i>
+
+                                    </span>
+                                    <span class="menu-title">Chats
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="staff.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-tie"></i>
+
+                                    </span>
+                                    <span class="menu-title">Staff
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="support.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-headset"></i>
+
+                                    </span>
+                                    <span class="menu-title">Support
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="main-area w-100 mb-0">
+        <!-- ----------------Header--------------- -->
+        <header class="header-div  w-100">
+            <div class="header w-100">
+                <a id="btn-collapse" href="#" class="align-self-center header-option">
+                    <i class="fa-duotone fa-bars-staggered header-icon"></i>
+
+                </a>
+                <a id="btn-toggle" href="#" class="align-self-center header-option">
+                    <i class="fa-duotone fa-bars-staggered header-icon"></i>
+                </a>
+                <div class="show-md align-self-center">
+                    <img src="assets/images/Logo-Png.png" alt="" class="img-fluid mobile-logo">
+                </div>
+
+                <!-- Notification -->
+                <div class="ms-auto d-flex">
+                    <div class="notification-dropdown-div  align-self-center header-option">
+                        <button type="button" style="position: relative;">
+                            <div class="notifications ">
+                                <i class="fa-duotone fa-bell header-icon mt-1"></i>
+
+                                <div class="pulse-wave"></div>
+                            </div>
+                        </button>
+                        <div class="notification-dropdown-inner">
+                            <ul class="notification-dropdown">
+                                <div class="notifications-header">
+                                    <h1 class="mb-0 pb-0">Notifications</h1>
+                                    <button>Clear All</button>
+                                </div>
+                                <li><a class=" " href="notifications.html"><i
+                                            class="bi bi-people-fill text-primary f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i class="bi bi-info-circle  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i
+                                            class="bi bi-person-fill text-primary  text-danger f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"> <i class="bi bi-chat-fill  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="notifications.html" class="text-center">
+                                        <div class="see-all w-100 text-center">
+                                            View All
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="header-option align-self-center hide-sm side-menu-quick-btn">
+                        <i class="fa-duotone fa-grid-round-2 header-icon"></i>
+
+                    </div>
+
+                    <!-- ticker -->
+                    <div class="header-option align-self-center hide-sm side-menu-ticket-btn">
+                        <!-- <i class="bi bi-app-indicator path-1"></i> -->
+                        <i class="fa-duotone fa-life-ring header-icon"></i>
+                    </div>
+
+                    <!-- chat -->
+                    <div class="header-option align-self-center hide-sm chat-btn">
+                        <i class="fa-duotone fa-messages header-icon"></i>
+
+                    </div>
+
+                    <!-- theme exchange -->
+                    <div class="header-option align-self-center" id="toggleTheme">
+                        <i class="fa-duotone fa-brightness header-icon"></i>
+
+                    </div>
+
+                    <!-- fullscreen -->
+                    <div class="header-option align-self-center me-0 hide-sm" id="fullscreen-button">
+
+                        <i class="fa-duotone fa-arrows-maximize header-icon"></i>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- quick links menu -->
+        <div class="side-menu side-menu-quick">
+            <div class="quick-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0 ">Quick Actions</h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-rectangle-history"></i>
+                                <p class="mb-0 pb-0">
+                                    Projects
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-users-line"></i>
+                                <p class="mb-0 pb-0">
+                                    clients
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-user-group-simple"></i>
+                                <p class="mb-0 pb-0">
+                                    Partners
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-user-tie"></i>
+                                <p class="mb-0 pb-0">
+                                    Staff
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-people-simple"></i>
+                                <p class="mb-0 pb-0">
+                                    Leads
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-gear-complex-code"></i>
+                                <p class="mb-0 pb-0">
+                                    Settings
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- ticket menu -->
+        <div class="side-menu side-menu-ticket">
+            <div class="ticket-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0">Ticket/support </h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat -->
+        <div class="chat__popup">
+            <div class="chat-header d-flex align-items-center">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <button class="close-chat ms-auto">
+                        <i class="fa-duotone fa-xmark-large"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body">
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="type-area">
+                <input type="text" placeholder="Type Here...">
+                <i class="fa-solid fa-paper-plane-top "></i>
+            </div>
+        </div>
+        <!-- -----------Main Contents----------- -->
+        <main class="content ">
+            <div class="container-fluid px-lg-0">
+                <div class="row">
+                    <div class="col-lg-12 ">
+
+                        <div class="chat__screen box p-0">
+                            <!-- chats -->
+                            <div class="chat__screen-chats chats-name">
+                                <div class="chat__screen-chats--header d-flex justify-content-between">
+                                    <p class="mb-0 pb-0 active">All Chats</p>
+                                    <p class="mb-0 pb-0 ms-2">Unread</p>
+                                </div>
+                                <div class="chat__screen-chats-wrapper pb-4">
+                                    <div class="chat__screen-chats-wrapper--body pb-lg-0 pb-5">
+                                        <!-- chat  -->
+                                        <div class="conversation">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Jack Roe</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation active-conversation">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- chat body -->
+                            <div class="chat__screen-chats chat__screen-body chats-msgs">
+                                <div class="chat__screen-chats--header mb-0">
+                                    <div class="d-flex align-items-center open-chat-header">
+                                        <div class="go-back">
+                                            <i class="bi bi-arrow-left-short text-primary f-36 me-1"></i>
+                                        </div>
+                                        <div class="open-chat-header-img ">
+                                            <img src="assets/images/vatar.png" alt="">
+                                        </div>
+                                        <div class="open-chat-header-text ms-2 ps-1">
+                                            <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat__screen-chats-wrapper " style="overflow-y: hidden;">
+                                    <div class="chat__screen-chats-wrapper--body chat__screen-body-msgs">
+                                        <div class="chat-date mt-2">
+                                            Wednesday, February 5th
+                                        </div>
+                                        <!-- msg recived -->
+                                        <div class="recieved-msg">
+                                            <div class="recieved-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="recieved-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">Jhon Doe</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="recieved-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam,
+                                                    quis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- msg sent -->
+                                        <div class="sent-msg">
+                                            <div class="sent-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="sent-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">AB Divilar</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="sent-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                    Hello!<br>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                    veniam,
+                                                    quis.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- msg recived -->
+                                        <div class="recieved-msg">
+                                            <div class="recieved-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="recieved-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">Jhon Doe</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="recieved-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                </p>
+                                            </div>
+                                            <div class="recieved-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                    Lorem ipsum dolor sit.
+                                                </p>
+                                            </div>
+                                            <div class="recieved-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                                                    itaque
+                                                    voluptatem incidunt similique tempore sit commodi nemo? Eaque, non
+                                                    nulla!
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- msg recived -->
+                                        <div class="recieved-msg">
+                                            <div class="recieved-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="recieved-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">Jhon Doe</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+
+                                            <div class="recieved-msg-text">
+                                                <img src="assets/images/6.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- date -->
+                                        <div class="chat-date mt-4">
+                                            Wednesday, February 5th
+                                        </div>
+                                        <!-- msg sent -->
+                                        <div class="sent-msg">
+                                            <div class="sent-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="sent-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">AB Divilar</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="sent-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                <div class="recieved-msg-text">
+                                                    <img src="assets/images/2.jpg" alt="">
+                                                </div>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- msg recived -->
+                                        <div class="recieved-msg">
+                                            <div class="recieved-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="recieved-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">Jhon Doe</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="recieved-msg-text">
+                                                <p class="mb-0 pb-0">
+                                                    OK
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- msg sent -->
+                                        <div class="sent-msg">
+                                            <div class="sent-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="sent-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">AB Divilar</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="sent-msg-text">
+                                                <div class="recieved-msg-text">
+                                                    <video controls>
+                                                        <source src="assets/images/big_buck_bunny_720p_1mb.mp4"
+                                                            type="video/mp4">
+                                                        Your browser does not support the video tag.
+                                                    </video>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- msg recived -->
+                                        <div class="recieved-msg">
+                                            <div class="recieved-msg-data">
+                                                <img src="assets/images/vatar.png" alt="" class="recieved-msg-data-img">
+                                                <h2 class="mb-0 pb-0 ms-2">Jhon Doe</h2>
+                                                <span class="ms-2">3:21 PM</span>
+                                            </div>
+                                            <div class="recieved-msg-text">
+                                                <video controls>
+                                                    <source
+                                                        src="assets/images/Download the Best Free Nature Videos_7.mp4"
+                                                        type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="msg-type-area ">
+                                        <div class="previews">
+                                            <div id="filePreview" class="preview">
+                                                <!-- <span class="close-icon" id="fileCloseIcon">&times;</span> -->
+                                            </div>
+                                            <div id="mediaPreview" class="preview">
+                                                <!-- <span class="close-icon" id="mediaCloseIcon">&times;</span> -->
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="msg-type-area--input d-flex align-items-center justify-content-between">
+                                            <input type="text" placeholder="Type your message">
+                                            <div class="d-flex align-items-center chat-btns">
+                                                <div class="option-btns ">
+                                                    <button id="fileButton">
+                                                        <i class="fa-solid fa-file"></i>
+                                                        <input type="file" id="fileInput" multiple
+                                                            accept=".txt, .pdf, .doc, .docx, .ppt, .pptx, .xls, .xlsx"
+                                                            style="display: none;">
+
+                                                        Documents
+                                                    </button>
+                                                    <button class="" id="mediaButton">
+                                                        <i class="fa-solid fa-image"></i>
+                                                        Photos&nbsp;&&nbsp;Videos
+                                                        <!-- hidden -->
+                                                        <input type="file" multiple id="mediaInput"
+                                                            accept="image/*, video/*" style="display: none;">
+
+
+                                                    </button>
+                                                </div>
+                                                <button class="show-options ">
+                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                        title="upload Image and video"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                                                        height="30" viewBox="0 0 30 30">
+                                                        <defs>
+                                                            <clipPath id="clip-path">
+                                                                <rect id="Rectangle_1108" data-name="Rectangle 1108"
+                                                                    width="25" height="30"
+                                                                    transform="translate(1464 1125)" opacity="0" />
+                                                            </clipPath>
+                                                        </defs>
+                                                        <g id="Mask_Group_1" data-name="Mask Group 1"
+                                                            transform="translate(-1464 -1125)"
+                                                            clip-path="url(#clip-path)">
+                                                            <path id="Path_646" data-name="Path 646"
+                                                                d="M369.672,6154.737a6.064,6.064,0,0,1-4.377-1.853,6.438,6.438,0,0,1,0-8.925l6.377-6.548a.88.88,0,0,1,1.261,1.228l-6.377,6.548a4.667,4.667,0,0,0,0,6.469,4.337,4.337,0,0,0,6.233,0l10.116-10.392a3,3,0,0,0,0-4.16,2.77,2.77,0,0,0-3.984,0L370,6146.336a1.354,1.354,0,0,0,0,1.854,1.208,1.208,0,0,0,1.737,0l7.011-7.267a.88.88,0,1,1,1.266,1.222l-7.014,7.27a2.967,2.967,0,0,1-4.261,0,3.109,3.109,0,0,1,0-4.306l8.921-9.231a4.508,4.508,0,0,1,3.255-1.38h0a4.5,4.5,0,0,1,3.253,1.378,4.772,4.772,0,0,1,0,6.615l-10.116,10.391A6.064,6.064,0,0,1,369.672,6154.737Z"
+                                                                transform="translate(-3130.714 -2940.092) rotate(-45)" />
+                                                        </g>
+                                                    </svg>
+                                                </button>
+                                                <button class="ms-md-3 ms-2 send send-msg">
+                                                    <p class="mb-0 pb-0 me-2">Send</p>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        class="" viewBox="0 0 16 16">
+                                                        <g id="Iconly_Bold_Send" data-name="Iconly/Bold/Send"
+                                                            transform="translate(-2 -2)">
+                                                            <g id="Send" transform="translate(2 2)">
+                                                                <path id="Path_1531" data-name="Path 1531"
+                                                                    d="M15.548.466A1.547,1.547,0,0,0,14,.063L1.126,3.808A1.535,1.535,0,0,0,.02,5.024a1.8,1.8,0,0,0,.8,1.682L4.848,9.181a1.043,1.043,0,0,0,1.288-.155l4.611-4.639a.587.587,0,0,1,.848,0,.61.61,0,0,1,0,.854L6.976,9.881a1.059,1.059,0,0,0-.154,1.295l2.46,4.067A1.528,1.528,0,0,0,10.61,16a1.659,1.659,0,0,0,.2-.008,1.559,1.559,0,0,0,1.3-1.111L15.932,2.02A1.571,1.571,0,0,0,15.548.466"
+                                                                    transform="translate(0 0)" fill="#fff" />
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="overlay"></div>
+
+    </div>
+    <!-- menu footer -->
+    <footer class="menu-footer">
+        <div class="footer-menu-link ">
+            <a href="index.html">
+                <i class="fa-duotone fa-grid-2"></i>
+                Dashboard
+            </a>
+        </div>
+        <div class="footer-menu-link ">
+            <a href="leads.html">
+                <i class="fa-duotone fa-people-group"></i>
+                Leads
+            </a>
+        </div>
+        <div class="footer-menu-link">
+            <a href="projects.html">
+                <i class="fa-duotone fa-rectangle-history"></i>
+                Projects
+            </a>
+        </div>
+        <div class="footer-menu-link active-footer-menu">
+            <a href="chats.html" class="">
+                <i class="fa-duotone fa-messages"></i>
+                Chats
+            </a>
+        </div>
+        <div class="footer-menu-link " id="show-more-menu">
+            <a>
+                <i class="fa-duotone fa-circle-ellipsis-vertical"></i>
+                More
+            </a>
+        </div>
+    </footer>
+    <!--show more mobile popup -->
+    <div class="menu-footer-popup">
+        <h3>More Menus</h3>
+        <div class="menu-footer-padding"></div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="sales.html" class="d-flex align-items-center">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-chart-mixed-up-circle-dollar"></i>
+                </div>
+                Sales
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle more-dropdown" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="more-icon">
+                        <i class="fa-duotone fa-file-invoice-dollar"></i>
+                    </div>
+                    Invoices
+                </button>
+
+                <ul class="dropdown-menu more-dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="menu-item">
+                        <a href="invoice-list.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices List</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="registered-users.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Grid</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="add-invoice.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Add Invoices</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="edit-invoice.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Edit Invoices</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="invoice-details.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Details</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="invoice-settings.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="d-flex align-items-center more-footer-link active-footer-menu ">
+            <a href="clients.html" class="">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-users-line"></i>
+                </div>
+
+                Clients
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="partners.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-group-simple"></i>
+                </div>
+
+                Partners
+            </a>
+        </div>
+
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="staff.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-tie"></i>
+                </div>
+
+                Staff
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="support.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-headset"></i>
+                </div>
+
+                Support
+            </a>
+        </div>
+    </div>
+
+
+
+    <div id="overlay-all" class="overlay"></div>
+
+    <div id="overlay-sidebar"></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="clientModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-medium">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Client</h5>
+                    <button type="button" class=" close-btn text-white" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-duotone fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="name"
+                                            placeholder="Mickel">
+                                        <label class="crm-label form-label" for="name">Client Name<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="bussiness-name"
+                                            placeholder="Mickel">
+                                        <label class="crm-label form-label" for="bussiness-name">Bussiness Name<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select crm-input" id="select-status"
+                                            aria-label="Floating label select example">
+                                            <option>Select</option>
+                                            <option value="1" style="color: green; ">Active
+                                            </option>
+                                            <option value="2" style="color: gray; ">
+                                                Inactive</option>
+
+                                        </select>
+                                        <label class="crm-label form-label" for="select-status">Status<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="country"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="country">State/Country<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="partner"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="partner">Partner Name<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control crm-input" id="date"
+                                            placeholder="12/3/2023">
+                                        <label class="crm-label form-label" for="date">Joined Date<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="Designation"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="Designation">Designation<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="p-number"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="p-number">Phone Number<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="Bussiness-Contact-Number"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="Bussiness-Contact-Number">Bussiness
+                                            Contact Number<span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control crm-input" id="email" placeholder="ABC">
+                                        <label class="crm-label form-label" for="email">Email Address<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control crm-input" id="bussiness-email"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="bussiness-email">Bussiness Email
+                                            Address<span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-12">
+                                    <div class="d-flex justify-content-lg-end justify-content-center mt-3 mb-3">
+                                        <button type="button" class="modal-btn-cancel me-3"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="modal-btn-save ">Save </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="assets/Js/jquery.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+        integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap5 -->
+    <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="assets/Js/app.js"></script>
+    <script src="assets/Js/layout.js"></script>
+    <script src="assets/Js/chat.js"></script>
+<script>
+   $(".show-options").on("click", function (event) {
+    event.stopPropagation(); // Prevent the click event from propagating to the document
+    $(".option-btns").toggleClass("option-btns-show");
+});
+
+$(document).on("click", function (event) {
+    if (!$(".option-btns").is(event.target) && $(".option-btns").has(event.target).length === 0) {
+        $(".option-btns").removeClass("option-btns-show");
+    }
+});
+
+$(".option-btns").on("click", function (event) {
+    event.stopPropagation(); // Prevent the click event from propagating to the document
+    $(".option-btns").removeClass("option-btns-show");
+});
+</script>
+
+
+</body>
+
+</html>
