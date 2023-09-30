@@ -67,7 +67,7 @@
 // ===============================================data table
 
 // ===============================================data table buttons===========================
-.data-table-style{
+.data-table-style {
   width: 100% !important;
 }
 table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
@@ -224,7 +224,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   // text-align: center !important;
   @media only screen and (max-width: 600px) {
     padding: 12px 6px !important;
-      text-align: center !important;
+    text-align: center !important;
   }
   @media only screen and (max-width: 400px) {
     padding: 10px 5px !important;
@@ -239,7 +239,7 @@ div.dataTables_wrapper div.dataTables_filter input {
   // text-align: center !important;
   vertical-align: middle;
   @media only screen and (max-width: 600px) {
-      text-align: center !important;
+    text-align: center !important;
     padding: 12px 6px !important;
   }
   @media only screen and (max-width: 400px) {
@@ -383,17 +383,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .in-active {
   background-color: rgb(143, 141, 141);
   color: white !important;
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width: 600px) {
     padding: 2px 5px !important;
     font-size: 12px;
   }
-
 }
 .active-now {
- 
-  background-color: #31b131 ;
+  background-color: #31b131;
   color: white;
-  @media only screen and (max-width:600px){
+  @media only screen and (max-width: 600px) {
     padding: 2px 5px !important;
     font-size: 12px;
   }
@@ -429,18 +427,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     text-align: center;
   }
 }
-.select-active{
+.select-active {
   padding: 4px 7px !important;
   border-radius: 5px !important;
   width: 100px;
   margin: 0px auto;
   font-size: 14px;
   &:active,
-  &:focus{
+  &:focus {
     outline: none !important;
     box-shadow: none !important;
   }
-  @media only screen and (max-width:400px){
+  @media only screen and (max-width: 400px) {
     font-size: 12px;
     width: 85px;
   }
@@ -474,11 +472,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border-color: white transparent transparent transparent;
   pointer-events: none;
 }
-.form-select:focus{
+.form-select:focus {
   // border-color: transparent !important;
   box-shadow: none !important;
 }
-.bussiness-n{
+.bussiness-n {
   font-size: 12px;
   color: $gray !important;
 }
@@ -765,3 +763,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 // table.dataTable tbody td.no-padding {
 //   padding: 0;
 // }
+.target-cell {
+  display: flex;
+  align-items: center;
+
+}

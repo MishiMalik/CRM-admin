@@ -884,6 +884,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     .pagination .active .page-link {
       color: white !important; }
 
+.target-cell {
+  display: flex;
+  align-items: center; }
+
 .modal-medium {
   max-width: 700px !important; }
   .modal-medium .modal-content {
