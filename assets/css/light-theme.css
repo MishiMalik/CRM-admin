@@ -71,6 +71,40 @@
   font-size: 15px;
   font-weight: 500; }
 
+#file {
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  left: 5px;
+  height: 25px;
+  opacity: 0;
+  width: 135px;
+  padding: 7px 0px;
+  background-color: red; }
+
+/* Style the custom label as a button */
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 4px 12px;
+  cursor: pointer;
+  color: black;
+  border-radius: 3px;
+  width: 135px; }
+
+/* Style the label when hovering */
+.custom-file-upload:hover {
+  background-color: #f0f0f0; }
+
+/* Style the delete icon (X) */
+.delete-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 25px !important;
+  color: red; }
+
 body {
   font-family: "Poppins", sans-serif; }
   body::-webkit-scrollbar {
@@ -1019,6 +1053,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #efeffd;
   padding: 0px; }
+  .person-card .person-img {
+    border-radius: 10px 10px 0px 0px; }
   .person-card .person-detail {
     position: relative;
     z-index: 2;
