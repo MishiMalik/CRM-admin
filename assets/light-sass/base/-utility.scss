@@ -50,7 +50,7 @@
 
 /* Style the custom label as a button */
 .custom-file-upload {
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     display: inline-block;
     padding: 4px 12px;
     cursor: pointer;
@@ -64,10 +64,13 @@
 .custom-file-upload:hover {
     background-color: #f0f0f0;
 }
+// .selected-file-name{
+//     margin: 7px 12px; 
+// }
  /* Style the delete icon (X) */
  .delete-icon {
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     right: 10px;
     cursor: pointer;
     font-size: 25px !important;

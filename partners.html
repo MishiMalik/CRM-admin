@@ -1158,7 +1158,7 @@
                                     <div class="form-floating mb-3">
                                         <input type="text" class="form-control crm-input" id="name"
                                             placeholder="Mickel">
-                                        <label class="crm-label form-label" for="name">Client Name<span
+                                        <label class="crm-label form-label" for="name">Partner Name<span
                                                 class="text-danger">*</span></label>
                                     </div>
                                 </div>
@@ -1234,7 +1234,7 @@
                                     <label class="file crm-input pb-1 w-100" style="position: relative;">
                                         <label class="crm-label form-label " for="commission">Picture <span
                                                 class="f-12">(Optional)</span></label><br>
-                                        <label for="file" class="custom-file-upload">
+                                        <label for="file" class="custom-file-upload"  id="upload-text">
                                             <span>Click to Upload <Picture></Picture></span>
                                         </label>
                                         <span id="selected-file-name" style="display: none;"></span>
@@ -1247,7 +1247,7 @@
 
 
                                 <div class="col-lg-12">
-                                    <div class="d-flex justify-content-end mt-3 mb-2">
+                                    <div class="d-flex justify-content-lg-end justify-content-center mt-3 mb-3">
                                         <button type="button" class="modal-btn-cancel me-3"
                                             data-bs-dismiss="modal">Cancel</button>
                                         <button type="button" class="modal-btn-save ">Save </button>
@@ -1291,6 +1291,7 @@
         const fileInput = document.querySelector('#file');
         const selectedFileName = document.querySelector('#selected-file-name');
         const deleteIcon = document.querySelector('#delete-icon');
+        const uploadText = document.querySelector('#upload-text');
 
         customFileUpload.addEventListener('click', () => {
             fileInput.click();
@@ -1301,15 +1302,22 @@
             selectedFileName.textContent = fileName;
             selectedFileName.style.display = 'inline';
             deleteIcon.style.display = 'inline';
+            uploadText.style.display = 'none'; // Hide the "Click here to upload" text
         });
 
-        deleteIcon.addEventListener('click', () => {
-            event.preventDefault(); 
+        deleteIcon.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevent the file dialog from opening
             fileInput.value = ''; // Clear the selected file
             selectedFileName.textContent = '';
             selectedFileName.style.display = 'none';
             deleteIcon.style.display = 'none';
+            uploadText.style.display = 'block'; // Show the "Click here to upload" text
         });
+
+        // If there's an initial file selection, hide the "Click here to upload" text
+        if (fileInput.value) {
+            uploadText.style.display = 'none';
+        }
     </script>
 
 </body>

@@ -7,6 +7,7 @@
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #efeffd;
   padding: 0px;
+  height: 100%;
   .person-img{
     border-radius: 10px 10px 0px 0px;
   }
@@ -21,6 +22,12 @@
         font-weight: 400;
         text-align: center;
     }
+    h2{
+      color: $secondry;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+  }
     p{
         font-size: 14px;
         font-weight: 400;
@@ -34,6 +41,10 @@
         &:hover{
             color: $secondry;
         }
+    }
+    i{
+      font-size: 14px;
+      color: green;
     }
   }
   .contact-icon {
@@ -202,4 +213,12 @@
             border-bottom: 3px solid green; 
         }
     }
+}
+.person-image{
+  position: relative;
+  .dots-dropdown{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
