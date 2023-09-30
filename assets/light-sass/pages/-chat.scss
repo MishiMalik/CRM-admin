@@ -12,12 +12,15 @@
     @media only screen and (max-width: 991px) {
       height: calc(100vh - 100px);
     }
+    @media only screen and (max-width: 580px) {
+        height: calc(100vh - 150px);
+      }
     // @media only screen and (max-width: 1024px) {
     //     height: calc(100vh - 90px);
     //   }
-      @media only screen and (max-width: 570px) {
-        height: calc(100vh - 150px);
-      }
+    //   @media only screen and (max-width: 570px) {
+    //     height: calc(100vh - 150px);
+    //   }
     &-chats {
       width: 300px;
       border-right: 1px solid $light-skin;
@@ -26,15 +29,21 @@
       @media only screen and (max-width: 1200px) {
         width: 100%;
       }
+      @media only screen and (max-width: 991px) {
+        height: calc(100vh - 100px);
+      }
+      @media only screen and (max-width: 580px) {
+          height: calc(100vh - 150px);
+        }
     //   @media only screen and (max-width: 1200px) {
     //     height: calc(100vh - 150px);
     //   }
     //   @media only screen and (max-width: 1024px) {
     //     height: calc(100vh - 90px);
     //   }
-      @media only screen and (max-width: 570px) {
-        height: calc(100vh - 200px);
-      }
+    //   @media only screen and (max-width: 570px) {
+    //     height: calc(100vh - 200px);
+    //   }
       &--header {
         height: 60px;
         border-bottom: 1px solid #e8e8e8;
@@ -76,11 +85,14 @@
               }
         }
         @media only screen and (max-width: 991px) {
-            height: calc(100vh - 100px);
+            height: calc(100vh - 169px);
           }
           @media only screen and (max-width: 580px) {
-            height: calc(100vh - 160px);
+            height: calc(100vh - 210px);
           }
+        //   @media only screen and (max-width: 580px) {
+        //     height: calc(100vh - 169px);
+        //   }
         // padding-bottom: 30px;
         // @media only screen and (max-width: 1200px) {
         //   height: calc(100vh - 155px);
@@ -101,6 +113,9 @@
           border-radius: 10px;
         }
         &--body {
+            @media only screen and (max-width: 991px) {
+                padding-bottom: 10px !important;
+              }
           .conversation {
             padding: 9px 10px;
             margin-top: 5px;
@@ -222,15 +237,15 @@
         overflow-y: scroll;
         // padding-bottom: 20px;
   
-        @media only screen and (max-width: 991px) {
-          height: calc(100vh - 222px);
-        }
-        @media only screen and (max-width: 767px) {
-          height: calc(100vh - 230px);
-        }
-        @media only screen and (max-width: 580px) {
-            height: calc(100vh - 280px);
-          }
+        // @media only screen and (max-width: 991px) {
+        //   height: calc(100vh - 222px);
+        // }
+        // @media only screen and (max-width: 767px) {
+        //   height: calc(100vh - 230px);
+        // }
+        // @media only screen and (max-width: 580px) {
+        //     height: calc(100vh - 280px);
+        //   }
         &::-webkit-scrollbar {
           width: 5px;
         }

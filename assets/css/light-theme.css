@@ -1956,7 +1956,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   @media only screen and (max-width: 991px) {
     .chat__screen {
       height: calc(100vh - 100px); } }
-  @media only screen and (max-width: 570px) {
+  @media only screen and (max-width: 580px) {
     .chat__screen {
       height: calc(100vh - 150px); } }
   .chat__screen-chats {
@@ -1967,9 +1967,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     @media only screen and (max-width: 1200px) {
       .chat__screen-chats {
         width: 100%; } }
-    @media only screen and (max-width: 570px) {
+    @media only screen and (max-width: 991px) {
       .chat__screen-chats {
-        height: calc(100vh - 200px); } }
+        height: calc(100vh - 100px); } }
+    @media only screen and (max-width: 580px) {
+      .chat__screen-chats {
+        height: calc(100vh - 150px); } }
     .chat__screen-chats--header {
       height: 60px;
       border-bottom: 1px solid #e8e8e8;
@@ -2005,10 +2008,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         border-radius: 10px; }
       @media only screen and (max-width: 991px) {
         .chat__screen-chats-wrapper {
-          height: calc(100vh - 100px); } }
+          height: calc(100vh - 169px); } }
       @media only screen and (max-width: 580px) {
         .chat__screen-chats-wrapper {
-          height: calc(100vh - 160px); } }
+          height: calc(100vh - 210px); } }
       .chat__screen-chats-wrapper::-webkit-scrollbar {
         width: 5px; }
       .chat__screen-chats-wrapper::-webkit-scrollbar-track {
@@ -2016,6 +2019,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       .chat__screen-chats-wrapper::-webkit-scrollbar-thumb {
         background-color: transparent;
         border-radius: 10px; }
+      @media only screen and (max-width: 991px) {
+        .chat__screen-chats-wrapper--body {
+          padding-bottom: 10px !important; } }
       .chat__screen-chats-wrapper--body .conversation {
         padding: 9px 10px;
         margin-top: 5px;
@@ -2113,15 +2119,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       padding: 5px 20px;
       height: calc(100vh - 250px);
       overflow-y: scroll; }
-      @media only screen and (max-width: 991px) {
-        .chat__screen-body-msgs {
-          height: calc(100vh - 222px); } }
-      @media only screen and (max-width: 767px) {
-        .chat__screen-body-msgs {
-          height: calc(100vh - 230px); } }
-      @media only screen and (max-width: 580px) {
-        .chat__screen-body-msgs {
-          height: calc(100vh - 280px); } }
       .chat__screen-body-msgs::-webkit-scrollbar {
         width: 5px; }
       .chat__screen-body-msgs::-webkit-scrollbar-track {
