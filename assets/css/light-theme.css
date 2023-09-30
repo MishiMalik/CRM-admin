@@ -2008,7 +2008,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         border-radius: 10px; }
       @media only screen and (max-width: 991px) {
         .chat__screen-chats-wrapper {
-          height: calc(100vh - 169px); } }
+          height: calc(100vh - 160px); } }
       @media only screen and (max-width: 580px) {
         .chat__screen-chats-wrapper {
           height: calc(100vh - 260px); } }
@@ -2119,6 +2119,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       padding: 5px 20px;
       height: calc(100vh - 250px);
       overflow-y: scroll; }
+      @media only screen and (max-width: 991px) {
+        .chat__screen-body-msgs {
+          height: calc(100vh - 225px); } }
+      @media only screen and (max-width: 580px) {
+        .chat__screen-body-msgs {
+          height: calc(100vh - 330px); } }
       .chat__screen-body-msgs::-webkit-scrollbar {
         width: 5px; }
       .chat__screen-body-msgs::-webkit-scrollbar-track {

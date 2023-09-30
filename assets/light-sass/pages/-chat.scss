@@ -85,7 +85,7 @@
               }
         }
         @media only screen and (max-width: 991px) {
-            height: calc(100vh - 169px);
+            height: calc(100vh - 160px);
           }
           @media only screen and (max-width: 580px) {
             height: calc(100vh - 260px);
@@ -237,9 +237,12 @@
         overflow-y: scroll;
         // padding-bottom: 20px;
   
-        // @media only screen and (max-width: 991px) {
-        //   height: calc(100vh - 222px);
-        // }
+        @media only screen and (max-width: 991px) {
+          height: calc(100vh - 225px);
+        }
+        @media only screen and (max-width: 580px) {
+            height: calc(100vh - 330px);
+          }
         // @media only screen and (max-width: 767px) {
         //   height: calc(100vh - 230px);
         // }
