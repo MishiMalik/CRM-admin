@@ -1090,6 +1090,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     .person-card .person-detail i {
       font-size: 14px;
       color: green; }
+      @media only screen and (max-width: 400px) {
+        .person-card .person-detail i {
+          font-size: 12px; } }
   .person-card .contact-icon {
     cursor: pointer;
     margin-top: -36px; }
@@ -1139,6 +1142,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   padding: 0;
   border: none; }
 
+.dots-btn2 {
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  padding: 0px;
+  border: none;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .dots-menu {
   background-color: white;
   background-color: #ffffff;
@@ -1157,6 +1171,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border: 1px solid #efeffd;
   display: none; }
 
+.dots-menu .dropdown-item,
+dots-menu2 .dropdown-item {
+  font-size: 14px; }
+
 .dots-dropdown {
   position: relative;
   text-align: left; }
@@ -1168,11 +1186,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   left: 15px;
   display: block; }
 
-.dots-btn:active ~ .dots-menu2,
-.dots-btn:focus ~ .dots-menu2 {
+.dots-btn2:active ~ .dots-menu2,
+.dots-btn2:focus ~ .dots-menu2 {
   position: absolute;
   top: 0px;
-  right: 15px;
+  right: 20px;
   display: block; }
 
 .person-flag {
