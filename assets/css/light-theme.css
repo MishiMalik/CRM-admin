@@ -1958,7 +1958,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       height: calc(100vh - 100px); } }
   @media only screen and (max-width: 580px) {
     .chat__screen {
-      height: calc(100vh - 200px); } }
+      height: calc(100vh - 195px); } }
   .chat__screen-chats {
     width: 300px;
     border-right: 1px solid #f6f6f6;
@@ -1972,7 +1972,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         height: calc(100vh - 100px); } }
     @media only screen and (max-width: 580px) {
       .chat__screen-chats {
-        height: calc(100vh - 200px); } }
+        height: calc(100vh - 195px); } }
     .chat__screen-chats--header {
       height: 60px;
       border-bottom: 1px solid #e8e8e8;
@@ -2011,7 +2011,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
           height: calc(100vh - 169px); } }
       @media only screen and (max-width: 580px) {
         .chat__screen-chats-wrapper {
-          height: calc(100vh - 260px); } }
+          height: calc(100vh - 255px); } }
       .chat__screen-chats-wrapper::-webkit-scrollbar {
         width: 5px; }
       .chat__screen-chats-wrapper::-webkit-scrollbar-track {
