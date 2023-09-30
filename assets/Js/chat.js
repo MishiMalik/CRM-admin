@@ -123,3 +123,16 @@
   });
   
   
+// Remove footer when virtusl keyboard is open
+var initialScreenSize = window.innerHeight; 
+window.addEventListener("resize", function() {
+   if(window.innerHeight < initialScreenSize){
+        $(".menu-footer").hide(); 
+   } else{ 
+        if($(window).width() < 767) {
+            $(".menu-footer").show(); 
+        }
+       
+   } 
+    
+});
