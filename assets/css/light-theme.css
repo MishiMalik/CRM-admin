@@ -1710,7 +1710,8 @@ dots-menu2 .dropdown-item {
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #efeffd;
   padding: 20px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 0; }
   @media only screen and (max-width: 1270px) and (min-width: 1200px) {
     .box {
       padding: 20px 10px; } }
