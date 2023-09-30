@@ -29,7 +29,7 @@
     <title>Document</title>
 </head>
 
-<body class="theme chat-body" >
+<body class="theme chat-body">
 
     <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
         <!-- ---------------------Side bar-------------- -->
@@ -722,7 +722,7 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Jhon Doe3</h2>
+                                                <h2 class="mb-0 pb-0">Jhon Doe4</h2>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -1519,23 +1519,23 @@
     <script src="assets/Js/app.js"></script>
     <script src="assets/Js/layout.js"></script>
     <script src="assets/Js/chat.js"></script>
-<script>
-   $(".show-options").on("click", function (event) {
-    event.stopPropagation(); // Prevent the click event from propagating to the document
-    $(".option-btns").toggleClass("option-btns-show");
-});
+    <script>
+        $(".show-options").on("click", function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the document
+            $(".option-btns").toggleClass("option-btns-show");
+        });
 
-$(document).on("click", function (event) {
-    if (!$(".option-btns").is(event.target) && $(".option-btns").has(event.target).length === 0) {
-        $(".option-btns").removeClass("option-btns-show");
-    }
-});
+        $(document).on("click", function (event) {
+            if (!$(".option-btns").is(event.target) && $(".option-btns").has(event.target).length === 0) {
+                $(".option-btns").removeClass("option-btns-show");
+            }
+        });
 
-$(".option-btns").on("click", function (event) {
-    event.stopPropagation(); // Prevent the click event from propagating to the document
-    $(".option-btns").removeClass("option-btns-show");
-});
-</script>
+        $(".option-btns").on("click", function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the document
+            $(".option-btns").removeClass("option-btns-show");
+        });
+    </script>
 
 
 </body>
