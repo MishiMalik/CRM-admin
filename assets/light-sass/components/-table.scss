@@ -766,5 +766,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .target-cell {
   display: flex;
   align-items: center;
-
 }
+.project-name{
+  width: 180px;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  @media only screen and (max-width:500px){
+    width: 160px;
+  }
+  @media only screen and (max-width:350px){
+    width: 130px;
+  }
+
+  }

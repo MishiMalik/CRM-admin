@@ -269,7 +269,25 @@
     border-radius: 10px;
   }
 }
+.recent-activities2 {
+  height: 430px;
+  overflow-y: auto;
+  @media only screen and (max-width:991px){
+    height:100%;
+  }
+  &::-webkit-scrollbar {
+    width: 5px !important;
+  }
 
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+}
 .select-duration{
 padding: 0 27px!important;
 border: none;
@@ -277,10 +295,4 @@ font-size: 14px;
 width: fit-content;
 margin-right: -10px;
 margin-top: -2px;
-}
-.project-name{
-width: 140px;
-white-space: nowrap !important;
-overflow: hidden !important;
-text-overflow: ellipsis !important;
 }
