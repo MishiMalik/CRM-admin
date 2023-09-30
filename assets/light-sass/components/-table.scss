@@ -313,6 +313,7 @@ div.dataTables_wrapper div.dataTables_filter input {
       color: black !important;
     }
   }
+
   .dropdown-menu {
     position: absolute !important;
     top: 30px !important;
@@ -332,6 +333,9 @@ div.dataTables_wrapper div.dataTables_filter input {
       }
     }
   }
+  // .dropdown-menu2{
+  //  right: 20px !important;
+  // }
 }
 // ==========================================client table
 .client-table.dataTable > tbody > tr.child span.dtr-title {

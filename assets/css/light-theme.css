@@ -1148,6 +1148,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border: 1px solid #efeffd;
   display: none; }
 
+.dots-menu2 {
+  background-color: white;
+  background-color: #ffffff;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #efeffd;
+  display: none; }
+
 .dots-dropdown {
   position: relative;
   text-align: left; }
@@ -1157,6 +1166,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   position: absolute;
   top: 0px;
   left: 15px;
+  display: block; }
+
+.dots-btn:active ~ .dots-menu2,
+.dots-btn:focus ~ .dots-menu2 {
+  position: absolute;
+  top: 0px;
+  right: 15px;
   display: block; }
 
 .person-flag {
