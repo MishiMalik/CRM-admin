@@ -1997,7 +1997,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         padding-bottom: 10px !important;
         justify-content: center;
         cursor: pointer; }
-      .chat__screen-chats--header .active {
+      .chat__screen-chats--header .active-tab {
         border-bottom: 3px solid #31d4f0; }
     .chat__screen-chats-wrapper {
       background-color: transparent;
@@ -2048,42 +2048,48 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
             border: none !important;
             border-radius: 100%;
             object-position: top; }
-        .chat__screen-chats-wrapper--body .conversation-text h2 {
-          font-size: 14px;
-          line-height: 14px;
-          font-weight: 500;
-          color: black;
-          margin-bottom: 5px !important;
-          padding-bottom: 0px !important;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          width: 180px;
-          white-space: nowrap; }
-          @media only screen and (max-width: 1200px) {
-            .chat__screen-chats-wrapper--body .conversation-text h2 {
-              width: 550px; } }
-          @media only screen and (max-width: 767px) {
-            .chat__screen-chats-wrapper--body .conversation-text h2 {
-              width: 400px; } }
-          @media only screen and (max-width: 500px) {
-            .chat__screen-chats-wrapper--body .conversation-text h2 {
-              width: 200px; } }
-        .chat__screen-chats-wrapper--body .conversation-text p {
-          font-size: 12px;
-          font-weight: 400;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          width: 180px;
-          white-space: nowrap; }
-          @media only screen and (max-width: 1200px) {
-            .chat__screen-chats-wrapper--body .conversation-text p {
-              width: 550px; } }
-          @media only screen and (max-width: 767px) {
-            .chat__screen-chats-wrapper--body .conversation-text p {
-              width: 400px; } }
-          @media only screen and (max-width: 500px) {
-            .chat__screen-chats-wrapper--body .conversation-text p {
-              width: 200px; } }
+        .chat__screen-chats-wrapper--body .conversation-text {
+          position: relative;
+          width: 90%; }
+          .chat__screen-chats-wrapper--body .conversation-text h2 {
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 500;
+            color: black;
+            margin-bottom: 5px !important;
+            padding-bottom: 0px !important;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 160px;
+            white-space: nowrap; }
+            @media only screen and (max-width: 1200px) {
+              .chat__screen-chats-wrapper--body .conversation-text h2 {
+                width: 520px; } }
+            @media only screen and (max-width: 767px) {
+              .chat__screen-chats-wrapper--body .conversation-text h2 {
+                width: 370px; } }
+            @media only screen and (max-width: 500px) {
+              .chat__screen-chats-wrapper--body .conversation-text h2 {
+                width: 170px; } }
+          .chat__screen-chats-wrapper--body .conversation-text span {
+            font-size: 10px;
+            padding-bottom: 7px; }
+          .chat__screen-chats-wrapper--body .conversation-text p {
+            font-size: 12px;
+            font-weight: 400;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 180px;
+            white-space: nowrap; }
+            @media only screen and (max-width: 1200px) {
+              .chat__screen-chats-wrapper--body .conversation-text p {
+                width: 550px; } }
+            @media only screen and (max-width: 767px) {
+              .chat__screen-chats-wrapper--body .conversation-text p {
+                width: 400px; } }
+            @media only screen and (max-width: 500px) {
+              .chat__screen-chats-wrapper--body .conversation-text p {
+                width: 200px; } }
       .chat__screen-chats-wrapper--body .active-conversation {
         background-color: #f6f6f6;
         border-left: 3px solid blue; }
@@ -2244,7 +2250,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       width: 70%;
       padding: 10px 10px;
       opacity: 1;
-      border: none;
+      border: none !important;
       background-color: transparent; }
       .msg-type-area--input input:active, .msg-type-area--input input:focus {
         outline: none;
@@ -2380,3 +2386,45 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .option-btns-show {
   display: block; }
+
+.tabcontent {
+  display: none; }
+
+.unread {
+  font-weight: 500 !important;
+  font-size: 14px !important; }
+
+.msg-number {
+  position: absolute;
+  top: 17px;
+  right: 4px;
+  height: 22px;
+  width: 22px;
+  border-radius: 100%;
+  background-color: rgba(49, 212, 240, 0.9);
+  font-size: 14px !important;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0px;
+  text-align: center;
+  vertical-align: middle; }
+
+.span6 {
+  float: left;
+  width: 48%;
+  padding: 1%; }
+
+.emojionearea-standalone {
+  float: right; }
+
+.emojionearea, .emojionearea.form-control {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important; }
+
+@media only screen and (max-width: 580px) {
+  .emojionearea-button {
+    display: none !important; } }

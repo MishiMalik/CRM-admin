@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" href="https://rawgit.com/mervick/emojionearea/master/dist/emojionearea.min.css">
+    <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
+    <link rel="stylesheet" href="https://emoji-css.afeld.me/emoji.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
@@ -711,10 +714,15 @@
                             <!-- chats -->
                             <div class="chat__screen-chats chats-name">
                                 <div class="chat__screen-chats--header d-flex justify-content-between">
-                                    <p class="mb-0 pb-0 active">All Chats</p>
-                                    <p class="mb-0 pb-0 ms-2">Unread</p>
+                                    <p class="mb-0 pb-0 active-tab tablinks" onclick="openCity(event, 'all')"
+                                        id="defaultOpen">All Chats</p>
+                                    <p class="mb-0 pb-0 ms-2 tablinks" onclick="openCity(event, 'unread')">Unread</p>
                                 </div>
-                                <div class="chat__screen-chats-wrapper pb-4">
+
+
+
+
+                                <div class="chat__screen-chats-wrapper pb-4 tabcontent" id="all">
                                     <div class="chat__screen-chats-wrapper--body pb-lg-0 pb-5">
                                         <!-- chat  -->
                                         <div class="conversation">
@@ -722,8 +730,12 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Jhon Doe10</h2>
-                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
+                                                <p class="mb-0 pb-0 unread">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
                                                     aperiam
@@ -733,6 +745,7 @@
                                                     soluta
                                                     mollitia
                                                     minima perferendis quisquam!</p>
+                                                <h3 class="msg-number">3</h3>
                                             </div>
                                         </div>
 
@@ -742,7 +755,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Jack Roe</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -761,7 +777,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -780,7 +799,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -799,7 +821,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -818,7 +843,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -839,7 +867,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -858,47 +889,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
-                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                    elit.
-                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
-                                                    aperiam
-                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
-                                                    ea magni
-                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
-                                                    soluta
-                                                    mollitia
-                                                    minima perferendis quisquam!</p>
-                                            </div>
-                                        </div>
-
-
-                                        <!-- chat  -->
-                                        <div class="conversation ">
-                                            <div class="conversation-img">
-                                                <img src="assets/images/vatar.png" alt="">
-                                            </div>
-                                            <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
-                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
-                                                    elit.
-                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
-                                                    aperiam
-                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
-                                                    ea magni
-                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
-                                                    soluta
-                                                    mollitia
-                                                    minima perferendis quisquam!</p>
-                                            </div>
-                                        </div>
-                                        <!-- chat  -->
-                                        <div class="conversation ">
-                                            <div class="conversation-img">
-                                                <img src="assets/images/vatar.png" alt="">
-                                            </div>
-                                            <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -919,7 +913,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -938,7 +935,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -959,7 +959,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">Mehwish Gul</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -978,7 +981,10 @@
                                                 <img src="assets/images/vatar.png" alt="">
                                             </div>
                                             <div class="conversation-text ms-2 ps-1">
-                                                <h2 class="mb-0 pb-0">AB Divilar</h2>
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
                                                 <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
                                                     elit.
                                                     Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
@@ -989,6 +995,106 @@
                                                     soluta
                                                     mollitia
                                                     minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
+                                                <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="chat__screen-chats-wrapper pb-4 tabcontent" id="unread">
+                                    <div class="chat__screen-chats-wrapper--body pb-lg-0 pb-5">
+
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
+                                                <p class="mb-0 pb-0 unread">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                                <h3 class="msg-number">1</h3>
+                                            </div>
+                                        </div>
+                                        <!-- chat  -->
+                                        <div class="conversation ">
+                                            <div class="conversation-img">
+                                                <img src="assets/images/vatar.png" alt="">
+                                            </div>
+                                            <div class="conversation-text ms-2 ps-1">
+                                                <div class="d-flex justify-content-between align-items-center ">
+                                                    <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                                    <span>12:00am</span>
+                                                </div>
+                                                <p class="mb-0 pb-0 unread">Lorem ipsum dolor sit amet consectetur,
+                                                    adipisicing
+                                                    elit.
+                                                    Pariatur odit, minus necessitatibus quam, rerum quo perspiciatis
+                                                    aperiam
+                                                    dignissimos in iste ullam excepturi reiciendis. Ipsam nihil tempore
+                                                    ea magni
+                                                    natus officiis! Repudiandae placeat officiis impedit quibusdam
+                                                    soluta
+                                                    mollitia
+                                                    minima perferendis quisquam!</p>
+                                                <h3 class="msg-number">3</h3>
                                             </div>
                                         </div>
 
@@ -1006,7 +1112,10 @@
                                             <img src="assets/images/vatar.png" alt="">
                                         </div>
                                         <div class="open-chat-header-text ms-2 ps-1">
-                                            <h2 class="mb-0 pb-0">Jhon Doe</h2>
+                                            <div class=" ">
+                                                <h2 class="mb-0 pb-0 mt-2">Jhon Doe</h2>
+                                                <span class="f-12 text-success mb-0 pb-0">Active</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1167,7 +1276,7 @@
                                         </div>
                                         <div
                                             class="msg-type-area--input d-flex align-items-center justify-content-between">
-                                            <input type="text" placeholder="Type your message">
+                                            <input type="text" placeholder="Type your message" id="emojionearea1">
                                             <div class="d-flex align-items-center chat-btns">
                                                 <div class="option-btns ">
                                                     <button id="fileButton">
@@ -1223,7 +1332,9 @@
                                                         </g>
                                                     </svg>
                                                 </button>
-
+                                                <!-- <div class="span6">
+                                                    <textarea id="emojionearea1">Default :smile:</textarea>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1536,8 +1647,45 @@
             $(".option-btns").removeClass("option-btns-show");
         });
     </script>
+    <script src="https://rawgit.com/mervick/emojionearea/master/dist/emojionearea.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $("#emojionearea1").emojioneArea({
 
+                pickerPosition: "top",
+                tonesStyle: "bullet",
+                events: {
+                    keyup: function (editor, event) {
+                        d
+                        console.log(editor.html());
+                        console.log(this.getText());
+                    }
+                }
+            });
 
+            $('#divOutside').click(function () {
+                $('.emojionearea-button').click()
+            })
+            // ==================================upload
+            // let input = document.getElementById("inputTag");
+            // let imageName = document.getElementById("imageName")
+
+            // input.addEventListener("change", () => {
+            //     let inputImage = document.querySelector("input[type=file]").files[0];
+
+            //     imageName.innerText = inputImage.name;
+            // })
+
+        });
+    </script> -->
+    <script>
+        $(document).ready(function () {
+            $("#emojionearea1").emojioneArea({
+                pickerPosition: "top",
+                tonesStyle: "bullet"
+            });
+        })
+    </script>
 </body>
 
 </html>
