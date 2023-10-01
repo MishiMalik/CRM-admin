@@ -74,21 +74,29 @@ $(document).ready(function () {
 
 // =====================================quick menu
 $(".side-menu-quick-btn").on("click", function () {
-  $(".side-menu-quick").css("right", "0px");
+  $("#side-menu-quick").css("right", "0px");
   $("#overlay-all").css("display", "block");
 });
 $(".close-btn").on("click", function () {
-  $(".side-menu-quick").css("right", "-400px");
+  $("#side-menu-quick").css("right", "-400px");
   $("#overlay-all").css("display", "none");
 });
-
+$("#documents-btn").on("click", function () {
+  $("#documents-menu").css("right", "0px");
+  $("#overlay-all").css("display", "block");
+});
+$(".close-btn").on("click", function () {
+  $("#documents-menu").css("right", "-400px");
+  $("#overlay-all").css("display", "none");
+});
 $("#overlay-all").on("click", function () {
   $(this).css("display", "none");
-  $(".side-menu-quick").css("right", "-400px");
+  $("#side-menu-quick").css("right", "-400px");
+  $("#documents-menu").css("right", "-400px");
   $(".side-menu-ticket").css("right", "-400px");
   $(".menu-footer-popup").toggleClass("menu-footer-popup-show");
   $(".overlay").toggleClass("overlay-show");
-  $('#show-more-menu').toggleClass("active-footer-menu");
+  $("#show-more-menu").toggleClass("active-footer-menu");
 });
 
 // =====================================ticket menu
@@ -122,7 +130,6 @@ $("#show-more-menu").on("click", function () {
   $(this).toggleClass("active-footer-menu");
 });
 
-
 function applyStyles2() {
   const screenWidth = $(window).width();
 
@@ -147,7 +154,6 @@ function applyStyles2() {
     $("#show-more-menu").on("click", function () {
       $(".theme").toggleClass("theme-override");
     });
-    
   }
 }
 

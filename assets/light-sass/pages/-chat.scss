@@ -689,3 +689,49 @@
             display: none !important;
         }
       }
+
+
+    //   ============================================document
+    .doc-card{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        padding: 10px 5px;
+        &:hover{
+            background-color: $light-skin;
+             border-radius: 4px;
+        }
+        .icon{
+            width: 40px;
+            height: 40px;
+            border-radius: 7px;
+            padding: 10px;
+            background-color: rgba($secondry, 0.5);
+            display: flex;
+            justify-content:center ;
+            align-items: center;
+            flex-shrink: 0;
+            i{
+                font-size: 20px;
+                color: white;
+            }
+        }
+        .doc-detail{
+            margin-left: 10px;
+            h1{
+                font-size: 14px;
+                font-weight: 500;
+                color: black;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 220px;
+                line-height: 14px;
+            }
+            span{
+                font-size: 14px;
+                color: $gray;
+            }
+        }
+    }
