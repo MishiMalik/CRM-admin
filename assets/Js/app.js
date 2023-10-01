@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.getElementById("toggleTheme");
   const themeLink = document.getElementById("theme-link");
   const logoImage = document.getElementById("logo-image");
+  const logoImagesm = document.getElementById("logo-image-sm");
   const lightThemeURL = "assets/css/light-theme.css";
   const darkThemeURL = "assets/css/dark-theme.css";
   const lightLogoURL = "assets/images/DigiSplix-Logo-for-Light-Mode.png";
@@ -28,10 +29,12 @@ document.addEventListener("DOMContentLoaded", function () {
     if (themeLink.href.includes(lightThemeURL)) {
       themeLink.href = darkThemeURL;
       logoImage.src = darkLogoURL; // Update the logo for dark theme
+      logoImagesm.src = darkLogoURL; // Update the logo for dark theme
       alert("Switching to dark theme");
     } else {
       themeLink.href = lightThemeURL;
       logoImage.src = lightLogoURL; // Update the logo for light theme
+      logoImagesm.src = lightLogoURL; // Update the logo for light theme
       alert("Switching to light theme");
     }
   });

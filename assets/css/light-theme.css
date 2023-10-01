@@ -1184,16 +1184,21 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #efeffd;
   display: none;
-  position: relative; }
+  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 15px; }
 
 .dots-menu2 {
-  position: relative;
   background-color: white;
   background-color: #ffffff;
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #efeffd;
+  position: absolute;
+  top: 0px;
+  right: 20px;
   display: none; }
 
 .dots-menu .dropdown-item,
@@ -1205,18 +1210,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   text-align: left;
   z-index: 2; }
 
-.dots-btn:active ~ .dots-menu,
-.dots-btn:focus ~ .dots-menu {
-  position: absolute;
-  top: 0px;
-  left: 15px;
+.dots-menu2-show {
   display: block; }
 
-.dots-btn2:active ~ .dots-menu2,
-.dots-btn2:focus ~ .dots-menu2 {
-  position: absolute;
-  top: 0px;
-  right: 20px;
+.dots-menu-show {
   display: block; }
 
 .person-flag {

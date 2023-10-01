@@ -239,7 +239,7 @@
                     <i class="fa-duotone fa-bars-staggered header-icon"></i>
                 </a>
                 <div class="show-md align-self-center">
-                    <img src="assets/images/Logo-Png.png" alt="" class="img-fluid mobile-logo">
+                    <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid mobile-logo" id="logo-image-sm">
                 </div>
 
                 <!-- Notification -->
@@ -1319,7 +1319,38 @@
             uploadText.style.display = 'none';
         }
     </script>
+  <script>
+    // Add a click event handler for each .dots-btn element
+    // Add a click event handler for each .dots-btn element
+    $(".dots-btn").on("click", function (event) {
+        event.stopPropagation(); // Prevent the click event from propagating to the document
 
+        // Find the corresponding .dots-menu2 for the clicked .dots-btn
+        var $menu = $(this).closest('.dots-dropdown').find('.dots-menu');
+
+        // Toggle the class for the specific .dots-menu2 associated with this button
+        $menu.toggleClass("dots-menu-show");
+
+        // Remove the dots-menu-show class from all other .dots-menu2 elements
+        $(".dots-menu").not($menu).removeClass("dots-menu-show");
+    });
+
+    // Add a document click event handler to close all .dots-menu2 elements
+    $(document).on("click", function (event) {
+        if (!$(event.target).closest(".dots-dropdown").length) {
+            $(".dots-menu").removeClass("dots-menu-show");
+        }
+    });
+    // Add a click event handler for inside .dots-menu2 elements to close them
+    $(".dots-menu").on("click", function (event) {
+        $(this).removeClass("dots-menu-show");
+    });
+    // Add a click event handler for each .dots-menu2 element
+    $(".dots-menu").on("click", function (event) {
+        event.stopPropagation(); // Prevent the click event from propagating to the document
+    });
+
+</script>
 </body>
 
 </html>

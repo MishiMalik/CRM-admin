@@ -129,10 +129,13 @@
   border: 1px solid #efeffd;
   display: none;
   position: relative;
+  position: absolute;
+  top: 0px;
+  left: 15px;
   // z-index: 3;
 }
 .dots-menu2 {
-  position: relative;
+  // position: relative;
   // z-index: 3;
   background-color: white;
   background-color: #ffffff;
@@ -140,6 +143,9 @@
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   border: 1px solid #efeffd;
+  position: absolute;
+  top: 0px;
+  right: 20px;
   display: none;
 }
 .dots-menu .dropdown-item,
@@ -151,21 +157,26 @@ font-size: 14px;
   text-align: left;
   z-index:2;
 }
-.dots-btn:active ~ .dots-menu,
-.dots-btn:focus ~ .dots-menu {
-  position: absolute;
-  top: 0px;
-  left: 15px;
-  display: block;
+// .dots-btn:active ~ .dots-menu,
+// .dots-btn:focus ~ .dots-menu {
+//   // position: absolute;
+//   // top: 0px;
+//   // left: 15px;
+//   display: block;
+// }
+// .dots-btn2:active ~ .dots-menu2,
+// .dots-btn2:focus ~ .dots-menu2 {
+//   // position: absolute;
+//   // top: 0px;
+//   // right: 20px;
+//   display: block;
+// }
+.dots-menu2-show{
+  display: block ;
 }
-.dots-btn2:active ~ .dots-menu2,
-.dots-btn2:focus ~ .dots-menu2 {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  display: block;
+.dots-menu-show{
+  display: block ;
 }
-
 .person-flag {
   position: absolute;
   height: 30px;
