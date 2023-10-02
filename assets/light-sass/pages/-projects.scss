@@ -17,7 +17,7 @@
       font-weight: 600;
       color: $secondry;
     }
-   
+
     a {
       i {
         color: $gray;
@@ -28,20 +28,20 @@
         }
       }
     }
-    .project-msg{
-        position: relative;
-        .project-msg-number{
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            height: 14px;
-            width: 14px;
-            border-radius: 100%;
-            background-color:$primary;
-            font-size: 10px;
-            color: white;
-            text-align: center;
-        }
+    .project-msg {
+      position: relative;
+      .project-msg-number {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        height: 14px;
+        width: 14px;
+        border-radius: 100%;
+        background-color: $primary;
+        font-size: 10px;
+        color: white;
+        text-align: center;
+      }
     }
   }
   &-data {
@@ -59,12 +59,23 @@
       font-size: 16px;
       font-weight: 500;
       color: $dark-blue;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
     h3 {
       font-size: 14px;
       color: $gray;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-   
   }
   &-details {
     padding: 15px 20px 0px 20px;
@@ -80,50 +91,50 @@
       text-align: left;
       color: $gray;
     }
-    .paid{
-        padding: 5px 20px !important;
-        background-color: green;
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
-        border: none;
-        line-height: 14px !important; 
-        height: 35px;
-        border-radius: 5px;
-        &:hover{
-            background-color: rgb(1, 83, 1);
-        }
+    .paid {
+      padding: 5px 20px !important;
+      background-color: green;
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+      border: none;
+      line-height: 14px !important;
+      height: 35px;
+      border-radius: 5px;
+      &:hover {
+        background-color: rgb(1, 83, 1);
+      }
     }
-    .overdue{
-        padding: 5px 20px !important;
-        background-color: rgb(218, 4, 4);
-        font-size: 14px;
-        font-weight: 500;
-        color: white;
-        border: none;
-        line-height: 14px !important; 
-        height: 35px;
-        border-radius: 5px;
-        &:hover{
-            background-color: rgb(153, 8, 8);
-        }
+    .overdue {
+      padding: 5px 20px !important;
+      background-color: rgb(218, 4, 4);
+      font-size: 14px;
+      font-weight: 500;
+      color: white;
+      border: none;
+      line-height: 14px !important;
+      height: 35px;
+      border-radius: 5px;
+      &:hover {
+        background-color: rgb(153, 8, 8);
+      }
     }
-    i{
-        color: $gray;
+    i {
+      color: $gray;
     }
-    span{
-        font-weight: 500;
-        font-size: 16px;
-        color: $gray;
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      color: $gray;
     }
   }
 }
-.completed{
+.completed {
+  color: green !important;
+  i {
     color: green !important;
-    i{
-        color: green !important;
-    }
-    span{
-        color: green !important;
-    }
+  }
+  span {
+    color: green !important;
+  }
 }

@@ -2009,10 +2009,22 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     .project-card-data h1 {
       font-size: 16px;
       font-weight: 500;
-      color: #172b4c; }
+      color: #172b4c;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
     .project-card-data h3 {
       font-size: 14px;
-      color: #5c607b; }
+      color: #5c607b;
+      display: block;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis; }
   .project-card-details {
     padding: 15px 20px 0px 20px; }
     .project-card-details p {
