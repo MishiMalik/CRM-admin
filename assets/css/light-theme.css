@@ -2008,7 +2008,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       object-fit: cover; }
     .project-card-data h1 {
       font-size: 16px;
-      font-weight: 500; }
+      font-weight: 500;
+      color: #172b4c; }
     .project-card-data h3 {
       font-size: 14px;
       color: #5c607b; }
