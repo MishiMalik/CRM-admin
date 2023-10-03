@@ -708,6 +708,7 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12 ">
                         <div class="row">
+                            
                             <div class="col-xl-3  col-md-6 mb-3">
                                 <div class="box">
                                     <h1 class="box-heading">Completed</h1>
@@ -781,6 +782,13 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="col-lg-12 mb-3">
+                                <select class="form-select box ms-auto"  aria-label="Default select example">
+                                    <option selected class="w-600">Filter</option>
+                                    <option value="On-Going" class="w-500 f-16">On-Going</option>
+                                    <option value="Completed" class="w-500 f-16">Completed</option>
+                                  </select>
                             </div>
                             <div class=" col-xxl-3 col-xl-4  col-md-6 mb-3">
                                 <div class="project-card">
@@ -1226,56 +1234,7 @@
     <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     <script src="assets/Js/table.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Iterate through each select element with class .select-active
-            $(".select-active").each(function () {
-                const selectStatus = $(this);
-
-                function applyStyleToSelectedOption() {
-                    // Get the selected option
-                    const selectedOption = selectStatus.find("option:selected");
-
-                    // Get the styles from the selected option
-                    const backgroundColor = selectedOption.css("background-color");
-                    const color = selectedOption.css("color");
-
-                    // Apply the styles to the select element
-                    selectStatus.css("background-color", backgroundColor);
-                    selectStatus.css("color", color);
-
-                    // Apply the styles to the selected option
-                    selectedOption.css("background-color", backgroundColor);
-                    selectedOption.css("color", color);
-                }
-
-                // Apply the style to the selected option immediately
-                applyStyleToSelectedOption();
-
-                // Listen for the change event on this specific select element
-                selectStatus.on("change", applyStyleToSelectedOption);
-            });
-        });
-
-
-        // select for modal
-        document.addEventListener("DOMContentLoaded", function () {
-            const selectStatus = document.getElementById("select-status");
-
-            selectStatus.addEventListener("change", function () {
-                // Get the selected option
-                const selectedOption = selectStatus.options[selectStatus.selectedIndex];
-
-                // Get the styles from the selected option
-                const backgroundColor = selectedOption.style.backgroundColor;
-                const color = selectedOption.style.color;
-
-                // Apply the styles to the select element
-                selectStatus.style.backgroundColor = backgroundColor;
-                selectStatus.style.color = color;
-            });
-        });
-    </script>
+   
 
 
 

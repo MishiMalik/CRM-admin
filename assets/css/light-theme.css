@@ -54,7 +54,7 @@
       display: block !important; } }
 
 .text-primary {
-  color: #31d4f0 !important; }
+  color: #0963ce !important; }
 
 .text-danger {
   color: red !important; }
@@ -183,6 +183,104 @@ body {
     display: block; }
   .carousel__slide.scrollable {
     overflow-y: scroll; }
+
+.progresshalf {
+  position: relative;
+  margin: 4px;
+  float: left;
+  min-height: fit-content;
+  text-align: center;
+  font-size: 25px;
+  color: #feb21f; }
+  .progresshalf .barOverflow {
+    /* Wraps the rotating .bar */
+    position: relative;
+    overflow: hidden;
+    /* Comment this line to understand the trick */
+    width: 170px;
+    height: 100px;
+    /* Half circle (overflow) */
+    margin-bottom: -35px;
+    /* bring the numbers up */ }
+  .progresshalf .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 170px;
+    height: 170px;
+    /* full circle! */
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 15px solid #eee;
+    /* half gray, */
+    border-bottom-color: #feb21f;
+    /* half azure */
+    border-right-color: #feb21f; }
+
+.progress-stripped {
+  padding: 3px;
+  background: white;
+  border-radius: 6px; }
+
+.progress-bar {
+  height: 14px;
+  background-color: #ee303c;
+  border-radius: 4px;
+  transition: 0.4s linear;
+  transition-property: width, background-color; }
+
+.progress-striped .progress-bar {
+  background-color: #fcbc51;
+  width: 80%;
+  background-image: linear-gradient(45deg, #fca311 25%, transparent 25%, transparent 50%, #fca311 50%, #fca311 75%, transparent 75%, transparent);
+  animation: progressAnimationStrike 6s; }
+
+@keyframes progressAnimationStrike {
+  from {
+    width: 0; }
+  to {
+    width: 80%; } }
+
+@property --progress-value {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 0; }
+
+@keyframes html-progress {
+  to {
+    --progress-value: 62; } }
+
+.progress-bar-container {
+  background-color: transparent; }
+  .progress-bar-container .progress-bar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: black !important;
+    font-size: 12px !important;
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent; }
+    @media only screen and (max-width: 580px) {
+      .progress-bar-container .progress-bar {
+        width: 35px;
+        height: 35px;
+        font-size: 10px !important;
+        margin: 13px 0px !important; } }
+  .progress-bar-container .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) "%"; }
+  .progress-bar-container .html {
+    background: radial-gradient(closest-side, #f6f6f6 79%, transparent 80% 100%), conic-gradient(#0963ce calc(var(--progress-value) * 1%), rgba(9, 99, 206, 0.2) 0);
+    animation: html-progress 2s 1 forwards; }
+  .progress-bar-container .html::before {
+    animation: html-progress 2s 1 forwards; }
+  .progress-bar-container progress {
+    visibility: hidden;
+    width: 0;
+    height: 0; }
 
 @keyframes bounceIn {
   from,
@@ -1959,6 +2057,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   margin-right: -10px;
   margin-top: -2px; }
 
+.box-white {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #efeffd;
+  padding: 20px 15px;
+  overflow: hidden; }
+  @media only screen and (max-width: 580px) {
+    .box-white {
+      padding: 0px; } }
+
 .project-card {
   position: relative;
   width: 100%;
@@ -2075,6 +2187,146 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     color: green !important; }
   .completed span {
     color: green !important; }
+
+/* Style the tab */
+.tabProjects {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; }
+
+/* Style the buttons inside the tab */
+.tabProjects button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 16px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  flex-grow: 1;
+  background-color: rgba(9, 99, 206, 0.1);
+  color: #0963ce;
+  border-bottom: 2px dashed #0963ce; }
+
+/* Change background color of buttons on hover */
+.tabProjects button:hover {
+  border-bottom: 2px solid #0963ce; }
+
+/* Create an active/current tablink class */
+.tabProjects button.activeProjects {
+  border-bottom: 2px solid #0963ce;
+  font-weight: 600; }
+
+/* Style the tab content */
+.tabcontentProjects {
+  padding: 10px 10px;
+  display: none;
+  border-top: none; }
+
+.box-gray {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border: 1px solid #efeffd;
+  padding: 20px;
+  height: 100%; }
+  @media only screen and (max-width: 580px) {
+    .box-gray {
+      padding: 20px 5px; } }
+
+.caption {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5c607b; }
+  @media only screen and (max-width: 580px) {
+    .caption {
+      font-size: 14px; } }
+
+.caption-step {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5c607b; }
+  @media only screen and (max-width: 580px) {
+    .caption-step {
+      font-size: 10px; } }
+
+.launch-img {
+  height: 80px; }
+
+.step-count {
+  text-align: center;
+  padding: 10px; }
+  @media only screen and (max-width: 580px) {
+    .step-count {
+      padding: 5px; } }
+  .step-count i {
+    font-size: 30px; }
+    @media only screen and (max-width: 580px) {
+      .step-count i {
+        font-size: 30px; } }
+  .step-count .complete-step {
+    color: green; }
+  .step-count .in-progress-step {
+    color: #0963ce; }
+
+.progress-step-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; }
+
+.task-card {
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  border: 1px solid #efeffd;
+  padding-bottom: 15px;
+  height: 100%;
+  position: relative;
+  padding-top: 50px; }
+  .task-card--header {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: #172b4c;
+    padding: 15px;
+    background-color: #f6f6f6;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #F2F2F2; }
+  .task-card--body {
+    max-height: 280px;
+    overflow-y: scroll;
+    padding: 15px 10px;
+    padding-bottom: 0px; }
+    .task-card--body::-webkit-scrollbar {
+      width: 7px; }
+    .task-card--body::-webkit-scrollbar-thumb {
+      background-color: #aaa;
+      border-radius: 10px; }
+    .task-card--body p {
+      font-size: 14px;
+      font-weight: 400;
+      color: #5c607b;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+      .task-card--body p span {
+        color: gray; }
+    .task-card--body i {
+      color: gray; }
+    .task-card--body .complete-step {
+      color: green; }
 
 .chat-body {
   height: 100vh !important;
