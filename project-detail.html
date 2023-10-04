@@ -1227,7 +1227,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="row justify-content-center">
+                                        <div class="row justify-content-center icon-container">
                                             <div class="col-xl-6 col-lg-6 mb-3 col-sm-6">
                                                 <div class="task-card">
                                                     <div class="task-card--header">
@@ -1237,7 +1237,7 @@
                                                             <i class="bi bi-pencil-fill"></i>
                                                         </div>
                                                     </div>
-                                                    <div class="task-card--body">
+                                                    <div class="task-card--body ">
                                                         <div
                                                             class="d-flex justify-content-between align-items-start task-div">
                                                             <div class="d-flex">
@@ -1255,8 +1255,7 @@
                                                                     accusamus?</p>
                                                             </div>
                                                             <div class="d-flex">
-                                                                <i
-                                                                    class="bi bi-check-circle-fill complete-step ms-2"></i>
+                                                                <i class="bi bi-check-circle-fill complete-step ms-2"></i>
                                                                 <div class="edit-task ms-2">
                                                                     <i class="bi bi-pencil-fill"></i>
                                                                 </div>
@@ -1274,7 +1273,7 @@
                                                             </div>
                                                             <div class="d-flex">
                                                                 <i
-                                                                    class="bi bi-check-circle-fill complete-step ms-2"></i>
+                                                                    class="bi bi-check-circle ms-2"></i>
                                                                 <div class="edit-task ms-2">
                                                                     <i class="bi bi-pencil-fill"></i>
                                                                 </div>
@@ -1291,7 +1290,7 @@
                                                             </div>
                                                             <div class="d-flex">
                                                                 <i
-                                                                    class="bi bi-check-circle-fill complete-step ms-2"></i>
+                                                                    class="bi bi-check-circle ms-2"></i>
                                                                 <div class="edit-task ms-2">
                                                                     <i class="bi bi-pencil-fill"></i>
                                                                 </div>
@@ -2371,6 +2370,27 @@
             });
         })
     </script>
+  <script>
+    // Get the common parent element
+    const iconContainer = document.querySelector('.icon-container');
+  
+    // Add a click event listener to the common parent element
+    iconContainer.addEventListener('click', function (event) {
+      const targetIcon = event.target;
+  
+      // Check if the clicked element has the class 'bi-check-circle-fill'
+      if (targetIcon.classList.contains('bi-check-circle-fill')) {
+        // Toggle the classes on the clicked element
+        targetIcon.classList.remove('bi-check-circle-fill', 'complete-step');
+        targetIcon.classList.add('bi-check-circle', 'complete-step');
+      } else if (targetIcon.classList.contains('bi-check-circle')) {
+        // Toggle the classes on the clicked element
+        targetIcon.classList.remove('bi-check-circle', 'complete-step');
+        targetIcon.classList.add('bi-check-circle-fill', 'complete-step');
+      }
+    });
+  </script>
+  
 </body>
 
 </html>
