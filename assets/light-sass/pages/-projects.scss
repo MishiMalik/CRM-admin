@@ -362,3 +362,17 @@
   text-align: center;
 
 }
+.accordion-button::after{
+  z-index: 5;
+}
+.accordion-button:not(.collapsed),
+.accordion-button{
+  background-color:#E6EFFA !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+.accordion-button::after{
+  @media only screen and (min-width:768px){
+    display: none !important;
+  }
+}

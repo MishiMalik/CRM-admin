@@ -2375,6 +2375,19 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border: 1px solid #5c607b;
   text-align: center; }
 
+.accordion-button::after {
+  z-index: 5; }
+
+.accordion-button:not(.collapsed),
+.accordion-button {
+  background-color: #E6EFFA !important;
+  box-shadow: none !important;
+  outline: none !important; }
+
+@media only screen and (min-width: 768px) {
+  .accordion-button::after {
+    display: none !important; } }
+
 .chat-body {
   height: 100vh !important;
   overflow-y: hidden !important; }
