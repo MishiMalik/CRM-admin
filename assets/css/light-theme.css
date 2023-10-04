@@ -2316,7 +2316,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     font-weight: 500;
     color: #172b4c;
     padding: 15px;
-    background-color: #f6f6f6;
+    background-color: #E6EFFA;
     top: 0;
     left: 0;
     right: 0;
@@ -2367,6 +2367,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .edit-task i:hover {
   color: #0963ce;
   cursor: pointer; }
+
+.score {
+  background-color: #f6f6f6 !important;
+  height: 30px;
+  width: 50px;
+  border: 1px solid #5c607b;
+  text-align: center; }
 
 .chat-body {
   height: 100vh !important;

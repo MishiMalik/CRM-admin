@@ -280,7 +280,7 @@
     font-weight: 500;
     color: $dark-blue;
     padding: 15px;
-    background-color: $light-skin;
+    background-color:#E6EFFA;
     top: 0;
     left: 0;
     right: 0;
@@ -353,4 +353,12 @@
       cursor: pointer;
     }
   }
+}
+.score{
+  background-color:$light-skin !important;
+  height: 30px;
+  width: 50px;
+  border: 1px solid $gray;
+  text-align: center;
+
 }
