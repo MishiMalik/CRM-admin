@@ -2336,6 +2336,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     padding: 20px;
     padding-bottom: 0px;
     background-color: white; }
+    @media only screen and (max-width: 767px) {
+      .task-card--body {
+        padding: 10px; } }
     .task-card--body::-webkit-scrollbar {
       width: 7px; }
     .task-card--body::-webkit-scrollbar-thumb {
