@@ -265,7 +265,7 @@
   background-color: $light-skin;
   border-radius: 10px;
   border: 1px solid #efeffd;
-  padding-bottom: 15px;
+  // padding-bottom: 15px;
   height: 100%;
   position: relative;
   padding-top: 50px;
@@ -301,8 +301,9 @@
   &--body {
     max-height: 280px;
     overflow-y: auto;
-    padding: 15px 10px;
+    padding:20px;
     padding-bottom: 0px;
+    background-color: white;
     &::-webkit-scrollbar {
       width: 7px;
     }
@@ -310,6 +311,7 @@
       background-color: #aaa;
       border-radius: 10px;
     }
+
     p{
       font-size: 14px;
       font-weight: 400;
@@ -343,4 +345,12 @@
     }
   }
  
+}
+.edit-task {
+  i{
+    &:hover{
+      color: $secondry;
+      cursor: pointer;
+    }
+  }
 }

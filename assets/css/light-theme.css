@@ -2303,7 +2303,6 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   background-color: #f6f6f6;
   border-radius: 10px;
   border: 1px solid #efeffd;
-  padding-bottom: 15px;
   height: 100%;
   position: relative;
   padding-top: 50px; }
@@ -2334,8 +2333,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   .task-card--body {
     max-height: 280px;
     overflow-y: auto;
-    padding: 15px 10px;
-    padding-bottom: 0px; }
+    padding: 20px;
+    padding-bottom: 0px;
+    background-color: white; }
     .task-card--body::-webkit-scrollbar {
       width: 7px; }
     .task-card--body::-webkit-scrollbar-thumb {
@@ -2361,6 +2361,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     border-top: 1px solid #F2F2F2; }
 
 .edit i:hover {
+  color: #0963ce;
+  cursor: pointer; }
+
+.edit-task i:hover {
   color: #0963ce;
   cursor: pointer; }
 
