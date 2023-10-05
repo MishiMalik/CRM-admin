@@ -868,22 +868,23 @@
                                                 </div>
                                                 <!-- cdk Editor for form -->
                                             </div>
-                                            <button class="upload-attchment attachment-btn mt-2">Click to Upload Attachment</button>
-                                           <div class="upload-area mt-4">
-                                            <p class="f-14 w-600">Upload Attachments <span
-                                                class="text-gray f-12">(Optional)</span></p>
-                                        <div id="dropzone">
-                                            <form action="/upload" class="dropzone needsclick" id="demo-upload">
-                                                <div class="dz-message needsclick">
-                                                    <span class="text">
+                                            <button class="upload-attchment attachment-btn mt-2">Click to Upload
+                                                Attachment</button>
+                                            <div class="upload-area mt-4">
+                                                <p class="f-14 w-600">Upload Attachments <span
+                                                        class="text-gray f-12">(Optional)</span></p>
+                                                <div id="dropzone">
+                                                    <form method="post" action="/upload" class="dropzone needsclick" id="demo-upload">
+                                                        <div class="dz-message needsclick">
+                                                            <span class="text">
 
-                                                        Drop files here or click to upload.
-                                                    </span>
-                                                    <span class="plus">+</span>
+                                                                Drop files here or click to upload.
+                                                            </span>
+                                                            <span class="plus">+</span>
+                                                        </div>
+                                                    </form>
                                                 </div>
-                                            </form>
-                                        </div>
-                                           </div>
+                                            </div>
                                         </div>
                                         <div class="d-flex justify-content-end mt-3">
                                             <button class="ticket-fill me-1 flex-grow-0 px-4 reply-btn"
@@ -1289,7 +1290,7 @@
                 // Toggle the visibility of the reply area
                 if (replyArea.style.display === "none" || replyArea.style.display === "") {
                     replyArea.style.display = "block";
-                } 
+                }
             });
             replyButton2.addEventListener("click", function (e) {
                 e.stopPropagation();
@@ -1297,7 +1298,7 @@
                 if (replyArea.style.display === "none" || replyArea.style.display === "") {
                     replyArea.style.display = "block";
                     window.scrollTo({ top: replyArea.offsetTop, behavior: "smooth" });
-                } else{
+                } else {
                     window.scrollTo({ top: replyArea.offsetTop, behavior: "smooth" });
                 }
             });
@@ -1305,17 +1306,17 @@
             var attachmentBtn = document.querySelector(".attachment-btn");
             var attchmentArea = document.querySelector(".upload-area");
 
-            attachmentBtn.addEventListener("click", function(){
-                
-                if(attchmentArea.style.display === "none" || attchmentArea.style.display === ""){
+            attachmentBtn.addEventListener("click", function () {
+
+                if (attchmentArea.style.display === "none" || attchmentArea.style.display === "") {
                     attchmentArea.style.display = "block";
-                    this.style.display= " none"
+                    this.style.display = " none"
                 }
             })
         });
 
 
-    
+
     </script>
 </body>
 
