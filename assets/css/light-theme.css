@@ -2981,7 +2981,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     left: 4px;
     height: 10px;
     width: 10px;
-    background-color: #E72F55;
+    background-color: #e72f55;
     border-radius: 100%; }
 
 .priority-medium {
@@ -2994,7 +2994,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     left: 4px;
     height: 10px;
     width: 10px;
-    background-color: #F9A400;
+    background-color: #f9a400;
     border-radius: 100%; }
 
 .ticket-open {
@@ -3007,7 +3007,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 12px; }
 
 .ticket-waiting {
-  background-color: #FFB22B;
+  background-color: #ffb22b;
   color: white;
   padding: 3px 5px;
   border-radius: 4px;
@@ -3016,7 +3016,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 12px; }
 
 .ticket-replied {
-  background-color: #00E200;
+  background-color: #00e200;
   color: white;
   padding: 3px 5px;
   border-radius: 4px;
@@ -3025,7 +3025,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 12px; }
 
 .ticket-completed {
-  background-color: #05825F;
+  background-color: #05825f;
   color: white;
   padding: 3px 5px;
   border-radius: 4px;
@@ -3041,11 +3041,14 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   align-items: center;
   font-size: 16px;
   font-weight: 500; }
+  @media only screen and (max-width: 1200px) {
+    .ticket-info--header {
+      font-size: 14px; } }
 
 .ticket-heading {
   font-size: 12px;
   font-weight: 500;
-  color: #8590A9;
+  color: #8590a9;
   margin-bottom: 4px !important; }
 
 .ticket-text {
@@ -3054,7 +3057,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   color: #172b4c; }
 
 .ticket-status {
-  background-color: #F9DDE1;
+  background-color: #f9dde1;
   padding: 3px 10px 3px 20px;
   border-radius: 3px;
   color: red;
@@ -3112,6 +3115,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border-left: 1px solid #e6effa;
   margin: 15px 0px 15px 15px;
   padding: 0px 0px 0 25px; }
+  @media only screen and (max-width: 580px) {
+    .ticket-chat {
+      margin: 10px 0px 0px 5px;
+      padding: 0px 0px 0 20px; } }
   .ticket-chat .title {
     position: relative;
     font-size: 16px;
@@ -3130,6 +3137,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       justify-content: center;
       align-items: center;
       background-color: white; }
+      @media only screen and (max-width: 580px) {
+        .ticket-chat .title .title-icon {
+          left: -30px;
+          top: 0px;
+          height: 20px;
+          width: 20px; } }
       .ticket-chat .title .title-icon-dot {
         height: 8px;
         width: 8px;
@@ -3153,9 +3166,18 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     justify-content: center;
     align-items: center;
     background-color: white; }
+    @media only screen and (max-width: 580px) {
+      .ticket-user .ticket-user-icon {
+        left: -35px;
+        top: 0px;
+        height: 30px;
+        width: 30px; } }
     .ticket-user .ticket-user-icon i {
       font-size: 20px;
       color: #0963ce; }
+      @media only screen and (max-width: 580px) {
+        .ticket-user .ticket-user-icon i {
+          line-height: 10px; } }
 
 .user-logo {
   height: 40px;
@@ -3165,10 +3187,19 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 16px;
   font-weight: 500;
   color: black; }
+  @media only screen and (max-width: 580px) {
+    .user-logo {
+      height: 30px;
+      width: 30px; } }
   .user-logo img {
     height: 40px;
     width: 40px;
-    object-fit: cover; }
+    object-fit: cover;
+    overflow: hidden; }
+    @media only screen and (max-width: 580px) {
+      .user-logo img {
+        height: 30px;
+        width: 30px; } }
 
 .ticket-detail-text {
   margin-bottom: 50px;
@@ -3176,6 +3207,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   border-radius: 6px;
   border: 1px solid #e6effa;
   margin-top: 15px; }
+  @media only screen and (max-width: 580px) {
+    .ticket-detail-text {
+      padding: 10px 10px; } }
   .ticket-detail-text p {
     font-size: 14px;
     font-weight: 400;
@@ -3216,14 +3250,23 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     justify-content: center;
     align-items: center;
     background-color: #e6effa; }
+    @media only screen and (max-width: 580px) {
+      .ticket-support .ticket-support-icon {
+        left: -36px;
+        top: 0px;
+        height: 30px;
+        width: 30px; } }
     .ticket-support .ticket-support-icon i {
       font-size: 20px;
       color: #0963ce; }
+      @media only screen and (max-width: 580px) {
+        .ticket-support .ticket-support-icon i {
+          line-height: 0p; } }
 
 .ticket-support-detail {
   background-color: #f0f3f7; }
 
-.ck.ck-editor__editable_inline[dir=ltr] {
+.ck.ck-editor__editable_inline[dir="ltr"] {
   border: 1px solid #e6effa;
   border-top: 0px;
   font-size: 12px; }
@@ -3243,3 +3286,70 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .ck.ck-toolbar {
   background-color: #e6effa !important;
   border: 1px solid #e6effa; }
+
+/* Setting a background color and font-family for the body */
+/* Styling for the dropzone */
+.dropzone {
+  width: 98%;
+  margin: 1%;
+  border: 2px dashed #3498db !important;
+  border-radius: 5px;
+  transition: 0.2s; }
+
+/* Styling for the dropzone when a drag is in progress */
+.dropzone.dz-drag-hover {
+  border: 2px solid #3498db !important; }
+
+/* Styling for the message inside the dropzone */
+.dz-message.needsclick img {
+  width: 50px;
+  display: block;
+  margin: auto;
+  opacity: 0.6;
+  margin-bottom: 15px; }
+
+/* Styling for the "plus" span */
+span.plus {
+  display: none; }
+
+/* Styling for the message when a file upload starts */
+.dropzone.dz-started .dz-message {
+  display: inline-block !important;
+  width: 120px;
+  float: right;
+  border: 1px solid rgba(238, 238, 238, 0.36);
+  border-radius: 30px;
+  height: 120px;
+  margin: 16px;
+  transition: 0.2s;
+  height: 40px !important;
+  /* Fixed a typo: "importnat" should be "important" */ }
+
+/* Styling for the text and "plus" span inside the message */
+span.plus {
+  display: none;
+  /* You mentioned "line-height: 110px convert to custom css" - this line is commented out, so it's not applied here. */ }
+
+.dropzone.dz-started .dz-message {
+  display: block !important;
+  width: 120px;
+  float: right;
+  border: 1px solid rgba(238, 238, 238, 0.36);
+  border-radius: 30px;
+  height: 120px;
+  margin: 16px;
+  transition: 0.2s; }
+  .dropzone.dz-started .dz-message span.text {
+    display: none; }
+  .dropzone.dz-started .dz-message span.plus {
+    display: block;
+    font-size: 70px;
+    color: #aaa; }
+
+.upload-attchment {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0963ce;
+  text-decoration: underline; }

@@ -22,11 +22,11 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-      <!-- cdk Editor -->
-  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
+    <!-- cdk Editor -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
-
+    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
     <script src="https://www.amcharts.com/lib/4/core.js"></script>
     <script src="https://www.amcharts.com/lib/4/charts.js"></script>
     <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
@@ -713,7 +713,7 @@
                     <div class="col-xl-12 ">
                         <div class="row">
 
-                            <div class="col-xl-8 col-md-8 mb-3">
+                            <div class="col-xl-8 col-md-8 mb-3 order-md-1 order-2">
                                 <div class="box">
                                     <div class="ticket-chat">
                                         <div class="title">
@@ -855,25 +855,42 @@
 
                                             </div>
                                         </div>
-
-                                        <div class="mb-4 mt-3 text-left">
-                                            <div id="toolbar-container"></div>
-                                            <div id="editor">
-                                                <p></p>
+                                        <div class="reply-area">
+                                            <p class="f-14 w-600">Type Reply </p>
+                                            <div class="mb-4 mt-3 text-left">
+                                                <div id="toolbar-container"></div>
+                                                <div id="editor">
+                                                    <p></p>
+                                                </div>
+                                                <!-- cdk Editor for form -->
                                             </div>
-                                            <!-- cdk Editor for form -->
+                                            <button class="upload-attchment">Click to Upload Attachment</button>
+                                            <p class="f-14 w-600">Upload Attachments <span
+                                                    class="text-gray f-12">(Optional)</span></p>
+                                            <div id="dropzone">
+                                                <form action="/upload" class="dropzone needsclick" id="demo-upload">
+                                                    <div class="dz-message needsclick">
+                                                        <span class="text">
+
+                                                            Drop files here or click to upload.
+                                                        </span>
+                                                        <span class="plus">+</span>
+                                                    </div>
+                                                </form>
+                                            </div>
                                         </div>
                                         <div class="d-flex justify-content-end mt-3">
-                                            <button class="ticket-fill me-1 flex-grow-0 px-4" style="width: fit-content !important;">Reply</button>
+                                            <button class="ticket-fill me-1 flex-grow-0 px-4"
+                                                style="width: fit-content !important;">Reply</button>
                                         </div>
 
                                     </div>
-                                    
-                                    
+
+
                                 </div>
-                                
+
                             </div>
-                            <div class="col-xl-4 col-md-4 mb-3">
+                            <div class="col-xl-4 col-md-4 mb-3 order-md-2 order-1">
                                 <div class="box">
                                     <div class="ticket-info">
                                         <div class="ticket-info--header  ">
@@ -1235,6 +1252,7 @@
 
     <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <script src="assets/Js/table.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -1382,16 +1400,16 @@
     </script>
     <script>
         // for editor
-DecoupledEditor
-.create( document.querySelector( '#editor' ) )
-.then( editor => {
-    const toolbarContainer = document.querySelector( '#toolbar-container' );
+        DecoupledEditor
+            .create(document.querySelector('#editor'))
+            .then(editor => {
+                const toolbarContainer = document.querySelector('#toolbar-container');
 
-    toolbarContainer.appendChild( editor.ui.view.toolbar.element );
-} )
-.catch( error => {
-    console.error( error );
-} );
+                toolbarContainer.appendChild(editor.ui.view.toolbar.element);
+            })
+            .catch(error => {
+                console.error(error);
+            });
     </script>
 </body>
 
