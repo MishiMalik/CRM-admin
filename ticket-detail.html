@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap5 -->
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js/dist/Chart.min.css">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/icons/icons/all.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-solid.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-regular.css">
+    <link rel="stylesheet" href="assets/icons/icons/sharp-light.css">
+    <!-- css -->
+    <link rel="stylesheet" href="https://unpkg.com/css-pro-layout@1.1.0/dist/css/css-pro-layout.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+      <!-- cdk Editor -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/30.0.0/decoupled-document/ckeditor.js"></script>
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css">
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="theme">
+
+    <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
+        <!-- ---------------------Side bar-------------- -->
+        <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
+
+            <div class="sidebar-layout">
+                <div class="sidebar-header d-flex justify-content-center">
+
+                    <a id="btn-toggle2" href="#" class="sidebar-toggler break-point-lg">
+                    </a>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid logo-lg"
+                            id="logo-image">
+                        <img src="assets/images/d-png.png" alt="" class="img-fluid logo-sm">
+                    </div>
+                </div>
+                <div class="d-flex  user-account ">
+
+                    <div class="user-icon">
+                        <img src="assets/images/vatar-removebg-preview.png" alt="" class="" height="50" width="50">
+                    </div>
+                    <div class="dropdown profile-dropdown ms-auto">
+                        <button class="dropdown-toggle d-flex align-items-center pe-3" type="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div>
+                                <h3 class="mb-0">Nil Yeager </h3>
+                                <p class="mb-0 pb-0">Super Admin</p>
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
+                            <li><a class="dropdown-item" href="profile.html"><i
+                                        class="bi bi-person me-3"></i>Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="settings.html"><i
+                                        class="bi bi-gear me-3"></i>Settings</a>
+                            <li><a class="dropdown-item" href="log-in.html"><i
+                                        class="bi bi-arrow-bar-left me-3"></i>Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-item py-3 menu-heading-div">
+                    <span class="ps-4 f-14 w-500 text-light-white ls-3 menu-heading ">Main Menu</span>
+                </div>
+                <div class="sidebar-content">
+                    <nav class="menu open-current-submenu">
+
+                        <ul>
+                            <li class="menu-item">
+                                <a href="index.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-grid-2"></i>
+                                    </span>
+                                    <span class="menu-title">Dashboard </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="leads.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-people-group"></i>
+
+                                    </span>
+                                    <span class="menu-title">Leads</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="projects.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-rectangle-history"></i>
+
+                                    </span>
+                                    <span class="menu-title">Projects</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="sales.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-chart-mixed-up-circle-dollar"></i>
+                                    </span>
+                                    <span class="menu-title">Sales
+                                    </span>
+                                </a>
+
+                            </li>
+
+                            <li class="menu-item sub-menu">
+                                <a>
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-file-invoice-dollar"></i>
+
+                                    </span>
+                                    <span class="menu-title">Invoices</span>
+
+                                </a>
+                                <div class="sub-menu-list">
+                                    <ul>
+                                        <li class="menu-item">
+                                            <a href="invoice-list.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices List</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="registered-users.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Grid</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="add-invoice.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Add Invoices</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="menu-item">
+                                            <a href="edit-invoice.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Edit Invoices</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="invoice-details.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Details</span>
+                                            </a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="invoice-settings.html">
+                                                <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Settings</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="menu-item">
+                                <a href="partners.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-group-simple"></i>
+                                    </span>
+
+                                    <span class="menu-title">Partners
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="clients.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-users-line"></i>
+
+                                    </span>
+                                    <span class="menu-title">Clients
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="chats.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-messages"></i>
+
+                                    </span>
+                                    <span class="menu-title">Chats
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="staff.html">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-tie"></i>
+
+                                    </span>
+                                    <span class="menu-title">Staff
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li class="menu-item">
+                                <a href="support.html" class="active-menu">
+                                    <span class="menu-icon">
+                                        <i class="fa-duotone fa-user-headset"></i>
+
+                                    </span>
+                                    <span class="menu-title">Support
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <div class="main-area w-100 mb-0">
+        <!-- ----------------Header--------------- -->
+        <header class="header-div  w-100">
+            <div class="header w-100">
+                <a id="btn-collapse" href="#" class="align-self-center header-option">
+                    <i class="fa-duotone fa-bars-staggered header-icon"></i>
+
+                </a>
+                <a id="btn-toggle" href="#" class="align-self-center header-option">
+                    <i class="fa-duotone fa-bars-staggered header-icon"></i>
+                </a>
+                <div class="show-md align-self-center">
+                    <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid mobile-logo"
+                        id="logo-image-sm">
+                </div>
+
+                <!-- Notification -->
+                <div class="ms-auto d-flex">
+                    <div class="notification-dropdown-div  align-self-center header-option">
+                        <button type="button" style="position: relative;">
+                            <div class="notifications ">
+                                <i class="fa-duotone fa-bell header-icon mt-1"></i>
+
+                                <div class="pulse-wave"></div>
+                            </div>
+                        </button>
+                        <div class="notification-dropdown-inner">
+                            <ul class="notification-dropdown">
+                                <div class="notifications-header">
+                                    <h1 class="mb-0 pb-0">Notifications</h1>
+                                    <button>Clear All</button>
+                                </div>
+                                <li><a class=" " href="notifications.html"><i
+                                            class="bi bi-people-fill text-primary f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 ">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i class="bi bi-info-circle  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"><i
+                                            class="bi bi-person-fill text-primary  text-danger f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+                                <li><a class=" " href="#"> <i class="bi bi-chat-fill  text-yellow f-14 me-2"></i>
+                                        <p class="mb-0 pb-0 text-start">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing
+                                            elit. Unde, a!</p>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="notifications.html" class="text-center">
+                                        <div class="see-all w-100 text-center">
+                                            View All
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Quick links -->
+                    <div class="header-option align-self-center hide-sm side-menu-quick-btn">
+                        <i class="fa-duotone fa-grid-round-2 header-icon"></i>
+
+                    </div>
+
+                    <!-- ticker -->
+                    <div class="header-option align-self-center hide-sm side-menu-ticket-btn">
+                        <!-- <i class="bi bi-app-indicator path-1"></i> -->
+                        <i class="fa-duotone fa-life-ring header-icon"></i>
+                    </div>
+
+                    <!-- chat -->
+                    <div class="header-option align-self-center hide-sm chat-btn">
+                        <i class="fa-duotone fa-messages header-icon"></i>
+
+                    </div>
+
+                    <!-- theme exchange -->
+                    <div class="header-option align-self-center" id="toggleTheme">
+                        <i class="fa-duotone fa-brightness header-icon"></i>
+
+                    </div>
+
+                    <!-- fullscreen -->
+                    <div class="header-option align-self-center me-0 hide-sm" id="fullscreen-button">
+
+                        <i class="fa-duotone fa-arrows-maximize header-icon"></i>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- quick links menu -->
+        <div class="side-menu side-menu-quick" id="side-menu-quick">
+            <div class="quick-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0 ">Quick Actions</h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-rectangle-history"></i>
+                                <p class="mb-0 pb-0">
+                                    Projects
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-users-line"></i>
+                                <p class="mb-0 pb-0">
+                                    clients
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-user-group-simple"></i>
+                                <p class="mb-0 pb-0">
+                                    Partners
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-user-tie"></i>
+                                <p class="mb-0 pb-0">
+                                    Staff
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 pe-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-people-simple"></i>
+                                <p class="mb-0 pb-0">
+                                    Leads
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6 ps-1 mb-2">
+                        <a href="">
+                            <div class="actions-card">
+                                <i class="fa-duotone fa-gear-complex-code"></i>
+                                <p class="mb-0 pb-0">
+                                    Settings
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- ticket menu -->
+        <div class="side-menu side-menu-ticket">
+            <div class="ticket-links">
+                <div class="row">
+                    <div class="col-lg-12 mb-4 pb-3 side-menu-header">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1 class="mb-0 pb-0">Ticket/support </h1>
+                            <button class="close-btn">
+                                <i class="fa-duotone fa-xmark-large"></i>
+
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">03:10</h4>
+                            <div class="ticket-body ticket-alert">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">10:10</h4>
+                            <div class="ticket-body ticket-warning">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">01:10</h4>
+                            <div class="ticket-body ticket-info">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-12 pe-1 mb-2">
+                        <a class="ticket-notify px-0 " href="#">
+                            <h4 class=" text-gray ">12:10</h4>
+                            <div class="ticket-body ticket-success">
+                                <p class="mb-2">Morbi quis ex eu arcu auctor sagittis.</p>
+                                <span class="text-fade">by Johne</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- chat -->
+        <div class="chat__popup">
+            <div class="chat-header d-flex align-items-center">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <button class="close-chat ms-auto">
+                        <i class="fa-duotone fa-xmark-large"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="body">
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+                <!-- send -->
+                <div class="send">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <div class="text-end">
+                            <h2>Jhon Doe</h2>
+                            <p class="status mb-0 pb-0">02:23 am</p>
+                        </div>
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Hi there, I'm Jesse and you?</p>
+                    </div>
+                    <div class="send-msg ms-auto">
+                        <p class="mb-0 pb-0">Are You ther?</p>
+                    </div>
+                </div>
+                <!-- recieve -->
+                <div class="recieve">
+                    <div class="d-flex align-items-center">
+                        <div class="image-div">
+                            <img src="assets/images/vatar.png" alt="" class="me-2">
+                        </div>
+                        <div>
+                            <h2>10:20 pm</h2>
+                            <p class="status mb-0 pb-0">Active</p>
+                        </div>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt porro
+                            delectus quasi dolorem cum sequi.</p>
+                    </div>
+                    <div class="recieved-msg">
+                        <p class="mb-0 pb-0">Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="type-area">
+                <input type="text" placeholder="Type Here...">
+                <i class="fa-solid fa-paper-plane-top "></i>
+            </div>
+        </div>
+        <!-- -----------Main Contents----------- -->
+        <main class="content ">
+            <div class="container-fluid px-lg-0">
+                <div class="row justify-content-center">
+                    <div class="col-xl-12 ">
+                        <div class="row">
+
+                            <div class="col-xl-8 col-md-8 mb-3">
+                                <div class="box">
+                                    <div class="ticket-chat">
+                                        <div class="title">
+                                            <div class="title-icon">
+                                                <div class="title-icon-dot"></div>
+                                            </div>
+                                            <p class="mb-0 pb-0">Ticket Submitted on Sep7, 2023 1:21pm</p>
+                                        </div>
+
+                                        <div class="ticket-user w-100 mb-4">
+                                            <div class="ticket-user-icon">
+                                                <i class="bi bi-person-circle"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div class="d-flex align-items-center ticket-text">
+                                                    <div class="user-logo me-2">
+                                                        <img src="assets/images/D-for-dark-mode.png" alt="" class="">
+                                                    </div>
+                                                    Muhammad Shoaib
+                                                </div>
+
+                                                <div class="ticket-heading">
+                                                    12/4/2023 1:23pm
+                                                </div>
+                                            </div>
+                                            <div class="ticket-detail-text">
+                                                <p class="my-1">
+                                                    Related Services: Bussiness Cloud - <a
+                                                        href="https://www.google.com/"
+                                                        target="_blank">https://www.google.com/
+                                                        <i
+                                                            class="fa-regular fa-arrow-up-right-from-square"></i></a>(Active)
+                                                </p>
+                                                <p class="my-1">
+                                                    Application: Hi there, when i try to login the website - <a
+                                                        href="https://www.google.com/"
+                                                        target="_blank">https://www.google.com/<i
+                                                            class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                                                    through cardentialis Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Voluptas, error. Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Laboriosam qui cumque impedit possimus
+                                                    ratione sint?
+                                                </p>
+                                                <p class="my-1">
+                                                    Latest Changes:
+                                                </p>
+                                                <p class="my-1">
+                                                    When issue appeard first time:
+                                                </p>
+                                                <p class="my-1">
+                                                    Additional Information:
+                                                </p>
+
+                                                <div class="screenshot my-1">
+                                                    <a href="https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                                        target="_blank">0344_77636GYT_uyuwuywe_uy62.png <i
+                                                            class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                                <div class="screenshot my-1">
+                                                    <a href="https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                                        target="_blank">0344_77636GYT_uyuwuywe_uy62.png <i
+                                                            class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ticket-user w-100 mb-4">
+                                            <div class="ticket-user-icon">
+                                                <i class="bi bi-person-circle"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div class="d-flex align-items-center ticket-text">
+                                                    <div class="user-logo me-2">
+                                                        <img src="assets/images/D-for-dark-mode.png" alt="" class="">
+                                                    </div>
+                                                    Muhammad Shoaib
+                                                </div>
+
+                                                <div class="ticket-heading">
+                                                    12/4/2023 1:23pm
+                                                </div>
+                                            </div>
+                                            <div class="ticket-detail-text">
+                                                <p class="my-1">
+                                                    Website <a href="https://www.google.com/"
+                                                        target="_blank">https://www.google.com/
+                                                        <i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                                                </p>
+
+                                                <p class="my-1">
+                                                    User: Admin
+                                                </p>
+                                                <p class="my-1">
+                                                    Password: @13jhu34
+                                                </p>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="ticket-support w-100 mb-4">
+                                            <div class="ticket-support-icon">
+                                                <i class="bi bi-dribbble"></i>
+                                            </div>
+                                            <div class="d-flex justify-content-between align-items-center w-100">
+                                                <div class="d-flex align-items-center ticket-text">
+                                                    <div class="user-logo me-2">
+                                                        <img src="assets/images/D-for-dark-mode.png" alt="" class="">
+                                                    </div>
+                                                    Muhammad Shoaib
+                                                </div>
+
+                                                <div class="ticket-heading">
+                                                    12/4/2023 1:23pm
+                                                </div>
+                                            </div>
+                                            <div class="ticket-detail-text ticket-support-detail">
+                                                <p class="my-1">
+                                                    Hi!
+                                                </p>
+                                                <p class="my-1">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                                                    temporibus commodi iste laudantium eos vero cum consequatur nisi.
+                                                    Dolorum, quas! Lorem ipsum dolor sit amet consectetur adipisicing
+                                                    elit. Odio vero cupiditate consequatur aliquid excepturi laboriosam
+                                                    veniam, eos ullam fugiat recusandae. Application: Hi there, when i
+                                                    try to login the website - <a href="https://www.google.com/"
+                                                        target="_blank">https://www.google.com/<i
+                                                            class="fa-regular fa-arrow-up-right-from-square"></i></a>
+                                                    through cardentialis Lorem ipsum dolor sit, amet consectetur
+                                                    adipisicing elit. Voluptas, error. Lorem ipsum dolor sit amet
+                                                    consectetur adipisicing elit. Laboriosam qui cumque impedit possimus
+                                                    ratione sint?
+                                                </p>
+                                                <p class="my-1">
+                                                    Regards: Aly Roe
+                                                </p>
+
+
+                                            </div>
+                                        </div>
+
+                                        <div class="mb-4 mt-3 text-left">
+                                            <div id="toolbar-container"></div>
+                                            <div id="editor">
+                                                <p></p>
+                                            </div>
+                                            <!-- cdk Editor for form -->
+                                        </div>
+                                        <div class="d-flex justify-content-end mt-3">
+                                            <button class="ticket-fill me-1 flex-grow-0 px-4" style="width: fit-content !important;">Reply</button>
+                                        </div>
+
+                                    </div>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-3">
+                                <div class="box">
+                                    <div class="ticket-info">
+                                        <div class="ticket-info--header  ">
+                                            <div class="box-icon bg-white" style="flex-shrink: 0;">
+                                                <i class="fa-solid fa-ticket"></i>
+                                            </div>
+                                            <div class="text-center b w-100">
+                                                Ticket Information
+                                            </div>
+                                        </div>
+                                        <div class="ticket-info--body">
+                                            <div class="mt-3 ">
+                                                <h3 class="ticket-heading mb-0">SUBJECT</h3>
+                                                <p class="ticket-text mb-0 pb-2">
+                                                    #84673 My Subdomain is not working, 404error
+                                                </p>
+                                                <div class="ticket-status">Close</div>
+                                            </div>
+                                            <div class="mt-3 pt-2">
+                                                <h3 class="ticket-heading mb-0">Domain</h3>
+                                                <p class="ticket-text mb-0 pb-2">
+                                                    crmadmin.com
+                                                </p>
+                                            </div>
+                                            <div
+                                                class="d-flex align-items-start justify-content-between flex-xl-row flex-column">
+                                                <div class="mt-3">
+                                                    <h3 class="ticket-heading mb-0">Department</h3>
+                                                    <p class="ticket-text mb-0 pb-2">
+                                                        Website Down
+                                                    </p>
+                                                </div>
+                                                <div class="mt-3">
+                                                    <h3 class="ticket-heading mb-0">Submitted</h3>
+                                                    <p class="ticket-text mb-0 pb-2">
+                                                        Sep 3, 2023 1:21PM
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="mt-3">
+                                                <h3 class="ticket-heading mb-0">Last Updated</h3>
+                                                <p class="ticket-text mb-0 pb-2">
+                                                    17 hours ago
+                                                </p>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-3">
+                                                <button class="ticket-fill me-1">Reply</button>
+                                                <button class="ticket-blank ms-1">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+        <div class="overlay"></div>
+
+    </div>
+    <!-- menu footer -->
+    <footer class="menu-footer">
+        <div class="footer-menu-link ">
+            <a href="index.html">
+                <i class="fa-duotone fa-grid-2"></i>
+                Dashboard
+            </a>
+        </div>
+        <div class="footer-menu-link ">
+            <a href="leads.html">
+                <i class="fa-duotone fa-people-group"></i>
+                Leads
+            </a>
+        </div>
+        <div class="footer-menu-link">
+            <a href="projects.html">
+                <i class="fa-duotone fa-rectangle-history"></i>
+                Projects
+            </a>
+        </div>
+        <div class="footer-menu-link">
+            <a href="chats.html">
+                <i class="fa-duotone fa-messages"></i>
+                Chats
+            </a>
+        </div>
+        <div class="footer-menu-link" id="show-more-menu">
+            <a>
+                <i class="fa-duotone fa-circle-ellipsis-vertical"></i>
+                More
+            </a>
+        </div>
+    </footer>
+    <!--show more mobile popup -->
+    <div class="menu-footer-popup">
+        <h3>More Menus</h3>
+        <div class="menu-footer-padding"></div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="sales.html" class="d-flex align-items-center">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-chart-mixed-up-circle-dollar"></i>
+                </div>
+                Sales
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle more-dropdown" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="more-icon">
+                        <i class="fa-duotone fa-file-invoice-dollar"></i>
+                    </div>
+                    Invoices
+                </button>
+
+                <ul class="dropdown-menu more-dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li class="menu-item">
+                        <a href="invoice-list.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices List</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="registered-users.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Grid</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="add-invoice.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Add Invoices</span>
+                        </a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a href="edit-invoice.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Edit Invoices</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="invoice-details.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Details</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="invoice-settings.html">
+                            <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="clients.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-users-line"></i>
+                </div>
+
+                Clients
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="partners.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-group-simple"></i>
+                </div>
+
+                Partners
+            </a>
+        </div>
+
+        <div class="d-flex align-items-center more-footer-link">
+            <a href="staff.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-tie"></i>
+                </div>
+
+                Staff
+            </a>
+        </div>
+        <div class="d-flex align-items-center more-footer-link active-footer-menu">
+            <a href="support.html">
+                <div class="more-icon">
+                    <i class="fa-duotone fa-user-headset"></i>
+                </div>
+
+                Support
+            </a>
+        </div>
+    </div>
+
+
+    <div id="overlay-all" class="overlay"></div>
+
+    <div id="overlay-sidebar"></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="leadModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-medium">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add New Lead</h5>
+                    <button type="button" class=" close-btn text-white" data-bs-dismiss="modal" aria-label="Close"><i
+                            class="fa-duotone fa-xmark"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="name"
+                                            placeholder="Mickel">
+                                        <label class="crm-label form-label" for="name">Client Name<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="bussiness-name"
+                                            placeholder="Mickel">
+                                        <label class="crm-label form-label" for="bussiness-name">Bussiness Name<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="Title" placeholder="ABC">
+                                        <label class="crm-label form-label" for="Title">Title<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control crm-input" id="email" placeholder="ABC">
+                                        <label class="crm-label form-label" for="email">Email Address<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- <div class="form-floating">
+                            <select class="form-select crm-input" id="select-status" aria-label="Floating label select example">
+                              <option selected value="1" style="padding: 7px 10px; background-color: #06F7F0; color: white;">New Lead</option>
+                              <option style="padding: 3px 10px; background-color: #063AF6; color: white;" value="2">Contracted</option>
+                              <option style="padding: 3px 10px; background-color: #E400F7; color: white;" value="3">Follow-Up</option>
+                              <option style="padding: 3px 10px; background-color: #F75C06; color: white;" value="2">In-Progress</option>
+                              <option style="padding: 3px 10px; background-color: #F70606; color: white;" value="3">Failed</option>
+                              <option style="padding: 3px 10px; background-color: #06F744; color: white;" value="3">Qualified</option>
+                            </select>
+                            <label class="crm-label form-label" for="select-status">Status<span class="text-danger">*</span></label>
+                          </div> -->
+
+                                    <div class="form-floating">
+                                        <select class="form-select crm-input" id="select-status"
+                                            aria-label="Floating label select example">
+                                            <option>Select</option>
+                                            <option value="1" style="color: #06F7F0; ">New Lead
+                                            </option>
+                                            <option value="2" style="color: #063AF6; ">
+                                                Contracted</option>
+                                            <option value="3" style="color: #E400F7; ">Follow-Up
+                                            </option>
+                                            <option value="4" style="color: #F75C06; ">
+                                                In-Progress</option>
+                                            <option value="5" style="color: #F70606; ">Failed
+                                            </option>
+                                            <option value="6" style="color: #06F744; ">Qualified
+                                            </option>
+                                        </select>
+                                        <label class="crm-label form-label" for="select-status">Status<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="url" placeholder="ABC">
+                                        <label class="crm-label form-label" for="url">URL<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="partner"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="partner">Partner<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="level" placeholder="ABC">
+                                        <label class="crm-label form-label" for="country">Country<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="address"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="address">Address<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control crm-input" id="p-number"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="p-number">Phone Number<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control crm-input" id="date" placeholder="ABC">
+                                        <label class="crm-label form-label" for="date">Date<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-floating mb-3">
+                                        <input type="date" class="form-control crm-input" id="follow-date"
+                                            placeholder="ABC">
+                                        <label class="crm-label form-label" for="follow-date">Follow-up Date<span
+                                                class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="d-flex justify-content-lg-end justify-content-center mt-3 mb-3">
+                                        <button type="button" class="modal-btn-cancel me-3"
+                                            data-bs-dismiss="modal">Cancel</button>
+                                        <button type="button" class="modal-btn-save ">Save </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Jquery -->
+    <script src="assets/Js/jquery.js"></script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"
+        integrity="sha512-nnzkI2u2Dy6HMnzMIkh7CPd1KX445z38XIu4jG1jGw7x5tSL3VBjE44dY4ihMU1ijAQV930SPM12cCFrB18sVw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- bootstrap5 -->
+    <script src="assets/bootstrap5/js/bootstrap.min.js"></script>
+    <script src="assets/Js/app.js"></script>
+    <script src="assets/Js/layout.js"></script>
+
+
+    <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
+    <script src="assets/Js/table.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const selectStatus = document.getElementById("select-status");
+
+            selectStatus.addEventListener("change", function () {
+                // Get the selected option
+                const selectedOption = selectStatus.options[selectStatus.selectedIndex];
+
+                // Get the styles from the selected option
+                const backgroundColor = selectedOption.style.backgroundColor;
+                const color = selectedOption.style.color;
+
+                // Apply the styles to the select element
+                selectStatus.style.backgroundColor = backgroundColor;
+                selectStatus.style.color = color;
+            });
+        });
+    </script>
+    <script>
+        // Create chart instance
+        var chart = am4core.create("chartdiv2", am4charts.PieChart);
+
+        // Add data with different colors
+        chart.data = [{
+            "level": "General",
+            "litres": 5017,
+            "color": am4core.color("#F74A6A") // Set a specific color for this category
+        }, {
+            "level": "Medium",
+            "litres": 3001,
+            "color": am4core.color("#FFB22B") // Set a specific color for this category
+        }, {
+            "level": "Low",
+            "litres": 5001,
+            "color": am4core.color("#398BF7") // Set a specific color for this category
+        }];
+
+        // Add and configure Series
+        var pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "litres";
+        pieSeries.dataFields.category = "level";
+        pieSeries.innerRadius = am4core.percent(50);
+        pieSeries.ticks.template.disabled = true;
+        pieSeries.labels.template.disabled = true;
+
+        // Set the color for each slice
+        pieSeries.slices.template.propertyFields.fill = "color";
+
+        var rgm = new am4core.LinearGradientModifier();
+        rgm.brightnesses.push(0, -0.4);
+        pieSeries.slices.template.fillModifier = rgm;
+
+        var rgm2 = new am4core.LinearGradientModifier();
+        rgm2.brightnesses.push(0, -0.4);
+
+        pieSeries.slices.template.strokeModifier = rgm2;
+        pieSeries.slices.template.strokeOpacity = 1;
+        pieSeries.slices.template.strokeWidth = 1;
+
+        // Create a custom legend formatter to display values instead of percentages
+        chart.legend = new am4charts.Legend();
+        chart.legend.position = "bottom";
+        chart.legend.useDefaultMarker = true;
+
+        chart.legend.itemContainers.template.events.on("validated", function (event) {
+            var dataItem = event.dataItem;
+            if (dataItem) {
+                dataItem.label.text = dataItem.dataContext.litres; // Display the 'litres' value in the legend
+            }
+        });
+
+        pieSeries.slices.template.events.on("validated", function (event) {
+            var gradient = event.target.fillModifier.gradient;
+            gradient.rotation = event.target.middleAngle + 90;
+
+            var gradient2 = event.target.strokeModifier.gradient;
+            gradient2.rotation = event.target.middleAngle + 90;
+        });
+
+
+    </script>
+    <script>
+        // Create chart instance
+        var chart = am4core.create("chartdiv3", am4charts.PieChart);
+
+        // Add data with different colors
+        chart.data = [{
+            "level": " Technical",
+            "litres": 5017,
+            "color": am4core.color("#F74A6A") // Set a specific color for this category
+        }, {
+            "level": "Sales/Billings",
+            "litres": 3001,
+            "color": am4core.color("#FFB22B") // Set a specific color for this category
+        }, {
+            "level": "General ",
+            "litres": 5001,
+            "color": am4core.color("#398BF7") // Set a specific color for this category
+        }];
+
+        // Add and configure Series
+        var pieSeries2 = chart.series.push(new am4charts.PieSeries());
+        pieSeries2.dataFields.value = "litres";
+        pieSeries2.dataFields.category = "level";
+        pieSeries2.innerRadius = am4core.percent(50);
+        pieSeries2.ticks.template.disabled = true;
+        pieSeries2.labels.template.disabled = true;
+
+        // Set the color for each slice
+        pieSeries2.slices.template.propertyFields.fill = "color";
+
+        var rgm = new am4core.LinearGradientModifier();
+        rgm.brightnesses.push(0, -0.4);
+        pieSeries2.slices.template.fillModifier = rgm;
+
+        var rgm2 = new am4core.LinearGradientModifier();
+        rgm2.brightnesses.push(0, -0.4);
+
+        pieSeries2.slices.template.strokeModifier = rgm2;
+        pieSeries2.slices.template.strokeOpacity = 1;
+        pieSeries2.slices.template.strokeWidth = 1;
+
+        // Create a custom legend formatter to display values instead of percentages
+        chart.legend = new am4charts.Legend();
+        chart.legend.position = "bottom";
+        chart.legend.useDefaultMarker = true;
+
+        chart.legend.itemContainers.template.events.on("validated", function (event) {
+            var dataItem = event.dataItem;
+            if (dataItem) {
+                dataItem.label.text = dataItem.dataContext.litres; // Display the 'litres' value in the legend
+            }
+        });
+
+        pieSeries2.slices.template.events.on("validated", function (event) {
+            var gradient = event.target.fillModifier.gradient;
+            gradient.rotation = event.target.middleAngle + 90;
+
+            var gradient2 = event.target.strokeModifier.gradient;
+            gradient2.rotation = event.target.middleAngle + 90;
+        });
+
+
+    </script>
+    <script>
+        // for editor
+DecoupledEditor
+.create( document.querySelector( '#editor' ) )
+.then( editor => {
+    const toolbarContainer = document.querySelector( '#toolbar-container' );
+
+    toolbarContainer.appendChild( editor.ui.view.toolbar.element );
+} )
+.catch( error => {
+    console.error( error );
+} );
+    </script>
+</body>
+
+</html>
