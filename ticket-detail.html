@@ -712,7 +712,11 @@
                 <div class="row justify-content-center">
                     <div class="col-xl-12 ">
                         <div class="row">
-
+                            <div class="col-lg-12">
+                                <h1 class="heading-ticket">
+                                    #880045 MY Subdomain is not working, 404 error
+                                </h1>
+                            </div>
                             <div class="col-xl-8 col-md-8 mb-3 order-md-1 order-2">
                                 <div class="box">
                                     <div class="ticket-chat">
@@ -855,32 +859,34 @@
 
                                             </div>
                                         </div>
-                                        <div class="reply-area">
+                                        <div class="reply-area" id="reply-area">
                                             <p class="f-14 w-600">Type Reply </p>
-                                            <div class="mb-4 mt-3 text-left">
+                                            <div class=" mt-3 text-left">
                                                 <div id="toolbar-container"></div>
                                                 <div id="editor">
                                                     <p></p>
                                                 </div>
                                                 <!-- cdk Editor for form -->
                                             </div>
-                                            <button class="upload-attchment">Click to Upload Attachment</button>
+                                            <button class="upload-attchment attachment-btn mt-2">Click to Upload Attachment</button>
+                                           <div class="upload-area mt-4">
                                             <p class="f-14 w-600">Upload Attachments <span
-                                                    class="text-gray f-12">(Optional)</span></p>
-                                            <div id="dropzone">
-                                                <form action="/upload" class="dropzone needsclick" id="demo-upload">
-                                                    <div class="dz-message needsclick">
-                                                        <span class="text">
+                                                class="text-gray f-12">(Optional)</span></p>
+                                        <div id="dropzone">
+                                            <form action="/upload" class="dropzone needsclick" id="demo-upload">
+                                                <div class="dz-message needsclick">
+                                                    <span class="text">
 
-                                                            Drop files here or click to upload.
-                                                        </span>
-                                                        <span class="plus">+</span>
-                                                    </div>
-                                                </form>
-                                            </div>
+                                                        Drop files here or click to upload.
+                                                    </span>
+                                                    <span class="plus">+</span>
+                                                </div>
+                                            </form>
+                                        </div>
+                                           </div>
                                         </div>
                                         <div class="d-flex justify-content-end mt-3">
-                                            <button class="ticket-fill me-1 flex-grow-0 px-4"
+                                            <button class="ticket-fill me-1 flex-grow-0 px-4 reply-btn"
                                                 style="width: fit-content !important;">Reply</button>
                                         </div>
 
@@ -937,7 +943,7 @@
                                                 </p>
                                             </div>
                                             <div class="d-flex align-items-center mt-3">
-                                                <button class="ticket-fill me-1">Reply</button>
+                                                <button class="ticket-fill me-1 reply-btn2">Reply</button>
                                                 <button class="ticket-blank ms-1">Cancel</button>
                                             </div>
                                         </div>
@@ -1254,150 +1260,9 @@
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <script src="assets/Js/table.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const selectStatus = document.getElementById("select-status");
-
-            selectStatus.addEventListener("change", function () {
-                // Get the selected option
-                const selectedOption = selectStatus.options[selectStatus.selectedIndex];
-
-                // Get the styles from the selected option
-                const backgroundColor = selectedOption.style.backgroundColor;
-                const color = selectedOption.style.color;
-
-                // Apply the styles to the select element
-                selectStatus.style.backgroundColor = backgroundColor;
-                selectStatus.style.color = color;
-            });
-        });
-    </script>
-    <script>
-        // Create chart instance
-        var chart = am4core.create("chartdiv2", am4charts.PieChart);
-
-        // Add data with different colors
-        chart.data = [{
-            "level": "General",
-            "litres": 5017,
-            "color": am4core.color("#F74A6A") // Set a specific color for this category
-        }, {
-            "level": "Medium",
-            "litres": 3001,
-            "color": am4core.color("#FFB22B") // Set a specific color for this category
-        }, {
-            "level": "Low",
-            "litres": 5001,
-            "color": am4core.color("#398BF7") // Set a specific color for this category
-        }];
-
-        // Add and configure Series
-        var pieSeries = chart.series.push(new am4charts.PieSeries());
-        pieSeries.dataFields.value = "litres";
-        pieSeries.dataFields.category = "level";
-        pieSeries.innerRadius = am4core.percent(50);
-        pieSeries.ticks.template.disabled = true;
-        pieSeries.labels.template.disabled = true;
-
-        // Set the color for each slice
-        pieSeries.slices.template.propertyFields.fill = "color";
-
-        var rgm = new am4core.LinearGradientModifier();
-        rgm.brightnesses.push(0, -0.4);
-        pieSeries.slices.template.fillModifier = rgm;
-
-        var rgm2 = new am4core.LinearGradientModifier();
-        rgm2.brightnesses.push(0, -0.4);
-
-        pieSeries.slices.template.strokeModifier = rgm2;
-        pieSeries.slices.template.strokeOpacity = 1;
-        pieSeries.slices.template.strokeWidth = 1;
-
-        // Create a custom legend formatter to display values instead of percentages
-        chart.legend = new am4charts.Legend();
-        chart.legend.position = "bottom";
-        chart.legend.useDefaultMarker = true;
-
-        chart.legend.itemContainers.template.events.on("validated", function (event) {
-            var dataItem = event.dataItem;
-            if (dataItem) {
-                dataItem.label.text = dataItem.dataContext.litres; // Display the 'litres' value in the legend
-            }
-        });
-
-        pieSeries.slices.template.events.on("validated", function (event) {
-            var gradient = event.target.fillModifier.gradient;
-            gradient.rotation = event.target.middleAngle + 90;
-
-            var gradient2 = event.target.strokeModifier.gradient;
-            gradient2.rotation = event.target.middleAngle + 90;
-        });
 
 
-    </script>
-    <script>
-        // Create chart instance
-        var chart = am4core.create("chartdiv3", am4charts.PieChart);
 
-        // Add data with different colors
-        chart.data = [{
-            "level": " Technical",
-            "litres": 5017,
-            "color": am4core.color("#F74A6A") // Set a specific color for this category
-        }, {
-            "level": "Sales/Billings",
-            "litres": 3001,
-            "color": am4core.color("#FFB22B") // Set a specific color for this category
-        }, {
-            "level": "General ",
-            "litres": 5001,
-            "color": am4core.color("#398BF7") // Set a specific color for this category
-        }];
-
-        // Add and configure Series
-        var pieSeries2 = chart.series.push(new am4charts.PieSeries());
-        pieSeries2.dataFields.value = "litres";
-        pieSeries2.dataFields.category = "level";
-        pieSeries2.innerRadius = am4core.percent(50);
-        pieSeries2.ticks.template.disabled = true;
-        pieSeries2.labels.template.disabled = true;
-
-        // Set the color for each slice
-        pieSeries2.slices.template.propertyFields.fill = "color";
-
-        var rgm = new am4core.LinearGradientModifier();
-        rgm.brightnesses.push(0, -0.4);
-        pieSeries2.slices.template.fillModifier = rgm;
-
-        var rgm2 = new am4core.LinearGradientModifier();
-        rgm2.brightnesses.push(0, -0.4);
-
-        pieSeries2.slices.template.strokeModifier = rgm2;
-        pieSeries2.slices.template.strokeOpacity = 1;
-        pieSeries2.slices.template.strokeWidth = 1;
-
-        // Create a custom legend formatter to display values instead of percentages
-        chart.legend = new am4charts.Legend();
-        chart.legend.position = "bottom";
-        chart.legend.useDefaultMarker = true;
-
-        chart.legend.itemContainers.template.events.on("validated", function (event) {
-            var dataItem = event.dataItem;
-            if (dataItem) {
-                dataItem.label.text = dataItem.dataContext.litres; // Display the 'litres' value in the legend
-            }
-        });
-
-        pieSeries2.slices.template.events.on("validated", function (event) {
-            var gradient = event.target.fillModifier.gradient;
-            gradient.rotation = event.target.middleAngle + 90;
-
-            var gradient2 = event.target.strokeModifier.gradient;
-            gradient2.rotation = event.target.middleAngle + 90;
-        });
-
-
-    </script>
     <script>
         // for editor
         DecoupledEditor
@@ -1410,6 +1275,47 @@
             .catch(error => {
                 console.error(error);
             });
+    </script>
+    <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get references to the elements
+            var replyArea = document.querySelector(".reply-area");
+            var replyButton = document.querySelector(".reply-btn");
+            var replyButton2 = document.querySelector(".reply-btn2");
+            // Add a click event listener to the reply button
+            replyButton.addEventListener("click", function (e) {
+                e.stopPropagation();
+                // Toggle the visibility of the reply area
+                if (replyArea.style.display === "none" || replyArea.style.display === "") {
+                    replyArea.style.display = "block";
+                } 
+            });
+            replyButton2.addEventListener("click", function (e) {
+                e.stopPropagation();
+                // Toggle the visibility of the reply area
+                if (replyArea.style.display === "none" || replyArea.style.display === "") {
+                    replyArea.style.display = "block";
+                    window.scrollTo({ top: replyArea.offsetTop, behavior: "smooth" });
+                } else{
+                    window.scrollTo({ top: replyArea.offsetTop, behavior: "smooth" });
+                }
+            });
+
+            var attachmentBtn = document.querySelector(".attachment-btn");
+            var attchmentArea = document.querySelector(".upload-area");
+
+            attachmentBtn.addEventListener("click", function(){
+                
+                if(attchmentArea.style.display === "none" || attchmentArea.style.display === ""){
+                    attchmentArea.style.display = "block";
+                    this.style.display= " none"
+                }
+            })
+        });
+
+
+    
     </script>
 </body>
 

@@ -420,18 +420,6 @@ span.plus {
   display: none;
 }
 
-/* Styling for the message when a file upload starts */
-.dropzone.dz-started .dz-message {
-  display: inline-block !important;
-  width: 120px;
-  float: right;
-  border: 1px solid rgba(238, 238, 238, 0.36);
-  border-radius: 30px;
-  height: 120px;
-  margin: 16px;
-  transition: 0.2s;
-  height: 40px !important; /* Fixed a typo: "importnat" should be "important" */
-}
 
 /* Styling for the text and "plus" span inside the message */
 // span.text {
@@ -447,13 +435,15 @@ span.plus {
 }
 .dropzone.dz-started .dz-message {
   display:block !important;
-  width: 120px;
+  width: 120px !important;
   float: right;
   border: 1px solid rgba(238, 238, 238, 0.36);
   border-radius: 30px;
-  height: 120px;
+  height: 120px !important;
   margin: 16px;
   transition: 0.2s;
+  text-align:center ;
+  line-height:120px;
   span.text {
     display: none;
  
@@ -472,4 +462,15 @@ span.plus {
   font-weight: 500;
   color: $secondry;
   text-decoration: underline;
+}
+.heading-ticket{
+  padding: 20px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.reply-area{
+  display: none;
+}
+.upload-area{
+  display: none;
 }
