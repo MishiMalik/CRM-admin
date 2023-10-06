@@ -320,11 +320,22 @@
 .screenshot {
   border: 1px solid #e6effa;
   width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   a {
     font-size: 12px;
     padding: 2px 5px;
     font-weight: 500;
     border-radius: 4px;
+    
+    @media only screen and (max-width:350px){
+      display: inline-block; /* Ensure the text is treated as a block element */
+      max-width: 200px; /* Set the maximum width of the anchor tag */
+      overflow: hidden; /* Hide any overflowing text */
+      text-overflow: ellipsis; /* Display ellipsis for overflowing text */
+      white-space: nowrap; /* Prevent text from wrapping to the next line */
+    }
   }
 }
 
@@ -473,4 +484,28 @@ span.plus {
 }
 .upload-area{
   display: none;
+}
+.subject{
+  color: $dark-blue;
+  width: 140px !important;
+  overflow: hidden; 
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  &:hover{
+    color: $secondry;
+  }
+}
+
+// .fixed {
+//   position: fixed;
+//   top: 0;
+// }
+.ticket-info-div{
+  position: sticky;
+    top: 100px;
+    @media only screen and (max-width:991px){
+      position: relative;
+      top: 0;
+    }
 }

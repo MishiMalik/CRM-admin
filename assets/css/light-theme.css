@@ -3227,12 +3227,27 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .screenshot {
   border: 1px solid #e6effa;
-  width: fit-content; }
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
   .screenshot a {
     font-size: 12px;
     padding: 2px 5px;
     font-weight: 500;
     border-radius: 4px; }
+    @media only screen and (max-width: 350px) {
+      .screenshot a {
+        display: inline-block;
+        /* Ensure the text is treated as a block element */
+        max-width: 200px;
+        /* Set the maximum width of the anchor tag */
+        overflow: hidden;
+        /* Hide any overflowing text */
+        text-overflow: ellipsis;
+        /* Display ellipsis for overflowing text */
+        white-space: nowrap;
+        /* Prevent text from wrapping to the next line */ } }
 
 .ticket-support {
   position: relative; }
@@ -3353,3 +3368,21 @@ span.plus {
 
 .upload-area {
   display: none; }
+
+.subject {
+  color: #172b4c;
+  width: 140px !important;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer; }
+  .subject:hover {
+    color: #0963ce; }
+
+.ticket-info-div {
+  position: sticky;
+  top: 100px; }
+  @media only screen and (max-width: 991px) {
+    .ticket-info-div {
+      position: relative;
+      top: 0; } }
