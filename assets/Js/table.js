@@ -29,6 +29,19 @@ const upcomingTable = $("#upcoming-table").DataTable({
   info: false,
 });
 
+const exampleRecurring = $("#example-recurring").DataTable({
+  responsive: true,
+  language: {
+    searchPlaceholder: "Search records",
+  },
+});
+const upcomingCancelled = $("#example-cancelled").DataTable({
+  responsive: true,
+  searching: false,
+  paging: false,
+  info: false,
+});
+
 // // Formatting function for row details - modify as you need
 // function format(d) {
 //     // `d` is the original data object for the row

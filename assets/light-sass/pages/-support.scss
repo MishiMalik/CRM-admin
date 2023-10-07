@@ -119,7 +119,7 @@
   align-items: center;
   font-size: 16px;
   font-weight: 500;
-  @media only screen and (max-width:1200px){
+  @media only screen and (max-width: 1200px) {
     font-size: 14px;
   }
 }
@@ -196,7 +196,7 @@
   border-left: 1px solid #e6effa;
   margin: 15px 0px 15px 15px;
   padding: 0px 0px 0 25px;
-  @media only screen and (max-width:580px){
+  @media only screen and (max-width: 580px) {
     margin: 10px 0px 0px 5px;
     padding: 0px 0px 0 20px;
   }
@@ -218,7 +218,7 @@
       justify-content: center;
       align-items: center;
       background-color: white;
-      @media only screen and (max-width:580px){
+      @media only screen and (max-width: 580px) {
         left: -30px;
         top: 0px;
         height: 20px;
@@ -251,7 +251,7 @@
     justify-content: center;
     align-items: center;
     background-color: white;
-    @media only screen and (max-width:580px){
+    @media only screen and (max-width: 580px) {
       left: -35px;
       top: 0px;
       height: 30px;
@@ -260,7 +260,7 @@
     i {
       font-size: 20px;
       color: $secondry;
-      @media only screen and (max-width:580px){
+      @media only screen and (max-width: 580px) {
         line-height: 10px;
       }
     }
@@ -271,18 +271,18 @@
   width: 40px;
   object-fit: cover;
   overflow: hidden;
-  @media only screen and (max-width:580px){
+  @media only screen and (max-width: 580px) {
     height: 30px;
-  width: 30px;
+    width: 30px;
   }
   img {
     height: 40px;
     width: 40px;
     object-fit: cover;
     overflow: hidden;
-    @media only screen and (max-width:580px){
+    @media only screen and (max-width: 580px) {
       height: 30px;
-    width: 30px;
+      width: 30px;
     }
   }
   font-size: 16px;
@@ -295,7 +295,7 @@
   border-radius: 6px;
   border: 1px solid #e6effa;
   margin-top: 15px;
-  @media only screen and (max-width:580px){
+  @media only screen and (max-width: 580px) {
     padding: 10px 10px;
   }
   p {
@@ -304,7 +304,6 @@
     color: $gray;
     text-align: justify;
     line-height: 23px;
-    
   }
   a {
     font-size: 13px;
@@ -328,8 +327,8 @@
     padding: 2px 5px;
     font-weight: 500;
     border-radius: 4px;
-    
-    @media only screen and (max-width:350px){
+
+    @media only screen and (max-width: 350px) {
       display: inline-block; /* Ensure the text is treated as a block element */
       max-width: 200px; /* Set the maximum width of the anchor tag */
       overflow: hidden; /* Hide any overflowing text */
@@ -356,7 +355,7 @@
     justify-content: center;
     align-items: center;
     background-color: #e6effa;
-    @media only screen and (max-width:580px){
+    @media only screen and (max-width: 580px) {
       left: -36px;
       top: 0px;
       height: 30px;
@@ -365,7 +364,7 @@
     i {
       font-size: 20px;
       color: $secondry;
-      @media only screen and (max-width:580px){
+      @media only screen and (max-width: 580px) {
         line-height: 0px;
       }
     }
@@ -431,7 +430,6 @@ span.plus {
   display: none;
 }
 
-
 /* Styling for the text and "plus" span inside the message */
 // span.text {
 //   display: none;
@@ -445,7 +443,7 @@ span.plus {
   /* You mentioned "line-height: 110px convert to custom css" - this line is commented out, so it's not applied here. */
 }
 .dropzone.dz-started .dz-message {
-  display:block !important;
+  display: block !important;
   width: 120px !important;
   float: right;
   border: 1px solid rgba(238, 238, 238, 0.36);
@@ -453,11 +451,10 @@ span.plus {
   height: 120px !important;
   margin: 16px;
   transition: 0.2s;
-  text-align:center ;
-  line-height:120px;
+  text-align: center;
+  line-height: 120px;
   span.text {
     display: none;
- 
   }
   span.plus {
     display: block;
@@ -466,7 +463,7 @@ span.plus {
   }
 }
 // line-height: 110px
-.upload-attchment{
+.upload-attchment {
   background-color: transparent;
   border: none;
   font-size: 14px;
@@ -474,25 +471,25 @@ span.plus {
   color: $secondry;
   text-decoration: underline;
 }
-.heading-ticket{
+.heading-ticket {
   padding: 20px 0px;
   font-size: 20px;
   font-weight: 600;
 }
-.reply-area{
+.reply-area {
   display: none;
 }
-.upload-area{
+.upload-area {
   display: none;
 }
-.subject{
+.subject {
   color: $dark-blue;
   width: 140px !important;
-  overflow: hidden; 
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: $secondry;
   }
 }
@@ -501,11 +498,11 @@ span.plus {
 //   position: fixed;
 //   top: 0;
 // }
-.ticket-info-div{
+.ticket-info-div {
   position: sticky;
-    top: 100px;
-    @media only screen and (max-width:991px){
-      position: relative;
-      top: 0;
-    }
+  top: 100px;
+  @media only screen and (max-width: 991px) {
+    position: relative;
+    top: 0;
+  }
 }

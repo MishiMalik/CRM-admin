@@ -397,20 +397,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   }
 }
 .table-actions {
-  .edit {
-    // height: 30px;
-    // width: 30px;
-    padding: 3px 7px;
-    border-radius: 4px;
-    background-color: $primary;
-    color: white;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 14px;
-  }
+  
   .save {
     // height: 30px;
     // width: 30px;
@@ -425,6 +412,23 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+}
+.edit {
+  // height: 30px;
+  // width: 30px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  background-color: $primary;
+  color: white !important;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  i{
+    color: white !important;
   }
 }
 .select-active {
