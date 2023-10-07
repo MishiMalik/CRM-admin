@@ -1044,6 +1044,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   .modal-medium .modal-content {
     width: 100% !important; }
 
+.modal-lg {
+  max-width: 900px !important; }
+  .modal-lg .modal-content {
+    width: 100% !important; }
+
 .modal-btn-save {
   background-color: #0963ce;
   border: 1px solid #0963ce;
@@ -1081,6 +1086,27 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 18px;
   font-weight: 500;
   margin-top: 20px; }
+
+.modal-logo {
+  height: 40px; }
+
+.invoice-detail-preview {
+  background-color: #0963ce;
+  padding: 20px;
+  margin: 0px 20px;
+  border-radius: 16px; }
+
+.border-right {
+  border-right: 1px solid white; }
+  @media only screen and (max-width: 991px) {
+    .border-right {
+      border-right: none;
+      border-bottom: 1px solid white;
+      padding-bottom: 10px; } }
+
+.payment-box {
+  padding: 20px;
+  border: 1px dashed #0963ce; }
 
 .crm-input {
   font-size: 14px;
@@ -3398,11 +3424,14 @@ span.plus {
 .selectBox {
   position: relative;
   cursor: pointer;
-  border: 1px solid #f7f8f9;
+  border: 1px solid #E5E5E5;
   padding: 10px;
   border-radius: 4px;
   display: flex;
   justify-content: space-between; }
+  @media only screen and (max-width: 580px) {
+    .selectBox {
+      padding: 7px 10px; } }
 
 .selectBox p {
   margin: 0;
@@ -3411,6 +3440,13 @@ span.plus {
   align-items: center;
   font-size: 16px;
   color: #5c607b; }
+
+.selectBox input {
+  border: none; }
+  .selectBox input:focus, .selectBox input:active {
+    outline: none;
+    border: none;
+    box-shadow: none; }
 
 .fa-angle-down {
   color: #5c607b; }
@@ -3588,3 +3624,60 @@ span.plus {
 
 .invoice-tabs {
   min-width: 500px; }
+
+.invoice-heading {
+  font-size: 18px;
+  font-weight: 500; }
+
+.invoice-label {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 100px; }
+
+.invoice-value {
+  font-size: 14px;
+  font-weight: 400;
+  color: #0963ce; }
+
+.form-check-label {
+  font-size: 14px !important;
+  color: #5c607b; }
+
+.line {
+  height: 1px;
+  background-color: #5c607b !important;
+  width: 90%;
+  margin: 0px auto; }
+
+.accordian-invoice-icon::after {
+  z-index: 5; }
+
+.accordian-invoice-icon:not(.collapsed),
+.accordian-invoice-icon {
+  background-color: #e6effa !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-size: 14px !important;
+  color: #5c607b;
+  background-color: transparent !important; }
+
+@media only screen and (min-width: 768px) {
+  .accordian-invoice-icon::after {
+    display: block !important; } }
+
+.cursonr-pointer {
+  cursor: pointer; }
+  .cursonr-pointer:hover {
+    color: #31d4f0 !important; }
+
+@media only screen and (max-width: 580px) {
+  .w-sm-100 {
+    width: 100% !important; } }
+
+.edit-bank {
+  background-color: #0963ce;
+  border-radius: 6px;
+  padding: 7px;
+  color: white; }
+  .edit-bank button i {
+    color: white !important; }
