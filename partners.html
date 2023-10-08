@@ -129,13 +129,13 @@
 
                                 </a>
                                 <div class="sub-menu-list">
-                                   <ul>
+                                    <ul>
                                         <li class="menu-item">
                                             <a href="invoice-list.html">
                                                 <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices List</span>
                                             </a>
                                         </li>
-                                       
+
                                         <li class="menu-item">
                                             <a href="add-invoice.html">
                                                 <span class="menu-title">-&nbsp;&nbsp;&nbsp;Add Invoices</span>
@@ -147,7 +147,7 @@
                                                 <span class="menu-title">-&nbsp;&nbsp;&nbsp;Edit Invoices</span>
                                             </a>
                                         </li>
-                                       
+
                                     </ul>
                                 </div>
                             </li>
@@ -226,7 +226,8 @@
                     <i class="fa-duotone fa-bars-staggered header-icon"></i>
                 </a>
                 <div class="show-md align-self-center">
-                    <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid mobile-logo" id="logo-image-sm">
+                    <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid mobile-logo"
+                        id="logo-image-sm">
                 </div>
 
                 <!-- Notification -->
@@ -1054,13 +1055,13 @@
                     Invoices
                 </button>
 
-                  <ul class="dropdown-menu more-dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <ul class="dropdown-menu more-dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <li class="menu-item">
                         <a href="invoice-list.html">
                             <span class="menu-title">-&nbsp;&nbsp;&nbsp;Invoices List</span>
                         </a>
                     </li>
-                  
+
                     <li class="menu-item">
                         <a href="add-invoice.html">
                             <span class="menu-title">-&nbsp;&nbsp;&nbsp;Add Invoices</span>
@@ -1072,7 +1073,7 @@
                             <span class="menu-title">-&nbsp;&nbsp;&nbsp;Edit Invoices</span>
                         </a>
                     </li>
-                   
+
                 </ul>
             </div>
 
@@ -1215,7 +1216,7 @@
                                     <label class="file crm-input pb-1 w-100" style="position: relative;">
                                         <label class="crm-label form-label " for="commission">Picture <span
                                                 class="f-12">(Optional)</span></label><br>
-                                        <label for="file" class="custom-file-upload"  id="upload-text">
+                                        <label for="file" class="custom-file-upload" id="upload-text">
                                             <span>Click to Upload <Picture></Picture></span>
                                         </label>
                                         <span id="selected-file-name" style="display: none;"></span>
@@ -1300,38 +1301,38 @@
             uploadText.style.display = 'none';
         }
     </script>
-  <script>
-    // Add a click event handler for each .dots-btn element
-    // Add a click event handler for each .dots-btn element
-    $(".dots-btn").on("click", function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to the document
+    <script>
+        // Add a click event handler for each .dots-btn element
+        // Add a click event handler for each .dots-btn element
+        $(".dots-btn").on("click", function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the document
 
-        // Find the corresponding .dots-menu2 for the clicked .dots-btn
-        var $menu = $(this).closest('.dots-dropdown').find('.dots-menu');
+            // Find the corresponding .dots-menu2 for the clicked .dots-btn
+            var $menu = $(this).closest('.dots-dropdown').find('.dots-menu');
 
-        // Toggle the class for the specific .dots-menu2 associated with this button
-        $menu.toggleClass("dots-menu-show");
+            // Toggle the class for the specific .dots-menu2 associated with this button
+            $menu.toggleClass("dots-menu-show");
 
-        // Remove the dots-menu-show class from all other .dots-menu2 elements
-        $(".dots-menu").not($menu).removeClass("dots-menu-show");
-    });
+            // Remove the dots-menu-show class from all other .dots-menu2 elements
+            $(".dots-menu").not($menu).removeClass("dots-menu-show");
+        });
 
-    // Add a document click event handler to close all .dots-menu2 elements
-    $(document).on("click", function (event) {
-        if (!$(event.target).closest(".dots-dropdown").length) {
-            $(".dots-menu").removeClass("dots-menu-show");
-        }
-    });
-    // Add a click event handler for inside .dots-menu2 elements to close them
-    $(".dots-menu").on("click", function (event) {
-        $(this).removeClass("dots-menu-show");
-    });
-    // Add a click event handler for each .dots-menu2 element
-    $(".dots-menu").on("click", function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to the document
-    });
+        // Add a document click event handler to close all .dots-menu2 elements
+        $(document).on("click", function (event) {
+            if (!$(event.target).closest(".dots-dropdown").length) {
+                $(".dots-menu").removeClass("dots-menu-show");
+            }
+        });
+        // Add a click event handler for inside .dots-menu2 elements to close them
+        $(".dots-menu").on("click", function (event) {
+            $(this).removeClass("dots-menu-show");
+        });
+        // Add a click event handler for each .dots-menu2 element
+        $(".dots-menu").on("click", function (event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the document
+        });
 
-</script>
+    </script>
 </body>
 
 </html>
