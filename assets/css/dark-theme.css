@@ -73,7 +73,7 @@
   margin-bottom: 0px !important; }
 
 .page-title {
-  color: #172b4c;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 15px;
   font-weight: 500; }
 
@@ -94,13 +94,13 @@
   display: inline-block;
   padding: 4px 12px;
   cursor: pointer;
-  color: black;
+  color: rgba(255, 255, 255, 0.85);
   border-radius: 3px;
   width: 135px; }
 
 /* Style the label when hovering */
 .custom-file-upload:hover {
-  background-color: #f0f0f0; }
+  background-color: #0c1a32; }
 
 /* Style the delete icon (X) */
 .delete-icon {
@@ -1276,7 +1276,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .person-card {
   position: relative;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #0c1a32;
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
@@ -1302,17 +1302,17 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     .person-card .person-detail p {
       font-size: 14px;
       font-weight: 400;
-      color: #5c607b; }
+      color: rgba(255, 255, 255, 0.85); }
     .person-card .person-detail a {
       font-size: 14px;
       font-weight: 400;
-      color: #5c607b;
+      color: rgba(255, 255, 255, 0.85);
       text-decoration: none; }
       .person-card .person-detail a:hover {
         color: #0963ce; }
     .person-card .person-detail i {
       font-size: 14px;
-      color: green; }
+      color: rgba(255, 255, 255, 0.85); }
       @media only screen and (max-width: 400px) {
         .person-card .person-detail i {
           font-size: 12px; } }
@@ -1377,8 +1377,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   align-items: center; }
 
 .dots-menu {
-  background-color: white;
-  background-color: #ffffff;
+  background-color: #0c1a32;
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);

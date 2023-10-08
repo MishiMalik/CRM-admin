@@ -29,7 +29,7 @@
     margin-bottom: 0px !important;
 }
 .page-title{
-    color: #172b4c;
+    color: $white-light;
     font-size: 15px;
     font-weight: 500;
 }
@@ -54,7 +54,7 @@
     display: inline-block;
     padding: 4px 12px;
     cursor: pointer;
-    color: black;
+    color: $white-light;
     border-radius: 3px;
     width: 135px;
     // width: 90% !important;
@@ -62,7 +62,7 @@
 
 /* Style the label when hovering */
 .custom-file-upload:hover {
-    background-color: #f0f0f0;
+    background-color: $dark;
 }
 // .selected-file-name{
 //     margin: 7px 12px; 

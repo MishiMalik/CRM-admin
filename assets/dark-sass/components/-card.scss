@@ -1,7 +1,7 @@
 .person-card {
     position: relative;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $dark;
     border-radius: 10px;
     -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
@@ -31,12 +31,12 @@
       p {
         font-size: 14px;
         font-weight: 400;
-        color: $gray;
+        color: $white-light;
       }
       a {
         font-size: 14px;
         font-weight: 400;
-        color: $gray;
+        color: $white-light;
         text-decoration: none;
         &:hover {
           color: $secondry;
@@ -44,7 +44,7 @@
       }
       i {
         font-size: 14px;
-        color: green;
+        color: $white-light;
         @media only screen and (max-width:400px){
         font-size: 12px;
         }
@@ -121,8 +121,7 @@
      align-items: center;
   }
   .dots-menu {
-    background-color: white;
-    background-color: #ffffff;
+    background-color: $dark;
     border-radius: 6px;
     -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
     box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
