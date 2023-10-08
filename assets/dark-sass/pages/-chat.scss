@@ -7,7 +7,7 @@
     height: 100%;
     height: calc(100vh - 114px);
     display: flex;
-    border-top: 1px solid #e8e8e8;
+    // border-top: 1px solid #e8e8e8;
 
     @media only screen and (max-width: 991px) {
       height: calc(100vh - 100px);
@@ -204,7 +204,7 @@
   
     &-body {
       width: 100% !important;
-      background-color: white;
+      background-color: $dark;
       // @media only screen and (max-width: 991px) {
       //  display: none;
       // }
@@ -232,7 +232,7 @@
           font-size: 18px;
           line-height: 16px;
           font-weight: 600;
-          color: black;
+          color: $white-light;
           @media only screen and (max-width: 991px) {
             font-size: 18px;
           }
@@ -271,7 +271,7 @@
         .chat-date {
           position: relative;
           text-align: center;
-          background-color: white;
+          background-color: $dark;
           z-index: 3;
           font-size: 14px;
           color: #bfbfbf;
@@ -319,7 +319,7 @@
             h2 {
               font-size: 14px;
               font-weight: 500;
-              color: #000000;
+              color: $white-light
             }
             span {
               font-size: 12px;
@@ -375,7 +375,7 @@
             h2 {
               font-size: 14px;
               font-weight: 500;
-              color: #000000;
+              color: $white-light;
             }
             span {
               font-size: 12px;
@@ -421,16 +421,18 @@
     position: relative;
     padding: 10px 10px;
     &--input {
-      background-color: #f6f6f8 !important;
+      background-color: $dark-skin !important;
       border-radius: 4px;
       width: 100%;
       padding: 4px 10px 4px 5px;
+      color: $white-light !important;
       input {
         width: 70%;
         padding: 10px 10px;
         opacity: 1;
         border: none !important;
         background-color: transparent;
+        color: $white-light !important;
         &:active,
         &:focus {
           outline: none;
@@ -438,7 +440,7 @@
         }
         &::placeholder {
           font-size: 14px;
-          color: #707070;
+          color: $white-light !important;
           font-weight: 400;
         }
       }
@@ -588,7 +590,7 @@
   
   .option-btns{
     position: absolute;
-    background-color: white;
+    background-color: $dark-skin;
     bottom: 70px;
     width: fit-content;
     padding: 7px;
@@ -609,6 +611,7 @@
         align-items: center;
         padding: 10px 5px;
         justify-content: flex-start;
+        color: $white-light;
         i{
             width: 40px;
             font-size: 20px;
@@ -653,9 +656,16 @@
         vertical-align: middle;
       }
 
+.emojionearea-editor{
+  color: $white-light !important;
+}
 
-
-
+.emojionearea .emojionearea-picker .emojionearea-scroll-area .emojionearea-category-title{
+  background-color: $dark-skin;
+}
+.emojionearea-wrapper{
+  background-color: $dark-skin;
+}
 
 
 
@@ -699,8 +709,9 @@
         margin-bottom: 0px;
         padding: 10px 5px;
         &:hover{
-            background-color: $light-skin;
+            background-color: $dark-skin;
              border-radius: 4px;
+            //  color: ;
         }
         .icon{
             width: 40px;
@@ -722,7 +733,7 @@
             h1{
                 font-size: 14px;
                 font-weight: 500;
-                color: black;
+                color: $white-light;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;

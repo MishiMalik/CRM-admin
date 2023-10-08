@@ -89,7 +89,7 @@
       height: 170px; /* full circle! */
       border-radius: 50%;
       box-sizing: border-box;
-      border: 15px solid #eee; /* half gray, */
+      border: 15px solid $dark-skin; /* half gray, */
       border-bottom-color: #feb21f; /* half azure */
       border-right-color: #feb21f;
     }
@@ -100,7 +100,7 @@
   //   ==============================progress bar stripped
   .progress-stripped {
     padding: 3px;
-    background: white;
+    background: $dark-skin;
     border-radius: 6px;
   }
   

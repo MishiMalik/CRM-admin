@@ -87,3 +87,12 @@
   .form-floating  input{
     color: $white-light !important;
   }
+  .form-select{
+    color: $white-light;
+  }
+  .border-bottom{
+    border-color: #5C607B !important;
+  }
+  .form-control:disabled, .form-control[readonly]{
+    background-color: transparent !important;
+  }
