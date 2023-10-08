@@ -9,7 +9,7 @@
     padding-left: 11px !important;
     padding-right: 0px;
     background-color: transparent;
-    color: #84818a;
+    color: $white-light;
   }
   .crm-input:focus,
   .crm-input:active {
@@ -39,7 +39,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 16px;
-    color: #84818a;
+    color: $white-light;
     /* 150% */
   }
   /* Add a class for styling the selected text */
@@ -50,7 +50,7 @@
   // }
   // =============================================check boxes
   .sign-check-label {
-    color: #84818a;
+    color: $white-light;
     font-family: Manrope;
     font-size: 12px;
     font-style: normal;
@@ -66,10 +66,12 @@
     font-weight: 600;
     line-height: 18px;
     text-decoration: none;
+
   }
   
   .form-check-input {
     border-color: $secondry !important;
+    color: $white-light !important;
   }
   
   .form-check-input:checked {
@@ -82,4 +84,6 @@
     outline: none !important;
     box-shadow: none !important;
   }
-  
+  .form-floating  input{
+    color: $white-light !important;
+  }

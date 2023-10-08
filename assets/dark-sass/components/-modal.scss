@@ -2,6 +2,7 @@
     max-width: 700px !important;
     .modal-content{
         width: 100% !important;
+        
     }
 }
 .modal-lg{
@@ -9,6 +10,12 @@
     .modal-content{
         width: 100% !important;
     }
+}
+.modal-content{
+    background-color: $dark;
+}
+.modal-title{
+    color: $white-light;
 }
 .modal-btn-save{
     background-color: $secondry;
