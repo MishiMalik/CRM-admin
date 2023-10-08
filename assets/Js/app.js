@@ -165,3 +165,10 @@ $(window).on("resize", applyStyles2);
 
 // Initial application of styles
 applyStyles2();
+
+// ==============================================footer date
+ // Get the current year
+ const currentYear = new Date().getFullYear();
+
+ // Update the content of the element with the current year
+ document.getElementById("copyright-year").textContent = `Copyright © ${currentYear} DigiSplix, LLC. All Rights Reserved`;
