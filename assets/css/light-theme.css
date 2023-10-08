@@ -787,7 +787,7 @@ div.dataTables_wrapper div.dataTables_filter input {
       padding: 12px 6px !important; } }
   @media only screen and (max-width: 400px) {
     .data-table-style tbody tr td {
-      padding: 10px 0px !important; } }
+      padding: 10px 5px !important; } }
 
 .dtr-details {
   text-align: left !important;
@@ -1785,6 +1785,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     height: 400px;
     overflow-y: auto;
     padding: 16px; }
+    .chat__popup .body::-webkit-scrollbar {
+      width: 7px; }
+    .chat__popup .body::-webkit-scrollbar-thumb {
+      background-color: #0963ce; }
     .chat__popup .body .recieve {
       margin-bottom: 16px; }
       .chat__popup .body .recieve .image-div {

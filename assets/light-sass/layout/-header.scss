@@ -397,6 +397,14 @@
     height: 400px;
     overflow-y: auto;
     padding: 16px;
+      &::-webkit-scrollbar {
+      width: 7px;
+    }
+    
+     
+    &::-webkit-scrollbar-thumb {
+      background-color: $secondry;
+    }
     .recieve {
       margin-bottom: 16px;
       .image-div {

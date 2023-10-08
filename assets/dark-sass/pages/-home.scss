@@ -6,11 +6,11 @@
   .box {
     position: relative;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $dark;
     border-radius: 10px;
-    -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.05);
-    border: 1px solid #efeffd;
+    -webkit-box-shadow:-7.829px 11.607px 21px 0px rgba(25, 42, 70, 0);
+    box-shadow:-7.829px 11.607px 21px 0px rgba(25, 42, 70, 0);
+    border: 1px solid #5C607B;
     padding: 20px;
     overflow: hidden;
     z-index: 0;
@@ -35,7 +35,7 @@
     }
     .box-heading {
       font-size: 16px;
-      color: $dark-blue;
+      color: $white-light;
       font-weight: 400;
       position: relative;
       z-index: 10;
@@ -43,7 +43,7 @@
       white-space: nowrap;
     }
     .box-value {
-      color: $gray;
+      color: $light-gray;
       font-size: 32px;
       font-weight: 500;
       position: relative;
@@ -296,4 +296,6 @@
   margin-right: -10px;
   margin-top: -2px;
   }
-  
+  .text-dark-clr{
+    color: $white-light;
+  }
