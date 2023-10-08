@@ -3442,7 +3442,9 @@ span.plus {
   color: #5c607b; }
 
 .selectBox input {
-  border: none; }
+  border: none;
+  padding: 0 !important;
+  font-size: 16px; }
   .selectBox input:focus, .selectBox input:active {
     outline: none;
     border: none;
