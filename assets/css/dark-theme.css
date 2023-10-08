@@ -256,7 +256,7 @@ body {
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    color: black !important;
+    color: rgba(255, 255, 255, 0.85) !important;
     font-size: 12px !important;
     /* to center the percentage value */
     display: flex;
@@ -2387,7 +2387,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       .step-count i {
         font-size: 30px; } }
   .step-count .complete-step {
-    color: green; }
+    color: #55e255; }
   .step-count .in-progress-step {
     color: #0963ce; }
 
@@ -2459,7 +2459,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     .task-card--body i {
       color: rgba(255, 255, 255, 0.85); }
     .task-card--body .complete-step {
-      color: green; }
+      color: #55e255; }
   .task-card--footer {
     padding: 0px 15px;
     border-top: 1px solid #F2F2F2; }
@@ -2501,7 +2501,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     color: white !important; }
 
 .progress-bar-container .html {
-  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.85) 79%, transparent 80% 100%), conic-gradient(#0963ce calc(var(--progress-value) * 1%), rgba(9, 99, 206, 0.2) 0); }
+  background: radial-gradient(closest-side, #0c1a32 79%, transparent 80% 100%), conic-gradient(#0963ce calc(var(--progress-value) * 1%), rgba(9, 99, 206, 0.2) 0); }
 
 .accordion-item {
   background-color: transparent !important;
@@ -3503,7 +3503,7 @@ span.plus {
 .selectBox {
   position: relative;
   cursor: pointer;
-  border: 1px solid #E5E5E5;
+  border: 1px solid #5C607B;
   padding: 10px;
   border-radius: 4px;
   display: flex;
@@ -3518,7 +3518,7 @@ span.plus {
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  color: #5c607b; }
+  color: rgba(255, 255, 255, 0.85); }
 
 .selectBox input {
   border: none;

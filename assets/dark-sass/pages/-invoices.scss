@@ -8,7 +8,7 @@
   .selectBox {
     position: relative;
     cursor: pointer;
-    border: 1px solid #E5E5E5;
+    border: 1px solid #5C607B;
     padding: 10px;
     border-radius: 4px;
     display: flex;
@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    color: $gray;
+    color: $white-light;
   }
   .selectBox input{
     border: none;
