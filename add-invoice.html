@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/layout.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
     <link rel="stylesheet" id="theme-link" href="assets/css/light-theme.css" />
 
     <title>Document</title>
@@ -1305,12 +1306,18 @@
     <!-- Preview Modal -->
     <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header d-flex flex-md-row flex-column align-items-md-center align-items-start border-bottom-0">
-                    <img src="assets/images/Logo-Png.png" alt="" class="img-fluid modal-logo">
+            <button class="ticket-fill invoice-download"><i class="fa fa-download f-18 me-2"
+                aria-hidden="true"></i>Download</button>
+            <div class="modal-content invoice-content">
+               
+                <div
+                    class="modal-header d-flex flex-md-row flex-column align-items-md-center align-items-start border-bottom-0">
+                    <img src="assets/images/DigiSplix-Logo-for-Light-Mode.png" alt="" class="img-fluid modal-logo">
                     <div class="mt-md-0 mt-3 pe-2 text-gray">
-                        <p class="mb-0 pb-0 f-16 w-500 d-flex justify-content-between">Invoice # : <span class="ms-3">In8782</span></p>
-                        <p class="mb-0 pb-0 f-16 w-500 d-flex justify-content-between">Date : <span class="ms-3">07/08/2023</span></p>
+                        <p class="mb-0 pb-0 f-16 w-500 d-flex justify-content-between">Invoice # : <span
+                                class="ms-3">In8782</span></p>
+                        <p class="mb-0 pb-0 f-16 w-500 d-flex justify-content-between">Date : <span
+                                class="ms-3">07/08/2023</span></p>
                     </div>
                 </div>
                 <div class="modal-body p-0">
@@ -1321,10 +1328,10 @@
                     </div>
                     <div class="px-4 mt-md-0 mt-3">
                         <div class="row align-items-center">
-                            <div class="col-lg-4 mb-lg-0 mb-4 mx-auto">
+                            <div class="col-lg-6 mb-lg-0 mb-4 mx-auto">
                                 <div class="border-right">
                                     <h1 class="invoice-heading ">Invoice From:</h1>
-                                    <div class="  w-500 f-16">DigiSplix, LLC                                    </div>
+                                    <div class="  w-500 f-16">DigiSplix, LLC </div>
                                     <p class="f-14 w-400  mb-0 pb-0">5900 Balcones Dr #15419
                                     </p>
                                     <p class="f-14 w-400  mb-0 pb-0">Austin, Texas 78731,
@@ -1333,12 +1340,12 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4 mb-lg-0 mb-4 mx-auto">
+                            <div class="col-lg-6 mb-lg-0 mb-4 mx-auto">
                                 <div class="border-right">
                                     <h1 class="invoice-heading  ">Customer:</h1>
                                     <div class="  w-500 f-16">Mike Roofers</div>
                                     <p class="f-14 w-400  mb-0 pb-0">45 Balcones STE 200,
-                                        </p>
+                                    </p>
                                     <p class="f-14 w-400  mb-0 pb-0">Los Anageles, Califronia</p>
                                     <p class="f-14 w-400  mb-0 pb-0">United States</p>
                                 </div>
@@ -1356,9 +1363,11 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="row mt-4 px-4">
-                        <div class="col-lg-12">
-                            <div class=" dasboard-table h-auto" style="height: fit-content !important; border: 1px solid #ccc; border-bottom: none;">
+                    <div class="px-4">
+                        <div class="row mt-4 ">
+                            <div class="col-lg-12">
+                                <div class=" dasboard-table h-auto"
+                                    style="height: fit-content !important; border: 1px solid #ccc; border-bottom: none;">
                                     <table class="table data-table-style mb-0">
                                         <thead>
                                             <tr>
@@ -1374,42 +1383,43 @@
                                             <tr class="">
                                                 <td>1.</td>
                                                 <td scope="row" style="white-space: normal;">
-                                                   ipsum dolor sit,  consectetur elit.
+                                                    ipsum dolor sit, consectetur elit.
                                                 </td>
                                                 <td>$50,00</td>
                                                 <td class="text-center">
-                                                    1 
+                                                    1
                                                 </td>
                                                 <td>%50,00</td>
-                                                
+
                                             </tr>
                                             <tr class="">
                                                 <td>2.</td>
                                                 <td scope="row" style="white-space: normal;">
-                                                   ipsum dolor sit,  consectetur elit.
+                                                    ipsum dolor sit, consectetur elit.
                                                 </td>
                                                 <td>$50,00</td>
                                                 <td class="text-center">
-                                                    1 
+                                                    1
                                                 </td>
                                                 <td>%50,00</td>
-                                                
+
                                             </tr>
                                             <tr class="">
                                                 <td>3.</td>
                                                 <td scope="row" style="white-space: normal;">
-                                                   ipsum dolor sit,  consectetur elit.
+                                                    ipsum dolor sit, consectetur elit.
                                                 </td>
                                                 <td>$50,00</td>
                                                 <td class="text-center">
-                                                    1 
+                                                    1
                                                 </td>
                                                 <td>%50,00</td>
-                                                
+
                                             </tr>
-                                           
+
                                         </tbody>
                                     </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1417,16 +1427,21 @@
                         <div class="col-lg-6 ">
                             <div class="ps-4">
                                 <h1 class="f-16 w-600">Thank you for your bussiness</h1>
-                            <div class=" mb-2 mt-3">
-                                <h1 class="f-16 w-600">Terms & Conditions:</h1>
-                                <p class="mb-0 pb-0 f-14 w-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                            </div>
-                            <div class="mt-3">
-                                <h1 class="f-16 w-600">payment Info:</h1>
-                                <p class="mb-0 pb-0 f-14 w-500">Account# : <span class="ms-3">In8782</span></p>
-                                <p class="mb-0 pb-0 f-14 w-500">A/C Name : <span class="ms-3">Lorem ipsum dolor sit.</span></p>
-                                <p class="mb-0 pb-0 f-14 w-500">Bank Details : <span class="ms-3">XXX552425172672F34</span></p>
-                            </div>
+
+                                <div class="mt-3 mb-2">
+                                    <h1 class="f-16 w-600">Payment Info:</h1>
+                                    <p class="mb-0 pb-0 f-14 w-500">Account# : <span class="ms-3">In8782</span></p>
+                                    <p class="mb-0 pb-0 f-14 w-500">A/C Name : <span class="ms-3">Lorem ipsum dolor
+                                            sit.</span></p>
+                                    <p class="mb-0 pb-0 f-14 w-500">Bank Details : <span
+                                            class="ms-3">XXX552425172672F34</span></p>
+                                </div>
+                                <div class=" mt-3">
+                                    <h1 class="f-16 w-600">Terms & Conditions:</h1>
+                                    <p class="mb-0 pb-0 f-14 w-500">Lorem ipsum dolor sit amet consectetur adipisicing
+                                        elit. </p>
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-lg-5 ms-auto ">
@@ -1440,7 +1455,7 @@
                                         <p class="f-14 w-400 text-gray mb-0 pb-0">Discount:</p>
                                         <p class="f-14 w-400 text-gray mb-0 pb-0">$22</p>
                                     </div>
-                                  
+
                                 </div>
 
                                 <div class="summary-div-total d-flex justify-content-between  pe-4 mt-3 ps-3">
@@ -1449,19 +1464,22 @@
                                     <p class="f-16 w-400   mb-0 pb-0">534$</p>
                                 </div>
 
-                                <div class="d-flex align-items-center justify-content-center flex-column w-100 px-4 pt-3 ">
+                                <div
+                                    class="d-flex align-items-center justify-content-center flex-column w-100 px-4 pt-3 ">
                                     <img src="assets/images/signature.png" alt="" class="img-fluid">
                                     <div class="sign-text w-100">
                                         <p class="text-center">Autorized Sign</p>
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div>
-                        <div class="col-lg-12">
+                        <div class="col-lg-12 mt-3">
                             <div class="invoice-footer">
-                                <p class="mb-0 pb-0 f-14 w-500 text-gray"><span class="w-600">Phone:</span> +92 38257 876</p>
-                                <p class="mb-0 pb-0 f-14 w-500 text-gray ms-4"><span class="w-600">Website:</span> crmdashboard.com</p>
+                                <p class="mb-0 pb-0 f-14 w-500 text-gray"><span class="w-600">Phone:</span> +92 38257
+                                    876</p>
+                                <p class="mb-0 pb-0 f-14 w-500 text-gray ms-4"><span class="w-600">Website:</span>
+                                    crmdashboard.com</p>
                             </div>
                         </div>
                     </div>
@@ -1484,39 +1502,29 @@
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     <script src="https://rawgit.com/enyo/dropzone/master/dist/dropzone.js"></script>
     <script src="assets/Js/table.js"></script>
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const selectStatus = document.getElementById("select-status");
-
-            selectStatus.addEventListener("change", function () {
-                // Get the selected option
-                const selectedOption = selectStatus.options[selectStatus.selectedIndex];
-
-                // Get the styles from the selected option
-                const backgroundColor = selectedOption.style.backgroundColor;
-                const color = selectedOption.style.color;
-
-                // Apply the styles to the select element
-                selectStatus.style.backgroundColor = backgroundColor;
-                selectStatus.style.color = color;
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+    <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const downloadButton = document.querySelector(".invoice-download");
+            downloadButton.addEventListener("click", function () {
+                const pdf = new jsPDF();
+                const modalContent = document.querySelector(".invoice-content");
+                console.log("clicked")
+                pdf.html(modalContent, {
+                    callback: function (pdf) {
+                        pdf.save("invoice.pdf");
+                    },
+                });
             });
         });
-    </script> -->
+
+    </script>
+
+    </script>
+
+
     <script>
-        // function tabs(evt, cityName) {
-        //     var i, tabcontent-lead, tablinks;
-        //     tabcontent-lead = document.getElementsByClassName("tabs-tabcontent-lead");
-        //     for (i = 0; i < tabcontent-lead.length; i++) {
-        //         tabcontent-lead[i].style.display = "block";
-        //     }
-        //     tablinks = document.getElementsByClassName("tabs-tablinks");
-        //     for (i = 0; i < tablinks.length; i++) {
-        //         tablinks[i].className = tablinks[i].className.replace(" active", "");
-        //     }
-        //     document.getElementById(cityName).style.display = "block";
-        //     evt.currentTarget.className += " active";
-        // }
-        // document.getElementById("defaultOpen").click();
+
         $(document).ready(function () {
             // Click event for tab buttons
             $(".tablink").click(function () {
@@ -1540,37 +1548,34 @@
         });
     </script>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        $(document).ready(function () {
             // Get all selectBox and checkBoxes elements
-            const selectBoxes = document.querySelectorAll(".selectBox");
-            const checkBoxesList = document.querySelectorAll(".checkBoxes");
+            const $selectBoxes = $(".selectBox");
+            const $checkBoxesList = $(".checkBoxes");
 
             // Add click event listener to each selectBox
-            selectBoxes.forEach(function (selectBox, index) {
-                selectBox.addEventListener("click", function () {
-                    // Toggle the display of the corresponding checkBoxes element
-                    checkBoxesList[index].style.display = checkBoxesList[index].style.display === "block" ? "none" : "block";
-                });
+            $selectBoxes.on("click", function () {
+                // Toggle the display of the corresponding checkBoxes element
+                const index = $selectBoxes.index(this);
+                $checkBoxesList.eq(index).toggle();
             });
 
             // Close the dropdown when clicking outside of any selectBox
-            document.addEventListener("click", function (event) {
-                selectBoxes.forEach(function (selectBox, index) {
-                    if (!selectBox.contains(event.target)) {
-                        checkBoxesList[index].style.display = "none";
+            $(document).on("click", function (event) {
+                $selectBoxes.each(function (index) {
+                    if (!$selectBoxes.eq(index).has(event.target).length) {
+                        $checkBoxesList.eq(index).hide();
                     }
                 });
             });
 
             // Prevent the dropdown from closing when clicking inside it
-            checkBoxesList.forEach(function (checkBoxes) {
-                checkBoxes.addEventListener("click", function (event) {
-                    event.stopPropagation();
-                });
+            $checkBoxesList.on("click", function (event) {
+                event.stopPropagation();
             });
         });
-
     </script>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const addItemButton = document.querySelector(".add-item");

@@ -1108,6 +1108,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   padding: 20px;
   border: 1px dashed #0963ce; }
 
+.invoice-download {
+  position: fixed;
+  bottom: 30px;
+  right: 30px; }
+
 .crm-input {
   font-size: 14px;
   font-style: normal;
