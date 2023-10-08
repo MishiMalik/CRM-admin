@@ -2524,7 +2524,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   .chat__screen-chats {
     width: 300px;
     border-right: 1px solid #5C607B;
-    background-color: white;
+    background-color: #0c1a32;
     height: calc(100vh - 114px); }
     @media only screen and (max-width: 1200px) {
       .chat__screen-chats {
@@ -2550,7 +2550,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       .chat__screen-chats--header p {
         font-size: 14px;
         font-weight: 500;
-        color: #000000;
+        color: rgba(255, 255, 255, 0.85);
         display: flex;
         width: auto;
         flex-grow: 1;
@@ -2591,7 +2591,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         align-items: center;
         border-left: 3px solid transparent; }
         .chat__screen-chats-wrapper--body .conversation:hover {
-          background-color: #f6f6f6;
+          background-color: #15243e;
           border-left: 3px solid blue;
           cursor: pointer; }
         @media only screen and (max-width: 500px) {
@@ -2617,7 +2617,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
             font-size: 14px;
             line-height: 14px;
             font-weight: 500;
-            color: black;
+            color: rgba(255, 255, 255, 0.85);
             margin-bottom: 5px !important;
             padding-bottom: 0px !important;
             overflow: hidden;
@@ -2635,14 +2635,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
                 width: 170px; } }
           .chat__screen-chats-wrapper--body .conversation-text span {
             font-size: 10px;
-            padding-bottom: 7px; }
+            padding-bottom: 7px;
+            color: rgba(255, 255, 255, 0.85); }
           .chat__screen-chats-wrapper--body .conversation-text p {
             font-size: 12px;
             font-weight: 400;
             overflow: hidden;
             text-overflow: ellipsis;
             width: 180px;
-            white-space: nowrap; }
+            white-space: nowrap;
+            color: #5c607b; }
             @media only screen and (max-width: 1200px) {
               .chat__screen-chats-wrapper--body .conversation-text p {
                 width: 550px; } }
@@ -2653,7 +2655,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
               .chat__screen-chats-wrapper--body .conversation-text p {
                 width: 200px; } }
       .chat__screen-chats-wrapper--body .active-conversation {
-        background-color: #f6f6f6;
+        background-color: #15243e;
         border-left: 3px solid blue; }
   .chat__screen-body {
     width: 100% !important;
