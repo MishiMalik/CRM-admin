@@ -1,37 +1,33 @@
 body {
-    font-family: "Poppins", sans-serif;
-    ::-webkit-scrollbar {
-      width: 7px;
-    }
-  
-    ::-webkit-scrollbar-track {
-      background-color: transparent !important;
-    }
-  
-    ::-webkit-scrollbar-thumb {
-      background-color: $secondry;
-      border-radius: 10px;
-    }
+  font-family: "Poppins", sans-serif;
+  &::-webkit-scrollbar {
+    width: 7px;
   }
-  .theme {
-    background-color: $dark-skin;
-    display: flex;
-    height: 100vh;
-    overflow-y: hidden;
-    // padding: 12px;
-    @media only screen and (max-width:991px){
-      height:100%;
-      overflow-y: auto;
-      padding-top: 50px;
-     
-    }
-    @media only screen and (max-width:575px){
+
+  &::-webkit-scrollbar-track {
+    background-color: transparent !important;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 10px;
+  }
+}
+.theme {
+  background-color: $light-skin;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+  // padding: 12px;
+  @media only screen and (max-width: 991px) {
+    height: 100%;
+    overflow-y: auto;
+    padding-top: 60px;
+  }
+  @media only screen and (max-width: 575px) {
     padding-bottom: 50px;
-    }
   }
-  .theme-override{
-    overflow: hidden;
-  }
-  .content{
-    color: $white-light;
-  }
+}
+.theme-override {
+  overflow: hidden;
+}

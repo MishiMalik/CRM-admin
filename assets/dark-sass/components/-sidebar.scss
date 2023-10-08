@@ -1,7 +1,9 @@
 .sidebar {
-  background-color: $dark !important;
+  background-color: white !important;
   border-radius: 10px;
   padding: 15px 0px;
+  position: relative;
+  z-index:3 ;
   .sidebar-header {
     padding: 0px 15px 15px 15px;
     .logo-lg {
@@ -17,24 +19,18 @@
     margin-bottom: 5px !important;
   }
   .menu .menu-item a {
-    color: #b5b5c3 !important;
-  }
-  .menu .menu-item a:hover {
-    color: $white-light !important;
-    background-color: transparent !important;
+    color: $gray !important;
   }
   .menu .menu-item a .menu-icon {
-    color: #b5b5c3 !important;
+    color: $gray !important;
     cursor: pointer;
   }
   .menu .menu-item a:hover .menu-title {
-    color: white;
-    background-color: transparent !important;
+    color: $secondry;
   }
 
   .menu .menu-item a:hover .menu-icon i {
-    color: white !important;
-    background-color: transparent !important;
+    color: $secondry !important;
   }
 
   .menu .menu-item a:hover::after {
@@ -43,16 +39,18 @@
   .menu-heading {
     padding: 0px 20px 15px 20px;
     font-weight: 400;
-    color: $white-light;
+    color: $dark-blue;
     opacity: 1;
   }
   .active-menu .menu-title {
-    color: white !important;
+    color: $secondry;
   }
   .active-menu .menu-icon i {
-    color: white !important;
+    color: $secondry !important;
   }
-
+  .active-menu .menu-icon svg .path-light {
+    fill: #0962ce8e !important;
+  }
   & .sidebar-layout .sidebar-content::-webkit-scrollbar {
     width: 5px;
   }
@@ -62,7 +60,7 @@
   }
 
   & .sidebar-layout .sidebar-content::-webkit-scrollbar-thumb {
-    background-color: $secondry;
+    background-color: #aaa;
     border-radius: 10px;
   }
 
@@ -70,7 +68,7 @@
     display: flex;
     align-items: center;
     padding: 10px 15px !important;
-    border: 1px solid $gray !important;
+    border: 1px solid #f3f6f9 !important;
     margin: 18px 20px !important;
     border-radius: 10px;
   }
@@ -80,7 +78,7 @@
   position: relative !important;
   .dropdown-toggle {
     h3 {
-      color: $white-light;
+      color: #172b4c;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -88,7 +86,7 @@
       line-height: 1.5;
     }
     p {
-      color: $white-light;
+      color: #172b4c;
       font-size: 14px;
       font-style: normal;
       font-weight: 400;
@@ -97,29 +95,15 @@
     }
     &::after {
       margin-left: 20px !important;
-      border-top-color: $white-light !important;
-      border-bottom-color: $white-light !important;
     }
   }
   .dropdown-menu {
     position: absolute !important;
     inset: 3px 30px auto -10px !important;
     right: 0px !important;
-    background-color: $dark;
-    border: 1px solid $gray !important;
-    color: $white-light !important;
-    li {
-      a {
-        color: $white-light !important;
-        &:hover{
-          background-color: $dark2;
-        }
-      }
-    
-    }
+    border: 1px solid #f3f6f9 !important;
     li:not(:last-child) {
       margin-bottom: 7px;
-      color: $white-light !important;
     }
   }
 }
@@ -149,7 +133,7 @@
   }
 }
 .sidebar.collapsed .sub-menu-list {
-  background-color: $dark !important;
+  background-color: #ffffff !important;
   box-shadow: 5px 8px 10px 0px rgba(0, 0, 0, 0.1) !important;
   padding-left: 0px !important;
   .menu-item {
