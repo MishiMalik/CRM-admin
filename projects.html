@@ -1235,15 +1235,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control crm-input" id="project"
-                                        placeholder="ABC">
-                                    <label class="crm-label form-label" for="project">Project Name<span
-                                            class="text-danger">*</span></label>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-floating mb-3">
-                                    <select class="form-select crm-input" id="select-status"
+                                    <select class="form-select crm-input" id="select-billing"
                                         aria-label="Floating label select example">
                                         <option>Select</option>
                                       
@@ -1254,11 +1246,38 @@
                                         <option value="6" style="color: #039227; ">Paid
                                         </option>
                                     </select>
-                                    <label class="crm-label form-label" for="select-status">Status<span
+                                    <label class="crm-label form-label" for="select-billing">Billing Status<span
                                             class="text-danger">*</span></label>
                                 </div>
 
                             </div>
+                            <div class="col-lg-6">
+                                <div class="form-floating mb-3">
+                                    <select class="form-select crm-input" id="select-status"
+                                        aria-label="Floating label select example">
+                                        <option>Select</option>
+                                      
+                                        <option value="2" style="color: #063AF6; ">
+                                            On-Going</option>
+                                        
+                                        
+                                        <option value="6" style="color: #039227; ">Completed
+                                        </option>
+                                    </select>
+                                    <label class="crm-label form-label" for="select-status">Changing Status<span
+                                            class="text-danger">*</span></label>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control crm-input" id="project"
+                                        placeholder="ABC">
+                                    <label class="crm-label form-label" for="project">Project Name<span
+                                            class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                            
                             <div class="col-lg-12 mb-3">
                                
                                 <label class="file crm-input pb-1 w-100" style="position: relative;">
@@ -1369,7 +1388,24 @@
             });
         });
     </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const selectStatus = document.getElementById("select-billing");
 
+        selectStatus.addEventListener("change", function () {
+            // Get the selected option
+            const selectedOption = selectStatus.options[selectStatus.selectedIndex];
+
+            // Get the styles from the selected option
+            const backgroundColor = selectedOption.style.backgroundColor;
+            const color = selectedOption.style.color;
+
+            // Apply the styles to the select element
+            selectStatus.style.backgroundColor = backgroundColor;
+            selectStatus.style.color = color;
+        });
+    });
+</script>
 
 </body>
 
