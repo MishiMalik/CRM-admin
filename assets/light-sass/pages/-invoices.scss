@@ -302,3 +302,39 @@ min-width: 500px;
         color: white !important;
     }
   }
+  // ==========================================================preview
+  .invoice-heading-row{
+    background-color: $secondry;
+    display: flex;
+    justify-content: flex-end;
+    padding:15px 45px;
+    position: relative;
+    .invoice-heading{
+      color: black;
+      font-size: 50px;
+      font-weight: 600;
+      background-color: white;
+      width: fit-content;
+      padding: 0px 15px;
+      position: absolute;
+      top: -15px;
+      right: 45px;
+    }
+
+  }
+  .summary-div-total {
+    background-color: $secondry;
+    padding: 5px ;
+    color: white;
+  }
+  .sign-text{
+    border-top: 1px solid $gray;
+    p{
+      font-size: 14px;
+    }
+  }
+  .invoice-footer{
+    border-top: 2px solid $secondry;
+    padding: 20px !important;
+    display: flex;
+  }

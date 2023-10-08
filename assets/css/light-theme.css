@@ -1045,7 +1045,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     width: 100% !important; }
 
 .modal-lg {
-  max-width: 900px !important; }
+  max-width: 700px !important; }
   .modal-lg .modal-content {
     width: 100% !important; }
 
@@ -3683,3 +3683,35 @@ span.plus {
   color: white; }
   .edit-bank button i {
     color: white !important; }
+
+.invoice-heading-row {
+  background-color: #0963ce;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 45px;
+  position: relative; }
+  .invoice-heading-row .invoice-heading {
+    color: black;
+    font-size: 50px;
+    font-weight: 600;
+    background-color: white;
+    width: fit-content;
+    padding: 0px 15px;
+    position: absolute;
+    top: -15px;
+    right: 45px; }
+
+.summary-div-total {
+  background-color: #0963ce;
+  padding: 5px;
+  color: white; }
+
+.sign-text {
+  border-top: 1px solid #5c607b; }
+  .sign-text p {
+    font-size: 14px; }
+
+.invoice-footer {
+  border-top: 2px solid #0963ce;
+  padding: 20px !important;
+  display: flex; }
