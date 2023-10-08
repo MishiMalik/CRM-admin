@@ -4,6 +4,7 @@
 /* Style for .selectBox (Dropdown container) */
 .multipleSelection {
     position: relative;
+    background-color: transparent !important;
   }
   .selectBox {
     position: relative;
@@ -13,6 +14,7 @@
     border-radius: 4px;
     display: flex;
     justify-content: space-between;
+    background-color: transparent !important;
     @media only screen and (max-width:580px){
         padding:7px 10px;
     }
@@ -30,6 +32,11 @@
     border: none;
     padding: 0 !important;
     font-size: 16px;
+    background-color: transparent !important;
+    color: $white-light;
+    &::placeholder{
+      color: $white-light;
+    }
     &:focus,
     &:active{
         outline: none;
@@ -57,7 +64,7 @@
     top: calc(100% + 15px);
     right: 0;
     min-width: 220px;
-    background-color: #fff;
+    background-color:$dark;
     border-top: none;
     border-radius: 0 0 4px 4px;
     z-index: 1;
@@ -133,7 +140,7 @@
       align-items: center;
       margin-bottom: 10px;
       font-size: 14px;
-      color: $gray;
+      color: $white-light;
       cursor: pointer;
       &:hover{
         color: $secondry;
@@ -248,6 +255,7 @@ min-width: 500px;
     font-size: 14px;
     font-weight: 500;
     min-width: 100px;
+    color: $white-light;
 }
 .invoice-value{
     font-size: 14px;
@@ -256,7 +264,7 @@ min-width: 500px;
 }
 .form-check-label{
     font-size: 14px !important;
-    color: $gray;
+    color: $white-light;
 }
 .line{
     height: 1px;
@@ -310,10 +318,10 @@ min-width: 500px;
     padding:15px 45px;
     position: relative;
     .invoice-heading{
-      color: black;
+      color: $white-light;
       font-size: 50px;
       font-weight: 600;
-      background-color: white;
+      background-color: $dark;
       width: fit-content;
       padding: 0px 15px;
       position: absolute;
@@ -338,4 +346,22 @@ min-width: 500px;
     padding: 20px !important;
     display: flex;
     justify-content: space-between;
+  }
+  .box-gray  textarea{
+    color: $white-light !important;
+  }
+  .accordian-invoice-icon:not(.collapsed), .accordian-invoice-icon{
+    color: $white-light !important;
+  }
+  .summary-div  p{
+    color: $white-light;
+  }
+  #dropzone p{
+    color: $white-light !important;
+  }
+  .dropzone{
+    background-color: transparent !important;
+  }
+  .accordion-body textarea{
+    background-color: transparent !important;
   }

@@ -3498,7 +3498,8 @@ span.plus {
 
 /* Style for .selectBox (Dropdown container) */
 .multipleSelection {
-  position: relative; }
+  position: relative;
+  background-color: transparent !important; }
 
 .selectBox {
   position: relative;
@@ -3507,7 +3508,8 @@ span.plus {
   padding: 10px;
   border-radius: 4px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: transparent !important; }
   @media only screen and (max-width: 580px) {
     .selectBox {
       padding: 7px 10px; } }
@@ -3523,7 +3525,11 @@ span.plus {
 .selectBox input {
   border: none;
   padding: 0 !important;
-  font-size: 16px; }
+  font-size: 16px;
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.85); }
+  .selectBox input::placeholder {
+    color: rgba(255, 255, 255, 0.85); }
   .selectBox input:focus, .selectBox input:active {
     outline: none;
     border: none;
@@ -3547,7 +3553,7 @@ span.plus {
   top: calc(100% + 15px);
   right: 0;
   min-width: 220px;
-  background-color: #fff;
+  background-color: #0c1a32;
   border-top: none;
   border-radius: 0 0 4px 4px;
   z-index: 1;
@@ -3608,7 +3614,7 @@ span.plus {
     align-items: center;
     margin-bottom: 10px;
     font-size: 14px;
-    color: #5c607b;
+    color: rgba(255, 255, 255, 0.85);
     cursor: pointer; }
     .selectBox-cont label:hover {
       color: #0963ce; }
@@ -3713,7 +3719,8 @@ span.plus {
 .invoice-label {
   font-size: 14px;
   font-weight: 500;
-  min-width: 100px; }
+  min-width: 100px;
+  color: rgba(255, 255, 255, 0.85); }
 
 .invoice-value {
   font-size: 14px;
@@ -3722,7 +3729,7 @@ span.plus {
 
 .form-check-label {
   font-size: 14px !important;
-  color: #5c607b; }
+  color: rgba(255, 255, 255, 0.85); }
 
 .line {
   height: 1px;
@@ -3770,10 +3777,10 @@ span.plus {
   padding: 15px 45px;
   position: relative; }
   .invoice-heading-row .invoice-heading {
-    color: black;
+    color: rgba(255, 255, 255, 0.85);
     font-size: 50px;
     font-weight: 600;
-    background-color: white;
+    background-color: #0c1a32;
     width: fit-content;
     padding: 0px 15px;
     position: absolute;
@@ -3795,6 +3802,24 @@ span.plus {
   padding: 20px !important;
   display: flex;
   justify-content: space-between; }
+
+.box-gray textarea {
+  color: rgba(255, 255, 255, 0.85) !important; }
+
+.accordian-invoice-icon:not(.collapsed), .accordian-invoice-icon {
+  color: rgba(255, 255, 255, 0.85) !important; }
+
+.summary-div p {
+  color: rgba(255, 255, 255, 0.85); }
+
+#dropzone p {
+  color: rgba(255, 255, 255, 0.85) !important; }
+
+.dropzone {
+  background-color: transparent !important; }
+
+.accordion-body textarea {
+  background-color: transparent !important; }
 
 .log-theme {
   min-height: 100vh;
