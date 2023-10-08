@@ -2164,7 +2164,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 14px;
   width: fit-content;
   margin-right: -10px;
-  margin-top: -2px; }
+  margin-top: -2px;
+  background-color: #0c1a32; }
 
 .text-dark-clr {
   color: rgba(255, 255, 255, 0.85); }
@@ -2523,7 +2524,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       height: calc(100vh - 200px); } }
   .chat__screen-chats {
     width: 300px;
-    border-right: 1px solid #f6f6f6;
+    border-right: 1px solid #5C607B;
     background-color: white;
     height: calc(100vh - 114px); }
     @media only screen and (max-width: 1200px) {
@@ -2537,7 +2538,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         height: calc(100vh - 200px); } }
     .chat__screen-chats--header {
       height: 60px;
-      border-bottom: 1px solid #e8e8e8;
+      border-bottom: 1px solid #5C607B;
       padding: 0px 20px;
       display: flex;
       align-items: stretch;

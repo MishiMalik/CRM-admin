@@ -23,7 +23,7 @@
     //   }
     &-chats {
       width: 300px;
-      border-right: 1px solid $light-skin;
+      border-right: 1px solid #5C607B;
       background-color: white;
       height: calc(100vh - 114px);
       @media only screen and (max-width: 1200px) {
@@ -46,7 +46,7 @@
     //   }
       &--header {
         height: 60px;
-        border-bottom: 1px solid #e8e8e8;
+        border-bottom: 1px solid #5C607B;
         padding: 0px 20px;
         display: flex;
         align-items: stretch;
