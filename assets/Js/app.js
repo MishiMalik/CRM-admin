@@ -1,5 +1,3 @@
-
-
 // document.addEventListener("DOMContentLoaded", function () {
 //   const toggleButton = document.getElementById("toggleTheme");
 //   const themeLink = document.getElementById("theme-link");
@@ -34,31 +32,30 @@ $(document).ready(function () {
   const lightLogoURL = "assets/images/DigiSplix-Logo-for-Light-Mode.png";
   const darkLogoURL = "assets/images/DigiSplix-logo-for-dark-mode.png";
 
-  if (currentMode === 'dark') {
+  if (currentMode === "dark") {
     $("#theme-link").attr("href", darkThemeURL);
     $("#logo-image").attr("src", darkLogoURL);
     $("#logo-image-sm").attr("src", darkLogoURL);
- 
   } else {
     $("#theme-link").attr("href", lightThemeURL);
     $("#logo-image").attr("src", lightLogoURL);
     $("#logo-image-sm").attr("src", lightLogoURL);
   }
 
-  $('#toggleTheme').click(function () {
+  $("#toggleTheme").click(function () {
     const currentMode = getMode();
-    const newMode = currentMode === 'dark' ? 'light' : 'dark';
+    const newMode = currentMode === "dark" ? "light" : "dark";
     toggleMode(newMode);
   });
 
   function setMode(mode) {
     // Set a cookie named "preferredMode" with the mode value
-    Cookies.set('preferredMode', mode, { expires: 365 }); // Cookie expires in 365 days
+    Cookies.set("preferredMode", mode, { expires: 365 }); // Cookie expires in 365 days
 
-    if (mode === 'dark') {
-      $("#theme-link").attr("href", darkThemeURL)
+    if (mode === "dark") {
+      $("#theme-link").attr("href", darkThemeURL);
       $("#logo-image").attr("src", darkLogoURL);
-    $("#logo-image-sm").attr("src", darkLogoURL);
+      $("#logo-image-sm").attr("src", darkLogoURL);
     } else {
       $("#theme-link").attr("href", lightThemeURL);
       $("#logo-image").attr("src", lightLogoURL);
@@ -68,7 +65,7 @@ $(document).ready(function () {
 
   function getMode() {
     // Get the value of the "preferredMode" cookie
-    return Cookies.get('preferredMode');
+    return Cookies.get("preferredMode");
   }
 
   function toggleMode(newMode) {
@@ -80,48 +77,38 @@ $(document).ready(function () {
 $(document).ready(function () {
   const currentSidebar = getSidebar();
 
-  if (currentSidebar === 'open') {
-    $("#sidebar").removeClass("collapsed")
+  if (currentSidebar === "open") {
+    $("#sidebar").removeClass("collapsed");
   } else {
-    $("#sidebar").addClass("collapsed")
+    $("#sidebar").addClass("collapsed");
   }
 
-  $('#btn-collapse').click(function () {
+  $("#btn-collapse").click(function () {
     const currentSidebar = getSidebar();
-    const newSidebar = currentSidebar === 'open' ? 'close' : 'open';
+    const newSidebar = currentSidebar === "open" ? "close" : "open";
     toggleSidebar(newSidebar);
   });
 
   function setSidebar(sidebar) {
     // Set a cookie named "preferredSidebar" with the Sidebar value
-    Cookies.set('preferredSidebar', sidebar, { expires: 365 }); // Cookie expires in 365 days
+    Cookies.set("preferredSidebar", sidebar, { expires: 365 }); // Cookie expires in 365 days
 
-    if (sidebar === 'open') {
-      $("#sidebar").removeClass("collapsed")
+    if (sidebar === "open") {
+      $("#sidebar").removeClass("collapsed");
     } else {
-      $("#sidebar").addClass("collapsed")
+      $("#sidebar").addClass("collapsed");
     }
   }
 
   function getSidebar() {
     // Get the value of the "preferredSidebar" cookie
-    return Cookies.get('preferredSidebar');
+    return Cookies.get("preferredSidebar");
   }
 
   function toggleSidebar(newSidebar) {
     setSidebar(newSidebar);
   }
 });
-
-
-
-
-
-
-
-
-
-
 
 // expand screen
 $(document).ready(function () {
@@ -250,8 +237,10 @@ $(window).on("resize", applyStyles2);
 applyStyles2();
 
 // ==============================================footer date
- // Get the current year
- const currentYear = new Date().getFullYear();
+// Get the current year
+const currentYear = new Date().getFullYear();
 
- // Update the content of the element with the current year
- document.getElementById("copyright-year").textContent = `Copyright © ${currentYear} DigiSplix, LLC. All Rights Reserved`;
+// Update the content of the element with the current year
+document.getElementById(
+  "copyright-year"
+).textContent = `Copyright © ${currentYear} DigiSplix, LLC. All Rights Reserved`;
