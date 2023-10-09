@@ -1376,15 +1376,26 @@
             gradient2.rotation = event.target.middleAngle + 90;
         });
 
+        setInterval(function () {
+            var themeLink = $("#theme-link").attr("href");
+            if (themeLink.includes("dark")) {
+                chart.legend.labels.template.fill = am4core.color("#fff");
+                chart.legend.valueLabels.template.fill = am4core.color("#fff");
+            } else {
+                chart.legend.labels.template.fill = am4core.color("#000");
+                chart.legend.valueLabels.template.fill = am4core.color("#000");
+            }
+        }, 100)
+
 
     </script>
     <script>
         // Create chart instance
-        var chart = am4core.create("chartdiv3", am4charts.PieChart);
-        chart.fontSize = 16;
+        var chart2 = am4core.create("chartdiv3", am4charts.PieChart);
+        chart2.fontSize = 16;
 
         // Add data with different colors
-        chart.data = [{
+        chart2.data = [{
             "level": "Technical",
             "litres": 5017,
             "color": am4core.color("#F74A6A"), // Set a specific color for this category
@@ -1402,7 +1413,7 @@
         }];
 
         // Add and configure Series
-        var pieSeries2 = chart.series.push(new am4charts.PieSeries());
+        var pieSeries2 = chart2.series.push(new am4charts.PieSeries());
         pieSeries2.dataFields.value = "litres";
         pieSeries2.dataFields.category = "level";
         pieSeries2.innerRadius = am4core.percent(50);
@@ -1424,11 +1435,11 @@
         pieSeries2.slices.template.strokeWidth = 1;
 
         // Create a custom legend formatter to display values instead of percentages
-        chart.legend = new am4charts.Legend();
-        chart.legend.position = "bottom";
-        chart.legend.useDefaultMarker = true;
+        chart2.legend = new am4charts.Legend();
+        chart2.legend.position = "bottom";
+        chart2.legend.useDefaultMarker = true;
 
-        chart.legend.itemContainers.template.events.on("validated", function (event) {
+        chart2.legend.itemContainers.template.events.on("validated", function (event) {
             var dataItem = event.dataItem;
             if (dataItem) {
                 dataItem.label.text = dataItem.dataContext.level; // Display the 'level' value in the legend
@@ -1443,6 +1454,17 @@
                 dataItem.label.fill = dataItem.dataContext.labelColor; // Set the liters text color in the legend
             }
         });
+
+        setInterval(function () {
+            var themeLink = $("#theme-link").attr("href");
+            if (themeLink.includes("dark")) {
+                chart2.legend.labels.template.fill = am4core.color("#fff");
+                chart2.legend.valueLabels.template.fill = am4core.color("#fff");
+            } else {
+                chart2.legend.labels.template.fill = am4core.color("#000");
+                chart2.legend.valueLabels.template.fill = am4core.color("#000");
+            }
+        }, 100)
 
     </script>
     <script>
