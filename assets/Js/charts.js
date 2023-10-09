@@ -46,7 +46,16 @@ var pieChart = new Chart(oilCanvas, {
   },
   
 });
+setInterval(function () {
+  var themeLink = $("#theme-link").attr("href");
+  if (themeLink.includes("dark")) {
+    pieChart.options.plugins.legend.labels.color = "white"
+  } else {
+    pieChart.options.plugins.legend.labels.color = "black"
+  }
 
+  pieChart.update()
+}, 100)
 am5.ready(function() {
 
     // Create root element

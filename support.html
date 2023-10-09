@@ -1391,6 +1391,80 @@
     </script>
     <script>
         // Create chart instance
+        var chart = am4core.create("chartdiv2", am4charts.PieChart);
+        chart.fontSize = 16;
+        // Add data with different colors
+        chart.data = [{
+            "level": "High",
+            "litres": 5017,
+            "color": am4core.color("#F74A6A") // Set a specific color for this category
+        }, {
+            "level": "Medium",
+            "litres": 3001,
+            "color": am4core.color("#FFB22B") // Set a specific color for this category
+        }, {
+            "level": "Low",
+            "litres": 5001,
+            "color": am4core.color("#398BF7") // Set a specific color for this category
+        }];
+
+        // Add and configure Series
+        var pieSeries = chart.series.push(new am4charts.PieSeries());
+        pieSeries.dataFields.value = "litres";
+        pieSeries.dataFields.category = "level";
+        pieSeries.innerRadius = am4core.percent(50);
+        pieSeries.ticks.template.disabled = true;
+        pieSeries.labels.template.disabled = true;
+
+        // Set the color for each slice
+        pieSeries.slices.template.propertyFields.fill = "color";
+
+        var rgm = new am4core.LinearGradientModifier();
+        rgm.brightnesses.push(0, -0.4);
+        pieSeries.slices.template.fillModifier = rgm;
+
+        var rgm2 = new am4core.LinearGradientModifier();
+        rgm2.brightnesses.push(0, -0.4);
+
+        pieSeries.slices.template.strokeModifier = rgm2;
+        pieSeries.slices.template.strokeOpacity = 1;
+        pieSeries.slices.template.strokeWidth = 1;
+
+        // Create a custom legend formatter to display values instead of percentages
+        chart.legend = new am4charts.Legend();
+        chart.legend.position = "bottom";
+        chart.legend.useDefaultMarker = true;
+
+        chart.legend.itemContainers.template.events.on("validated", function (event) {
+            var dataItem = event.dataItem;
+            if (dataItem) {
+                dataItem.label.text = dataItem.dataContext.litres; // Display the 'litres' value in the legend
+            }
+        });
+
+        pieSeries.slices.template.events.on("validated", function (event) {
+            var gradient = event.target.fillModifier.gradient;
+            gradient.rotation = event.target.middleAngle + 90;
+
+            var gradient2 = event.target.strokeModifier.gradient;
+            gradient2.rotation = event.target.middleAngle + 90;
+        });
+
+        setInterval(function () {
+            var themeLink = $("#theme-link").attr("href");
+            if (themeLink.includes("dark")) {
+                chart.legend.labels.template.fill = am4core.color("#fff");
+                chart.legend.valueLabels.template.fill = am4core.color("#fff");
+            } else {
+                chart.legend.labels.template.fill = am4core.color("#000");
+                chart.legend.valueLabels.template.fill = am4core.color("#000");
+            }
+        }, 100)
+
+
+    </script>
+    <script>
+        // Create chart instance
         var chart2 = am4core.create("chartdiv3", am4charts.PieChart);
         chart2.fontSize = 16;
 
