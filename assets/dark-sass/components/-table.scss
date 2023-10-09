@@ -195,7 +195,7 @@
   .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
   .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
   .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-    background-color: $light-gray !important;
+    background-color: $white-light !important;
     color: $gray !important;
     border: 2px solid transparent !important;
   }
@@ -798,3 +798,7 @@
     .dataTables_info{
       color: $white-light !important;
     }
+    .dataTables_wrapper .dataTables_length select
+  {
+    background-color: $dark-skin;
+  }

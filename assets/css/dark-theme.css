@@ -754,7 +754,7 @@ div.dataTables_wrapper div.dataTables_filter input {
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
 .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
-  background-color: #F2F2F2 !important;
+  background-color: rgba(255, 255, 255, 0.85) !important;
   color: #5c607b !important;
   border: 2px solid transparent !important; }
 
@@ -1063,6 +1063,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .dataTables_info {
   color: rgba(255, 255, 255, 0.85) !important; }
+
+.dataTables_wrapper .dataTables_length select {
+  background-color: #15243e; }
 
 .modal-medium {
   max-width: 700px !important; }
