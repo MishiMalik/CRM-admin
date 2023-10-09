@@ -1,43 +1,78 @@
-// toggle theme
-// document.addEventListener("DOMContentLoaded", function () {
-//   const toggleButton = document.getElementById("toggleTheme");
-//   const themeLink = document.getElementById("theme-link");
-//   const lightThemeURL = "assets/css/light-theme.css";
-//   const darkThemeURL = "assets/css/dark-theme.css";
+// Toggle theme
+$(document).ready(function () {
+  const currentMode = getMode();
 
-//   toggleButton.addEventListener("click", function () {
-//     if (themeLink.href.includes(lightThemeURL)) {
-//       themeLink.href = darkThemeURL;
-//       alert("Switching to dark theme");
-//     } else {
-//       themeLink.href = lightThemeURL;
-//       alert("Switching to light theme");
-//     }
-//   });
-// });
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("toggleTheme");
-  const themeLink = document.getElementById("theme-link");
-  const logoImage = document.getElementById("logo-image");
-  const logoImagesm = document.getElementById("logo-image-sm");
   const lightThemeURL = "assets/css/light-theme.css";
   const darkThemeURL = "assets/css/dark-theme.css";
-  const lightLogoURL = "assets/images/DigiSplix-Logo-for-Light-Mode.png";
-  const darkLogoURL = "assets/images/DigiSplix-logo-for-dark-mode.png";
 
-  toggleButton.addEventListener("click", function () {
-    if (themeLink.href.includes(lightThemeURL)) {
-      themeLink.href = darkThemeURL;
-      logoImage.src = darkLogoURL; // Update the logo for dark theme
-      logoImagesm.src = darkLogoURL; // Update the logo for dark theme
-      alert("Switching to dark theme");
-    } else {
-      themeLink.href = lightThemeURL;
-      logoImage.src = lightLogoURL; // Update the logo for light theme
-      logoImagesm.src = lightLogoURL; // Update the logo for light theme
-      alert("Switching to light theme");
-    }
+  if (currentMode === 'dark') {
+    $("#theme-link").attr("href", darkThemeURL)
+  } else {
+    $("#theme-link").attr("href", lightThemeURL)
+  }
+
+  $('#toggleTheme').click(function () {
+    const currentMode = getMode();
+    const newMode = currentMode === 'dark' ? 'light' : 'dark';
+    toggleMode(newMode);
   });
+
+  function setMode(mode) {
+    // Set a cookie named "preferredMode" with the mode value
+    Cookies.set('preferredMode', mode, { expires: 365 }); // Cookie expires in 365 days
+
+    if (mode === 'dark') {
+      $("#theme-link").attr("href", darkThemeURL)
+    } else {
+      $("#theme-link").attr("href", lightThemeURL)
+    }
+  }
+
+  function getMode() {
+    // Get the value of the "preferredMode" cookie
+    return Cookies.get('preferredMode');
+  }
+
+  function toggleMode(newMode) {
+    setMode(newMode);
+  }
+});
+
+// Toggle sidebar
+$(document).ready(function () {
+  const currentSidebar = getSidebar();
+
+  if (currentSidebar === 'open') {
+    $("#sidebar").removeClass("collapsed")
+  } else {
+    $("#sidebar").addClass("collapsed")
+  }
+
+  $('#btn-collapse').click(function () {
+    const currentSidebar = getSidebar();
+    const newSidebar = currentSidebar === 'open' ? 'close' : 'open';
+    toggleSidebar(newSidebar);
+  });
+
+  function setSidebar(sidebar) {
+    // Set a cookie named "preferredSidebar" with the Sidebar value
+    Cookies.set('preferredSidebar', sidebar, { expires: 365 }); // Cookie expires in 365 days
+
+    if (sidebar === 'open') {
+      $("#sidebar").removeClass("collapsed")
+    } else {
+      $("#sidebar").addClass("collapsed")
+    }
+  }
+
+  function getSidebar() {
+    // Get the value of the "preferredSidebar" cookie
+    return Cookies.get('preferredSidebar');
+  }
+
+  function toggleSidebar(newSidebar) {
+    setSidebar(newSidebar);
+  }
 });
 
 // expand screen
