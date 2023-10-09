@@ -50,7 +50,7 @@
       z-index: 10;
     }
     .box-icon {
-      background-color: rgba($secondry, 0.1);
+      background-color: $dark-skin;
       height: 50px;
       width: 50px;
       border-radius: 10px;
@@ -58,7 +58,7 @@
       justify-content: center;
       align-items: center;
       i {
-        color: $secondry;
+        color: #6dbef5;
         font-size: 23px;
       }
     }

@@ -42,7 +42,7 @@
     cursor: pointer;
     .header-icon {
       font-size: 18px !important;
-      color: $secondry;
+      color: #6dbef5;
       @media only screen and (max-width: 580px) {
         font-size: 20px;
       }
@@ -305,7 +305,7 @@
     &:hover {
       .ticket-body {
         p {
-          color: $secondry;
+          color:#86c6f0;
         }
       }
     }
@@ -509,7 +509,7 @@
       }
     }
     i {
-      color: $secondry;
+      color: #86c6f0;
       font-size: 20px;
     }
   }

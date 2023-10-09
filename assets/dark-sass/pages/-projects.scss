@@ -29,7 +29,7 @@
       h2 {
         font-size: 16px;
         font-weight: 600;
-        color: $secondry;
+        color: #86c6f0;
       }
   
       a {
@@ -37,7 +37,7 @@
           color: $white-light;
           font-size: 18px;
           &:hover {
-            color: $secondry;
+            color: #86c6f0;
             cursor: pointer;
           }
         }
@@ -144,12 +144,12 @@
     }
   }
   .completed {
-    color: green !important;
+    color: rgb(55, 224, 55) !important;
     i {
-      color: green !important;
+      color: rgb(55, 224, 55) !important;
     }
     span {
-      color: green !important;
+      color: rgb(55, 224, 55) !important;
     }
   }
   // =====================================================tabs
@@ -173,7 +173,7 @@
     font-weight: 500;
     flex-grow: 1;
     background-color: rgba($secondry, 0.1);
-    color: $secondry;
+    color: #86c6f0;
     border-bottom: 2px dashed $secondry;
   }
   .tabProjects button span {
@@ -252,7 +252,7 @@
       color: rgb(85, 226, 85);
     }
     .in-progress-step {
-      color: $secondry;
+      color: #86c6f0;
     }
   }
   .progress-step-div {
@@ -294,7 +294,7 @@
         top: 3px;
         right: 3px;
         &:hover {
-          color: $secondry;
+          color: #86c6f0;
           cursor: pointer;
         }
       }
@@ -348,7 +348,7 @@
   .edit {
     i {
       &:hover {
-        color: $secondry;
+        color: #86c6f0;
         cursor: pointer;
       }
     }
@@ -356,7 +356,7 @@
   .edit-task {
     i {
       &:hover {
-        color: $secondry;
+        color: #86c6f0;
         cursor: pointer;
       }
     }

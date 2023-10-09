@@ -106,7 +106,7 @@
     padding: 0px;
     margin: 0;
     font-weight: 500;
-    color: $secondry;
+    color: #86c6f0;
     font-size: 14px;
   }
   
@@ -143,7 +143,7 @@
       color: $white-light;
       cursor: pointer;
       &:hover{
-        color: $secondry;
+        color: #86c6f0;
       }
       input {
         margin-right: 7px;
@@ -180,6 +180,7 @@
     margin-bottom: 7px;
     padding: 10px;
     font-size: 16px;
+    color: $white-light;
     &:hover{
       background-color: #e7eafc;
     }
@@ -260,7 +261,7 @@ min-width: 500px;
 .invoice-value{
     font-size: 14px;
     font-weight: 400;
-    color: $secondry
+    color: #86c6f0;
 }
 .form-check-label{
     font-size: 14px !important;
@@ -302,7 +303,7 @@ min-width: 500px;
     }
   }
   .edit-bank{
-    background-color: $secondry;
+    background-color: #86c6f0;
     border-radius: 6px;
     padding: 7px;
     color: white;
@@ -312,7 +313,7 @@ min-width: 500px;
   }
   // ==========================================================preview
   .invoice-heading-row{
-    background-color: $secondry;
+    background-color: #86c6f0;
     display: flex;
     justify-content: flex-end;
     padding:15px 45px;
@@ -331,7 +332,7 @@ min-width: 500px;
 
   }
   .summary-div-total {
-    background-color: $secondry;
+    background-color: #86c6f0;
     padding: 5px ;
     color: white;
   }

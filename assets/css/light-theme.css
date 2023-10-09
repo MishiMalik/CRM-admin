@@ -3426,6 +3426,9 @@ span.plus {
       position: relative;
       top: 0; } }
 
+.ticket-info-icon {
+  background-color: white !important; }
+
 /* Style for .selectBox (Dropdown container) */
 .multipleSelection {
   position: relative; }

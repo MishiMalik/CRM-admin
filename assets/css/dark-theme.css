@@ -54,7 +54,7 @@
       display: block !important; } }
 
 .text-primary {
-  color: #0963ce !important; }
+  color: #86c6f0 !important; }
 
 .text-danger {
   color: red !important; }
@@ -809,7 +809,11 @@ div.dataTables_wrapper div.dataTables_filter input {
   width: 100%; }
   .dtr-details li {
     display: flex !important;
-    width: 100%; }
+    width: 100%;
+    border-color: #15243e !important; }
+
+tbody, td, tfoot, th, thead, tr {
+  border-bottom: 1px solid #15243e !important; }
 
 .dtr-title {
   text-align: left !important;
@@ -833,6 +837,8 @@ div.dataTables_wrapper div.dataTables_filter input {
   @media only screen and (max-width: 330px) {
     .dtr-data {
       font-size: 12px; } }
+  .dtr-data a {
+    color: #86c6f0; }
 
 .parent .child {
   padding: 0px !important; }
@@ -1190,7 +1196,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   line-height: 18px; }
 
 .sign-check-label a {
-  color: #0963ce;
+  color: #86c6f0;
   /* Regular Text / 12px / Semibold */
   font-family: Manrope;
   font-size: 12px;
@@ -1262,12 +1268,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 /* Change background color of buttons on hover */
 .tab button:hover {
   border-bottom: 1px solid #0963ce;
-  color: #0963ce; }
+  color: #86c6f0; }
 
 /* Create an active/current tabslink class */
 .tab button.active {
   border-bottom: 1px solid #0963ce;
-  color: #0963ce; }
+  color: #86c6f0; }
 
 /* Style the tabs content */
 .tab-tabcontent {
@@ -1290,12 +1296,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     padding: 20px 10px 7px 10px;
     text-align: center; }
     .person-card .person-detail h1 {
-      color: #0963ce;
+      color: #86c6f0;
       font-size: 22px;
       font-weight: 400;
       text-align: center; }
     .person-card .person-detail h2 {
-      color: #0963ce;
+      color: #86c6f0;
       font-size: 16px;
       font-weight: 500;
       text-align: center; }
@@ -1309,7 +1315,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       color: rgba(255, 255, 255, 0.85);
       text-decoration: none; }
       .person-card .person-detail a:hover {
-        color: #0963ce; }
+        color: #86c6f0; }
     .person-card .person-detail i {
       font-size: 14px;
       color: rgba(255, 255, 255, 0.85); }
@@ -1541,7 +1547,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     cursor: pointer; }
     .header .header-option .header-icon {
       font-size: 18px !important;
-      color: #0963ce; }
+      color: #6dbef5; }
       @media only screen and (max-width: 580px) {
         .header .header-option .header-icon {
           font-size: 20px; } }
@@ -1750,7 +1756,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       font-size: 13px;
       color: #7e8299; }
   .ticket-links .ticket-notify:hover .ticket-body p {
-    color: #0963ce; }
+    color: #86c6f0; }
 
 .ticket-success {
   border-left-color: #05825f !important; }
@@ -1916,7 +1922,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
         outline: none;
         border: none; }
     .chat__popup .type-area i {
-      color: #0963ce;
+      color: #86c6f0;
       font-size: 20px; }
 
 .pulse-wave {
@@ -1976,7 +1982,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     position: relative;
     z-index: 10; }
   .box .box-icon {
-    background-color: rgba(9, 99, 206, 0.1);
+    background-color: #15243e;
     height: 50px;
     width: 50px;
     border-radius: 10px;
@@ -1984,7 +1990,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     justify-content: center;
     align-items: center; }
     .box .box-icon i {
-      color: #0963ce;
+      color: #6dbef5;
       font-size: 23px; }
   .box .progress {
     width: 70px;
@@ -2202,12 +2208,12 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     .project-card--header h2 {
       font-size: 16px;
       font-weight: 600;
-      color: #0963ce; }
+      color: #86c6f0; }
     .project-card--header a i {
       color: rgba(255, 255, 255, 0.85);
       font-size: 18px; }
       .project-card--header a i:hover {
-        color: #0963ce;
+        color: #86c6f0;
         cursor: pointer; }
     .project-card--header .project-msg {
       position: relative; }
@@ -2296,11 +2302,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       color: #5c607b; }
 
 .completed {
-  color: green !important; }
+  color: #37e037 !important; }
   .completed i {
-    color: green !important; }
+    color: #37e037 !important; }
   .completed span {
-    color: green !important; }
+    color: #37e037 !important; }
 
 /* Style the tab */
 .tabProjects {
@@ -2321,7 +2327,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-weight: 500;
   flex-grow: 1;
   background-color: rgba(9, 99, 206, 0.1);
-  color: #0963ce;
+  color: #86c6f0;
   border-bottom: 2px dashed #0963ce; }
 
 @media only screen and (max-width: 580px) {
@@ -2390,7 +2396,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   .step-count .complete-step {
     color: #55e255; }
   .step-count .in-progress-step {
-    color: #0963ce; }
+    color: #86c6f0; }
 
 .progress-step-div {
   display: flex;
@@ -2428,7 +2434,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       top: 3px;
       right: 3px; }
       .task-card--header .edit:hover {
-        color: #0963ce;
+        color: #86c6f0;
         cursor: pointer; }
     .task-card--header .edit-able {
       padding: 4px; }
@@ -2466,11 +2472,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     border-top: 1px solid #F2F2F2; }
 
 .edit i:hover {
-  color: #0963ce;
+  color: #86c6f0;
   cursor: pointer; }
 
 .edit-task i:hover {
-  color: #0963ce;
+  color: #86c6f0;
   cursor: pointer; }
 
 .score {
@@ -3146,12 +3152,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   font-size: 12px; }
 
 .ticket-info--header {
-  background-color: #e6effa;
+  background-color: #15243e;
   padding: 7px 7px;
   border-radius: 6px;
   display: flex;
   align-items: center;
   font-size: 16px;
+  color: rgba(255, 255, 255, 0.85) !important;
   font-weight: 500; }
   @media only screen and (max-width: 1200px) {
     .ticket-info--header {
@@ -3160,13 +3167,13 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .ticket-heading {
   font-size: 12px;
   font-weight: 500;
-  color: #8590a9;
+  color: #9b9ca7;
   margin-bottom: 4px !important; }
 
 .ticket-text {
   font-size: 14px;
   font-weight: 500;
-  color: #15243e; }
+  color: rgba(255, 255, 255, 0.85); }
 
 .ticket-status {
   background-color: #f9dde1;
@@ -3235,7 +3242,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     position: relative;
     font-size: 16px;
     font-weight: 600;
-    color: black;
+    color: rgba(255, 255, 255, 0.85);
     margin-bottom: 50px; }
     .ticket-chat .title .title-icon {
       position: absolute;
@@ -3317,7 +3324,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   margin-bottom: 50px;
   padding: 15px 20px;
   border-radius: 6px;
-  border: 1px solid #e6effa;
+  border: 1px solid #5C607B;
   margin-top: 15px; }
   @media only screen and (max-width: 580px) {
     .ticket-detail-text {
@@ -3325,29 +3332,32 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   .ticket-detail-text p {
     font-size: 14px;
     font-weight: 400;
-    color: #5c607b;
+    color: rgba(255, 255, 255, 0.85);
     text-align: justify;
     line-height: 23px; }
   .ticket-detail-text a {
     font-size: 13px;
     font-weight: 400;
     padding-left: 5px;
+    color: #86c6f0;
     padding-right: 5px; }
     .ticket-detail-text a i {
       color: #5c607b;
       padding: 0px 5px; }
 
 .screenshot {
-  border: 1px solid #e6effa;
+  border: 1px solid #5C607B;
   width: fit-content;
   display: flex;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  border-radius: 4px; }
   .screenshot a {
     font-size: 12px;
     padding: 2px 5px;
     font-weight: 500;
-    border-radius: 4px; }
+    border-radius: 4px;
+    color: #86c6f0; }
     @media only screen and (max-width: 350px) {
       .screenshot a {
         display: inline-block;
@@ -3391,10 +3401,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
           line-height: 0px; } }
 
 .ticket-support-detail {
-  background-color: #f0f3f7; }
+  background-color: #15243e; }
 
 .ck.ck-editor__editable_inline[dir="ltr"] {
-  border: 1px solid #e6effa;
+  border: 1px solid #5C607B;
   border-top: 0px;
   font-size: 12px; }
 
@@ -3419,7 +3429,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .dropzone {
   width: 98%;
   margin: 1%;
-  border: 2px dashed #3498db !important;
+  border: 2px dashed #86c6f0 !important;
   border-radius: 5px;
   transition: 0.2s; }
 
@@ -3467,13 +3477,14 @@ span.plus {
   border: none;
   font-size: 14px;
   font-weight: 500;
-  color: #0963ce;
+  color: #86c6f0;
   text-decoration: underline; }
 
 .heading-ticket {
   padding: 20px 0px;
   font-size: 20px;
-  font-weight: 600; }
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85); }
 
 .reply-area {
   display: none; }
@@ -3482,14 +3493,14 @@ span.plus {
   display: none; }
 
 .subject {
-  color: #15243e;
+  color: rgba(255, 255, 255, 0.85);
   width: 140px !important;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   cursor: pointer; }
   .subject:hover {
-    color: #0963ce; }
+    color: #31d4f0; }
 
 .ticket-info-div {
   position: sticky;
@@ -3589,7 +3600,7 @@ span.plus {
   padding: 0px;
   margin: 0;
   font-weight: 500;
-  color: #0963ce;
+  color: #86c6f0;
   font-size: 14px; }
 
 .form-custom {
@@ -3620,7 +3631,7 @@ span.plus {
     color: rgba(255, 255, 255, 0.85);
     cursor: pointer; }
     .selectBox-cont label:hover {
-      color: #0963ce; }
+      color: #86c6f0; }
     .selectBox-cont label input {
       margin-right: 7px;
       height: 15px;
@@ -3651,7 +3662,8 @@ span.plus {
   border-radius: 4px;
   margin-bottom: 7px;
   padding: 10px;
-  font-size: 16px; }
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.85); }
   .date-list li a:hover {
     background-color: #e7eafc; }
   @media only screen and (max-width: 580px) {
@@ -3728,7 +3740,7 @@ span.plus {
 .invoice-value {
   font-size: 14px;
   font-weight: 400;
-  color: #0963ce; }
+  color: #86c6f0; }
 
 .form-check-label {
   font-size: 14px !important;
@@ -3766,7 +3778,7 @@ span.plus {
     width: 100% !important; } }
 
 .edit-bank {
-  background-color: #0963ce;
+  background-color: #86c6f0;
   border-radius: 6px;
   padding: 7px;
   color: white; }
@@ -3774,7 +3786,7 @@ span.plus {
     color: white !important; }
 
 .invoice-heading-row {
-  background-color: #0963ce;
+  background-color: #86c6f0;
   display: flex;
   justify-content: flex-end;
   padding: 15px 45px;
@@ -3791,7 +3803,7 @@ span.plus {
     right: 45px; }
 
 .summary-div-total {
-  background-color: #0963ce;
+  background-color: #86c6f0;
   padding: 5px;
   color: white; }
 

@@ -257,7 +257,11 @@
     li {
       display: flex !important;
       width: 100%;
+      border-color:$dark-skin !important;
     }
+  }
+  tbody, td, tfoot, th, thead, tr{
+    border-bottom:1px solid $dark-skin !important;
   }
   .dtr-title {
     text-align: left !important;
@@ -280,6 +284,9 @@
     white-space: normal !important;
     @media only screen and (max-width: 330px) {
       font-size: 12px;
+    }
+    a{
+      color: #86c6f0;
     }
   }
   .parent .child {
