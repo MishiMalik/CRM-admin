@@ -2450,8 +2450,20 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     color: white !important; }
 
 .chat-body {
-  height: 100vh !important;
-  overflow-y: hidden !important; }
+  background-color: #f6f6f6;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden; }
+  @media only screen and (max-width: 991px) {
+    .chat-body {
+      height: 100%;
+      overflow-y: auto;
+      padding-top: 0px; } }
+  @media only screen and (max-width: 575px) {
+    .chat-body {
+      padding-bottom: 50px; } }
+  .chat-body .header {
+    position: relative !important; }
 
 .chat__screen {
   height: 100%;
