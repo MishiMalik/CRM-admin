@@ -3330,7 +3330,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   margin-bottom: 50px;
   padding: 15px 20px;
   border-radius: 6px;
-  border: 1px solid #5C607B;
+  border: 1px solid #5c607b;
   margin-top: 15px; }
   @media only screen and (max-width: 580px) {
     .ticket-detail-text {
@@ -3352,7 +3352,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       padding: 0px 5px; }
 
 .screenshot {
-  border: 1px solid #5C607B;
+  border: 1px solid #5c607b;
   width: fit-content;
   display: flex;
   justify-content: flex-start;
@@ -3410,7 +3410,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   background-color: #15243e; }
 
 .ck.ck-editor__editable_inline[dir="ltr"] {
-  border: 1px solid #5C607B;
+  border: 1px solid #5c607b;
   border-top: 0px;
   font-size: 12px; }
 

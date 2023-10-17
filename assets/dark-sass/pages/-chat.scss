@@ -1,8 +1,30 @@
 .chat-body {
-    height: 100vh !important;
-    overflow-y: hidden !important;
+  // height: 100vh !important;
+  // overflow-y: hidden !important;
+  // // padding: 0px !important;
+  // @media only screen and (max-width: 991px) {
+  //   height: 100% !important;
+  //   overflow-y: scroll !important;
+  // }
 
+
+  background-color: $dark-skin;
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+  // padding: 12px;
+  @media only screen and (max-width: 991px) {
+    height: 100%;
+    overflow-y: auto;
+    padding-top: 0px;
   }
+  @media only screen and (max-width: 575px) {
+    padding-bottom: 50px;
+  }
+  .header{
+    position: relative !important; 
+  }
+}
   .chat__screen {
     height: 100%;
     height: calc(100vh - 114px);
