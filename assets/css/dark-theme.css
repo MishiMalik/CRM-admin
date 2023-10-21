@@ -72,6 +72,16 @@
   text-overflow: ellipsis;
   margin-bottom: 0px !important; }
 
+.ellipsis-2 {
+  color: #15243e;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2 !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0px !important; }
+
 .page-title {
   color: rgba(255, 255, 255, 0.85);
   font-size: 15px;

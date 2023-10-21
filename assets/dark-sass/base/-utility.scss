@@ -28,6 +28,16 @@
     text-overflow: ellipsis;
     margin-bottom: 0px !important;
 }
+.ellipsis-2{
+    color: $dark-blue;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0px !important;
+}
 .page-title{
     color: $white-light;
     font-size: 15px;
