@@ -1247,7 +1247,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   background-color: transparent !important; }
 
 /* Style the tabs */
-.tab {
+.tab,
+.tab2 {
   overflow: hidden;
   border: none;
   background-color: transparent;
@@ -1255,7 +1256,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   margin-bottom: 20px; }
 
 /* Style the buttons inside the tabs */
-.tab button {
+.tab button,
+.tab2 button {
   background-color: inherit;
   float: left;
   border: none;
@@ -1269,25 +1271,30 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   background-color: transparent !important;
   border-bottom: 1px solid transparent; }
   @media only screen and (max-width: 420px) {
-    .tab button {
+    .tab button,
+    .tab2 button {
       padding: 7px 10px;
       font-size: 14px; } }
   @media only screen and (max-width: 360px) {
-    .tab button {
+    .tab button,
+    .tab2 button {
       padding: 7px 8px;
       font-size: 13px; } }
   @media only screen and (max-width: 328px) {
-    .tab button {
+    .tab button,
+    .tab2 button {
       padding: 7px 7px;
       font-size: 13px; } }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+.tab button:hover,
+.tab2 button:hover {
   border-bottom: 1px solid #0963ce;
   color: #86c6f0; }
 
 /* Create an active/current tabslink class */
-.tab button.active {
+.tab button.active,
+.tab2 button.active {
   border-bottom: 1px solid #0963ce;
   color: #86c6f0; }
 
@@ -3142,6 +3149,15 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     width: 10px;
     background-color: #f9a400;
     border-radius: 100%; }
+
+.ticket-paid {
+  background-color: green;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 4px;
+  text-align: center;
+  width: fit-content;
+  font-size: 12px; }
 
 .ticket-open {
   background-color: #3596f7;

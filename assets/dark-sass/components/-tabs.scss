@@ -1,6 +1,7 @@
 
 /* Style the tabs */
-.tab {
+.tab,
+.tab2 {
     overflow: hidden;
     border: none;
     background-color: transparent;
@@ -9,7 +10,8 @@
   }
   
   /* Style the buttons inside the tabs */
-  .tab button {
+  .tab button,
+  .tab2 button{
     background-color: inherit;
     float: left;
     border: none;
@@ -37,13 +39,15 @@
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
+  .tab button:hover,
+  .tab2 button:hover {
       border-bottom: 1px solid $secondry;
       color: #86c6f0;
   }
   
   /* Create an active/current tabslink class */
-  .tab button.active {
+  .tab button.active,
+  .tab2 button.active {
       border-bottom: 1px solid $secondry;
       color: #86c6f0;
   }
