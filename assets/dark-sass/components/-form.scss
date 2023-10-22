@@ -96,3 +96,6 @@
   .form-control:disabled, .form-control[readonly]{
     background-color: transparent !important;
   }
+  .form-select{
+    background-color: $dark !important;
+  }

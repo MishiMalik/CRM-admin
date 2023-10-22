@@ -917,22 +917,28 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   margin: 0px !important; }
 
 .new {
-  background-color: #06f7f0; }
+  background-color: #06f7f0;
+  color: white !important; }
 
 .contracted {
-  background-color: #063af6; }
+  background-color: #063af6;
+  color: white !important; }
 
 .follow-up {
-  background-color: #e506f7; }
+  background-color: #e506f7;
+  color: white !important; }
 
 .in-progress {
-  background-color: #f75c06; }
+  background-color: #f75c06;
+  color: white !important; }
 
 .failed {
-  background-color: #f70606; }
+  background-color: #f70606;
+  color: white !important; }
 
 .qualified {
-  background-color: #06f744; }
+  background-color: #06f744;
+  color: white !important; }
 
 .in-active {
   background-color: #8f8d8d;
@@ -1246,8 +1252,16 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 .form-control:disabled, .form-control[readonly] {
   background-color: transparent !important; }
 
+.form-select {
+  background-color: #0c1a32 !important; }
+
 /* Style the tabs */
-.tab,
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 20px; }
+
 .tab2 {
   overflow: hidden;
   border: none;
@@ -1294,7 +1308,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 /* Create an active/current tabslink class */
 .tab button.active,
-.tab2 button.active {
+.tab2 button.active2 {
   border-bottom: 1px solid #0963ce;
   color: #86c6f0; }
 
@@ -3152,7 +3166,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .ticket-paid {
   background-color: green;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -3161,7 +3175,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .ticket-open {
   background-color: #3596f7;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -3170,7 +3184,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .ticket-waiting {
   background-color: #ffb22b;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -3179,7 +3193,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .ticket-replied {
   background-color: #00e200;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -3188,7 +3202,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .ticket-completed {
   background-color: #05825f;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -3243,7 +3257,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
   background-color: #0963ce;
   border-radius: 4px;
   padding: 7px 10px;
-  color: white;
+  color: white !important;
   font-weight: 500;
   border: none;
   border: 1px solid #0963ce;
@@ -3257,7 +3271,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .ticket-blank {
   font-size: 14px;
-  background-color: white;
+  background-color: white !important;
   border-radius: 4px;
   padding: 7px 10px;
   color: #0963ce;

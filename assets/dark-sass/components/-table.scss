@@ -373,23 +373,29 @@
   // ===============================================statuses color
   .new {
     background-color: #06f7f0;
+    color: white !important;
   }
   .contracted {
     background-color: #063af6;
+    color: white !important;
   }
   .follow-up {
     background-color: #e506f7;
+    color: white !important;
   }
   
   .in-progress {
     background-color: #f75c06;
+    color: white !important;
   }
   
   .failed {
     background-color: #f70606;
+    color: white !important;
   }
   .qualified {
     background-color: #06f744;
+    color: white !important;
   }
   .in-active {
     background-color: rgb(143, 141, 141);

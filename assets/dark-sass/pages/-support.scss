@@ -76,7 +76,7 @@
 }
 .ticket-paid{
   background-color:green;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -86,7 +86,7 @@
 }
 .ticket-open {
   background-color: #3596f7;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -95,7 +95,7 @@
 }
 .ticket-waiting {
   background-color: #ffb22b;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -104,7 +104,7 @@
 }
 .ticket-replied {
   background-color: #00e200;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -113,7 +113,7 @@
 }
 .ticket-completed {
   background-color: #05825f;
-  color: white;
+  color: white !important;
   padding: 3px 5px;
   border-radius: 4px;
   text-align: center;
@@ -170,7 +170,7 @@
   background-color: $secondry;
   border-radius: 4px;
   padding: 7px 10px;
-  color: white;
+  color: white !important;
   font-weight: 500;
   border: none;
   border: 1px solid $secondry;
@@ -185,7 +185,7 @@
 }
 .ticket-blank {
   font-size: 14px;
-  background-color: white;
+  background-color: white !important;
   border-radius: 4px;
   padding: 7px 10px;
   color: $secondry;

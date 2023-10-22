@@ -1,14 +1,18 @@
 
 /* Style the tabs */
-.tab,
-.tab2 {
+.tab{
     overflow: hidden;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 20px;
+  }
+  .tab2{
+     overflow: hidden;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid $light-gray;
     margin-bottom: 20px;
   }
-  
   /* Style the buttons inside the tabs */
   .tab button,
   .tab2 button{
@@ -47,7 +51,7 @@
   
   /* Create an active/current tabslink class */
   .tab button.active,
-  .tab2 button.active {
+  .tab2 button.active2 {
       border-bottom: 1px solid $secondry;
       color: #86c6f0;
   }
