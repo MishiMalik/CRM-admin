@@ -33,7 +33,9 @@
 </head>
 
 <body class="theme">
-
+     <div class="loader">
+        <img src="assets/images/Logo-Png.png" alt="">
+     </div>
     <div class="layout has-sidebar fixed-sidebar d-flex" style="width: fit-content !important;">
         <!-- ---------------------Side bar-------------- -->
         <aside id="sidebar" class="sidebar break-point-lg has-bg-image ">
@@ -1351,6 +1353,15 @@
     <script src="https://cdn.datatables.net/v/dt/dt-1.13.6/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.min.js"></script>
     <script src="assets/Js/table.js"></script>
+    <!-- loader -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          setTimeout(function() {
+            var loader = document.querySelector(".loader");
+            loader.style.display = "none";
+          }, 4000); // 6 seconds (6000 milliseconds)
+        });
+      </script>
 </body>
 
 </html>
