@@ -2998,7 +2998,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
 
 .previews {
   display: none;
-  background-color: white;
+  background-color: #0c1a32;
   padding: 15px 20px 10px 20px;
   max-height: 130px;
   min-height: 90px;
@@ -3030,7 +3030,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
     width: fit-content; }
   .preview i {
     font-size: 50px;
-    display: block; }
+    display: block;
+    color: white; }
   .preview video {
     max-height: 70px;
     width: fit-content; }
@@ -3078,7 +3079,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
       width: 40px;
       font-size: 20px; }
     .option-btns button:hover {
-      background-color: #F2F2F2; }
+      background-color: #0c1a32; }
 
 .show-options {
   position: relative; }

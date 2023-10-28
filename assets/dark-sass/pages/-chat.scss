@@ -527,7 +527,7 @@
   }
   .previews {
     display: none;
-    background-color: white;
+    background-color: $dark;
     padding: 15px 20px 10px 20px;
     max-height: 130px;
     min-height: 90px;
@@ -570,6 +570,7 @@
     i {
       font-size: 50px;
       display: block;
+      color: white;
     }
     video {
       max-height: 70px;
@@ -640,8 +641,8 @@
             width: 40px;
             font-size: 20px;
         }
-        &:hover{
-            background-color: $light-gray;
+        &:hover {
+          background-color: $dark;
         }
     }
 }
